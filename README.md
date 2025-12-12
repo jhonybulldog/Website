@@ -20,7 +20,7 @@ Presenta competenze, progetti ed esperienze professionali.
 
 ✨ CARATTERISTICHE PRINCIPALI
 • Design Responsive (mobile, tablet, desktop)
-• Sezioni organizzate: Hero, Portfolio, Competenze, Esperienze, Contatti
+• Sezioni organizzate: , Portfolio, Competenze, Esperienze, Contatti
 • Animazioni fluide e tema personalizzato
 • Calcolatrice interattiva di subnetting IP
 
@@ -34,8 +34,8 @@ STRUMENTI:
 • VS Code - Editor di sviluppo
 
 🚀 INSTALLAZIONE LOCALE
-1. git clone https://github.com/tuo-username/jhonnyfolio-site.git
-2. cd jhonnyfolio-site
+1. git clone https://github.com/jhonnybulldog/Website
+2. cd Website
 3. Apri index.html nel browser
    O usa: python -m http.server 8000
 4. Visita http://localhost:8000
