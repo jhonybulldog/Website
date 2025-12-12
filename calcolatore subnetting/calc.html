@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore di Subnetting IP</title>
+    <link rel="stylesheet" href="calc-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="site-title">
+                <i class="fas fa-network-wired"></i> Calcolatore di Subnetting IP
+            </h1>
+            <p class="site-description">
+                Calcola rapidamente subnet mask, indirizzi di rete, broadcast e molto altro con questo strumento semplice e preciso.
+            </p>
+        </header>
+
+        <!-- Input Section -->
+        <section class="input-section card">
+            <div class="input-container">
+                <label for="ip-input" class="input-label">
+                    <i class="fas fa-ip-address"></i> Indirizzo IP/CIDR
+                </label>
+                <div class="input-group">
+                    <input type="text" id="ip-input" class="ip-input" 
+                           placeholder="Es. 192.168.1.0/24" 
+                           value="">
+                    <button id="calculate-btn" class="calculate-btn">
+                        <i class="fas fa-calculator"></i> Calcola
+                    </button>
+                </div>
+                <div class="input-hint">
+                    <span class="hint-title"><i class="fas fa-lightbulb"></i> Esempi:</span>
+                    <span class="hint-example">192.168.1.0/24</span>
+                    <span class="hint-example">10.0.0.0/8</span>
+                    <span class="hint-example">172.16.0.0/12</span>
+                    <span class="hint-example">8.8.8.8/32</span>
+                </div>
+                <div id="error-message" class="error-message"></div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <div class="card">
+                <h2 class="section-title">
+                    <i class="fas fa-table"></i> Risultati del Calcolo
+                </h2>
+                
+                <div class="placeholder-message" id="placeholder-message">
+                    <div class="placeholder-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Pronto per il calcolo</h3>
+                    <p>Inserisci un indirizzo IP con notazione CIDR (es. 192.168.1.0/24) nel campo sopra e premi "Calcola" per visualizzare i risultati.</p>
+                </div>
+                
+                <div class="results-container" id="results-container" style="display: none;">
+                    <div class="result-row">
+                        <div class="result-label">Address</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="address-decimal">-</div>
+                            <div class="binary-value" id="address-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">Netmask</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="netmask-decimal">-</div>
+                            <div class="binary-value" id="netmask-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">CIDR</div>
+                        <div class="result-value">
+                            <div class="decimal-value"><span id="cidr-value">-</span> <span id="cidr-desc" class="cidr-desc"></span></div>
+                            <div class="binary-value" id="cidr-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">Cisco Wildcard</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="wildcard-decimal">-</div>
+                            <div class="binary-value" id="wildcard-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">Network</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="network-decimal">-</div>
+                            <div class="binary-value" id="network-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">Broadcast</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="broadcast-decimal">-</div>
+                            <div class="binary-value" id="broadcast-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">Hosts</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="hosts-total">-</div>
+                            <div class="binary-value">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">HostMin</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="hostmin-decimal">-</div>
+                            <div class="binary-value" id="hostmin-binary">-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-row">
+                        <div class="result-label">HostMax</div>
+                        <div class="result-value">
+                            <div class="decimal-value" id="hostmax-decimal">-</div>
+                            <div class="binary-value" id="hostmax-binary">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info Section -->
+        <section class="additional-info card">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i> Informazioni Aggiuntive
+            </h2>
+            
+            <div class="placeholder-info" id="placeholder-info">
+                <p>Le informazioni dettagliate sulla rete appariranno qui dopo il calcolo.</p>
+            </div>
+            
+            <div class="info-grid" id="info-grid" style="display: none;">
+                <div class="info-item">
+                    <span class="info-label">Classe di Rete</span>
+                    <span class="info-value badge" id="network-class">-</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Tipo di Indirizzo</span>
+                    <span class="info-value badge" id="address-type">-</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">Range di Indirizzi</span>
+                    <span class="info-value" id="address-range">-</span>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-label">IP in forma Decimale</span>
+                    <span class="info-value" id="decimal-ip">-</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Calcolatore di Subnetting IP &copy; <span id="current-year">2023</span> | 
+                Realizzato con <i class="fas fa-heart" style="color: #ef4444;"></i> per la comunità networking</p>
+            <p class="footer-note">Strumento ispirato a <a href="https://httplab.it/ipcalc.php" target="_blank">httplab.it/ipcalc.php</a> e realizzato con stile ispirato a <a href="https://jhonnyfolio.site" target="_blank">jhonnyfolio.site</a></p>
+        </footer>
+    </div>
+
+    <script src="calc-script.js"></script>
+</body>
+</html>

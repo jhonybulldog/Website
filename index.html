@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonny - Sviluppatore & Designer</title>
+    <link rel="stylesheet" href="main/style.css">
+</head>
+
+<body>
+    <!-- Header con navigazione fissa -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><a href="#home">Jhonny</a></h2>
+                </div>
+
+                <!-- Menu desktop -->
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Chi Sono</a></li>
+                    <li><a href="#skills" class="nav-link">Competenze</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contatti</a></li>
+                    <li><a href="admin/admin.html" class="nav-link admin-btn">Area Admin</a></li>
+                </ul>
+
+                <!-- Menu hamburger per mobile -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sezione Hero/Home -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Ciao, sono <span class="highlight">Jhonny</span>
+                    </h1>
+                    <p class="hero-subtitle">Web Designer, Developer & IT Specialist</p>
+                    <p class="hero-description">
+                        Costruisco e mantengo il tuo sito personale/aziendale. Dal front-end creativo al robusto back-end e all'infrastruttura che lo supporta, 
+                        fornisco una soluzione completa e sicura. Che rispecchia perfettamente i propri gusti,
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Vedi i miei lavori</a>
+                        <a href="#contact" class="btn btn-secondary">Contattami</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="image/logo.png" alt="Jhonny - Sviluppatore & Designer" class="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione About/Chi Sono -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Chi Sono</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>La mia passione per la tecnologia e il design</h3>
+                        <p>
+                            Sono uno sviluppatore e designer con una profonda passione per
+                            la creazione di esperienze digitali uniche. Credo nell'equilibrio
+                            tra estetica e funzionalità, creando prodotti che non solo
+                            funzionano perfettamente, ma che anche ispirano e coinvolgono.
+                        </p>
+                        <p>
+                            Con un approccio meticoloso ai dettagli e una costante voglia
+                            di imparare, mi impegno a superare le aspettative in ogni progetto.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Anni di Esperienza</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Progetti Completati</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Soddisfazione Clienti</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Competenze -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Le Mie Competenze</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Sviluppo Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Design</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Figma</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Adobe Creative Suite</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" data-level="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">I Miei Progetti</h2>
+                <div class="portfolio-grid">
+                    <!-- Progetto 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="image/shopify.png" alt="Progetto E-commerce">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#contact" class="project-link">Dettagli</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Piattaforma E-commerce</h3>
+                            <p>Soluzione completa di e-commerce con carrello e checkout</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progetto 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="image/calcsubb.png" alt="Progetto Dashboard"> 
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="calcolatore subnetting/calc.html" class="project-link">Provalo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Calcolatore di Subnetting</h3>
+                            <p>Strumento web per calcolare parametri di rete da un indirizzo IP con notazione CIDR.
+                                Fornisce subnet mask, indirizzi di rete, broadcast, host disponibili e rappresentazioni binarie con interfaccia</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>Css</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progetto 3 - GitHub -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="image/github.png" alt="Progetti GitHub">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/jhonybulldog" target="_blank" class="project-link">Vedi
+                                        GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Repository GitHub</h3>
+                            <p>Collezione dei miei progetti open-source e personali</p>
+                            <div class="project-tech">
+                                <span>Vari</span>
+                                <span>Open Source</span>
+                                <span>Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione Contatti -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contattami</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Mettiamoci in Contatto</h3>
+                        <p>
+                            Sei interessato a collaborare o vuoi maggiori informazioni
+                            sui miei servizi? Non esitare a contattarmi!
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                <a href="mailto:infojhonny90@gmail.com">infojhonny90@gmail.com,</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>GitHub:</strong>
+                                <a href="https://github.com/jhonybulldog" target="_blank">github.com/jhonnybulldog</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Disponibilità:</strong>
+                                <span>Disponibile per nuovi progetti</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/f/movpweqw" method="POST">                        <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio di Jhonny">
+                        <input type="hidden" name="_language" value="it">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Il tuo nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="La tua email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Oggetto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Jhonny </h3>
+                    <p>Sviluppatore & Designer Creativo</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contatti</a>
+                    <a href="admin/admin.html">Admin</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jhonny. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="main/script.js"></script>
+</body>
+
+</html>
