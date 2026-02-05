@@ -132,7 +132,7 @@ p {
     font-weight: 700;
 }
 
-.logo h2 a{
+.logo h2 a {
     text-decoration: none;
     color: inherit;
 }
@@ -336,7 +336,7 @@ section {
 
 .section-title {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
@@ -350,6 +350,17 @@ section {
     height: 4px;
     background: var(--primary-green);
     border-radius: var(--radius-sm);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -481,8 +492,15 @@ section {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .project-card {
@@ -492,6 +510,9 @@ section {
     box-shadow: var(--shadow-md);
     transition: var(--transition-normal);
     border: 1px solid var(--medium-gray);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -499,21 +520,31 @@ section {
     box-shadow: var(--shadow-xl);
 }
 
+/* MODIFICATO: Contenitore immagine flessibile */
 .project-image {
     position: relative;
-    height: 250px;
+    width: 100%;
     overflow: hidden;
+    background: var(--light-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    max-height: 250px;
 }
 
+/* MODIFICATO: Immagine che mantiene proporzioni */
 .project-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    padding: 10px;
     transition: var(--transition-slow);
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .project-overlay {
@@ -524,10 +555,13 @@ section {
     height: 100%;
     background: rgba(16, 185, 129, 0.9);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: var(--transition-normal);
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .project-card:hover .project-overlay {
@@ -537,6 +571,8 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-link {
@@ -547,41 +583,129 @@ section {
     border-radius: var(--radius-lg);
     font-weight: 600;
     transition: var(--transition-fast);
+    white-space: nowrap;
 }
 
 .project-link:hover {
     background: var(--dark-green);
     color: var(--white);
     transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Opzione alternativa se vuoi mantenere altezza fissa ma mostrare immagini intere */
+.project-image-alt {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--light-green), var(--white));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image-alt img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: var(--transition-slow);
+}
+
+/* Opzione per immagini con sfondo bianco */
+.project-image-white {
+    background: var(--white);
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+/* Badge per progetti in sviluppo */
+.coming-soon-badge {
+    background: #ff9800;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
 }
 
 .project-info {
     padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-info h3 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--dark-gray);
+    font-size: 1.3rem;
 }
 
 .project-info p {
     color: var(--text-gray);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    font-size: 0.95rem;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
-.project-tech span {
+.tech-tag {
     background: var(--light-green);
     color: var(--dark-green);
-    padding: 0.25rem 0.75rem;
+    padding: 0.4rem 0.9rem;
     border-radius: var(--radius-full);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.tech-tag:hover {
+    background: var(--accent-green);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Portfolio Call to Action */
+.portfolio-cta {
+    text-align: center;
+    padding: 40px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-top: 30px;
+}
+
+.portfolio-cta p {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 25px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .portfolio-cta {
+        padding: 30px 20px;
+    }
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -797,6 +921,15 @@ section {
     .container {
         padding: 0 1rem;
     }
+
+    /* Portfolio Mobile */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 180px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -812,10 +945,6 @@ section {
         font-size: 2rem;
     }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
     .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -828,6 +957,16 @@ section {
 
     .nav-container {
         padding: 0 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project-link {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -860,4 +999,26 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--dark-green);
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .header, .footer, .cta-buttons, .project-overlay {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    section {
+        padding: 2rem 0;
+        page-break-inside: avoid;
+    }
 }

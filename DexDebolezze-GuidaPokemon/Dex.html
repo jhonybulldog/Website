@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dex Debolezze Pokémon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dex-style.css">
+</head>
+<body>
+    <div class="section-header">
+        <h1>Dex Debolezze Pokémon</h1>
+        <p>Consulta la tabella completa delle interazioni tra i tipi Pokémon. Clicca su un tipo per visualizzarne i dettagli.</p>
+    </div>
+    
+    <!-- Search Section -->
+    <section class="search-section">
+        <label class="search-label" for="type-search">
+            <i class="fas fa-search"></i> Cerca un Tipo specifico
+        </label>
+        <div class="search-container">
+            <div class="type-selector">
+                <input type="text" 
+                       id="type-search" 
+                       class="search-input" 
+                       placeholder="Digita il nome di un tipo (es. Fuoco, Acqua)..."
+                       autocomplete="off">
+            </div>
+            <button id="clear-search" class="clear-search">
+                <i class="fas fa-times"></i> Pulisci
+            </button>
+        </div>
+        
+        <div class="type-icons">
+            <!-- Le icone verranno popolate dinamicamente via JavaScript -->
+        </div>
+    </section>
+    
+    <!-- Results Table -->
+    <section class="table-container">
+        <div class="table-header">
+            <h2>Tabella delle Interazioni</h2>
+            <div class="table-stats" id="table-stats"></div>
+        </div>
+        
+        <table class="results-table" id="results-table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Debole a</th>
+                    <th>Super efficace su</th>
+                    <th>Poco efficace su</th>
+                    <th>Nessun effetto</th>
+                    <th>Resiste a</th>
+                    <th>Immune a</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Le righe verranno popolate dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </section>
+    
+   
+    <footer class="footer">
+            <p class="footer-note">Dex Debolezze &copy; <span id="current-year">2026</span> | 
+                Realizzato da jhonny e luxio</p>
+        </footer>
+    </div>
+    <script src="dex-script.js"></script>
+</body>
+</html>
