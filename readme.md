@@ -10,7 +10,7 @@
                                                           ░ ░        
 
                                                           
-#🌐 il mio personale portfolio come sito web
+# 🌐 il mio personale portfolio come sito web
 
 - Interfacce sviluppate in HTML, CSS e JavaScript
 
@@ -18,7 +18,7 @@
 
 - Codice modulare e separazione logica (stile / script)
 
-##🧮 Calcolatore di Subnetting ("📁 calcolatore subnetting/")
+## 🧮 Calcolatore di Subnetting ("📁 calcolatore subnetting/")
 
 - Calcolo automatico delle subnet
 
@@ -27,7 +27,7 @@
 - Interfaccia chiara e orientata all’apprendimento
 
 
-##🎮 Dex Debolezze Pokémon ("📁 DexDebolezze-GuidaPokemon/")
+## 🎮 Dex Debolezze Pokémon ("📁 DexDebolezze-GuidaPokemon/")
 
 - Guida interattiva alle debolezze dei Pokémon
 
@@ -35,7 +35,7 @@
 
 - Script dedicato per la gestione dei dati
 
-##🗂️ Struttura del progetto 
+## 🗂️ Struttura del progetto 
 `website/
 │
 ├── index.html
@@ -62,7 +62,7 @@
 └── database/
     └── backend / dati `
 
-##🚀 Avvio del progetto
+## 🚀 Avvio del progetto
 
 - Front-End
 
@@ -71,7 +71,7 @@
 - Naviga tra le varie applicazioni
 
 
-##🛠️ Tecnologie utilizzate
+## 🛠️ Tecnologie utilizzate
 
 - Front-End
 
@@ -81,11 +81,12 @@
 
 - JavaScript Vanilla
 
-###📌 Stato del progetto 🟡 In sviluppo
+### 📌 Stato del progetto 🟡 In sviluppo
 
-##👤 Autore
+## 👤 Autore
 
 Sviluppato da jhonnybulldog
 
 🔗 GitHub: [jhonnybulldog](https://github.com/jhonybulldog/)
+
 
