@@ -36,7 +36,7 @@ UI personalizzata
 Script dedicato per la gestione dei dati
 
 🗂️ Struttura del progetto 
-website/
+```website/
 │
 ├── index.html
 ├── inlav.html
@@ -60,7 +60,7 @@ website/
 │   └── assets grafici
 │
 └── database/
-    └── backend / dati
+    └── backend / dati```
 
 🚀 Avvio del progetto
 Front-End
@@ -84,4 +84,5 @@ JavaScript Vanilla
 👤 Autore
 
 Sviluppato da jhonnybulldog
+
 🔗 GitHub: https://github.com/jhonybulldog/
