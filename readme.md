@@ -35,32 +35,6 @@
 
 - Script dedicato per la gestione dei dati
 
-## 🗂️ Struttura del progetto 
-`website/
-│
-├── index.html
-├── inlav.html
-├── 50x.html
-│
-├── main/
-│   ├── style.css
-│   └── script.js
-│
-├── calcolatore subnetting/
-│   ├── calc.html
-│   ├── calc-style.css
-│   └── calc-script.js
-│
-├── DexDebolezze-GuidaPokemon/
-│   ├── Dex.html
-│   ├── dex-style.css
-│   └── dex-script.js
-│
-├── image/
-│   └── assets grafici
-│
-└── database/
-    └── backend / dati `
 
 ## 🚀 Avvio del progetto
 
@@ -88,5 +62,6 @@
 Sviluppato da jhonnybulldog
 
 🔗 GitHub: [jhonnybulldog](https://github.com/jhonybulldog/)
+
 
 
