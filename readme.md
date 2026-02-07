@@ -10,4 +10,4 @@
                                                           ░ ░        
 
 questo e il mio sito personale portfolio con un aggiuntiva di sezione admin
-che si occupa dei siti miei personali utilizzati preferiti
+che si occupa dei siti miei personali utilizzati preferiti.
