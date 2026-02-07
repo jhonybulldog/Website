@@ -10,33 +10,33 @@
                                                           ░ ░        
 
                                                           
-🌐 il mio personale portfolio come sito web
+#🌐 il mio personale portfolio come sito web
 
-Interfacce sviluppate in HTML, CSS e JavaScript
+- Interfacce sviluppate in HTML, CSS e JavaScript
 
-Navigazione semplice tramite homepage
+- Navigazione semplice tramite homepage
 
-Codice modulare e separazione logica (stile / script)
+- Codice modulare e separazione logica (stile / script)
 
-🧮 Calcolatore di Subnetting ("📁 calcolatore subnetting/")
+##🧮 Calcolatore di Subnetting ("📁 calcolatore subnetting/")
 
-Calcolo automatico delle subnet
+- Calcolo automatico delle subnet
 
-Logica implementata in JavaScript
+- Logica implementata in JavaScript
 
-Interfaccia chiara e orientata all’apprendimento
+- Interfaccia chiara e orientata all’apprendimento
 
 
-🎮 Dex Debolezze Pokémon ("📁 DexDebolezze-GuidaPokemon/")
+##🎮 Dex Debolezze Pokémon ("📁 DexDebolezze-GuidaPokemon/")
 
-Guida interattiva alle debolezze dei Pokémon
+- Guida interattiva alle debolezze dei Pokémon
 
-UI personalizzata
+- UI personalizzata
 
-Script dedicato per la gestione dei dati
+- Script dedicato per la gestione dei dati
 
-🗂️ Struttura del progetto 
-```website/
+##🗂️ Struttura del progetto 
+`website/
 │
 ├── index.html
 ├── inlav.html
@@ -60,29 +60,32 @@ Script dedicato per la gestione dei dati
 │   └── assets grafici
 │
 └── database/
-    └── backend / dati```
+    └── backend / dati `
 
-🚀 Avvio del progetto
-Front-End
+##🚀 Avvio del progetto
 
-Apri index.html in un browser
+- Front-End
 
-Naviga tra le varie applicazioni
+- Apri index.html in un browser
+
+- Naviga tra le varie applicazioni
 
 
-🛠️ Tecnologie utilizzate
-Front-End
+##🛠️ Tecnologie utilizzate
 
-HTML5
+- Front-End
 
-CSS3
+- HTML5
 
-JavaScript Vanilla
+- CSS3
 
-📌 Stato del progetto 🟡 In sviluppo
+- JavaScript Vanilla
 
-👤 Autore
+###📌 Stato del progetto 🟡 In sviluppo
+
+##👤 Autore
 
 Sviluppato da jhonnybulldog
 
-🔗 GitHub: https://github.com/jhonybulldog/
+🔗 GitHub: [jhonnybulldog](https://github.com/jhonybulldog/)
+
