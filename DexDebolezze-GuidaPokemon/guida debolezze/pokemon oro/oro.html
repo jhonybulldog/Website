@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Oro & Argento</title>
+    <link rel="stylesheet" href="oro-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Oro & Argento</h1>
+        <div class="accent"></div>
+        <p>guida strategica per la sfida nella regione di Johto</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>⚡ Differenze Oro / Argento</h3>
+            <p><strong>Oro:</strong> Pinsir, Growlithe (comune), Gligar<br>
+            <strong>Argento:</strong> Scyther, Vulpix (comune), Phanpy<br>
+            <strong>Vantaggio:</strong> Oro per Arcanine, Argento per Scyther e Donphan</p>
+        </div>
+        <div class="info-card">
+            <h3>🎮 Meccaniche 2ª gen</h3>
+            <p>Giorno/Notte influenzano gli incontri. Nuovi tipi: Acciaio e Buio. Gli starter possono essere femmina (utile contro Miltank).</p>
+        </div>
+        <div class="info-card">
+            <h3>⚠ Whitney & Miltank</h3>
+            <p>La palestra più pericolosa! Machop (scambio a Fiordoropoli) con Colpo Basso è la soluzione più sicura. Usa Pokémon femmina!</p>
+        </div>
+    </div>
+
+    <!-- Starter Section -->
+    <h2 class="section-title">scelta dello starter</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-toto" data-modal="totodile">
+            <div class="starter-icon">🐊</div>
+            <h3>Totodile</h3>
+            <p class="verdict best">★ Migliore scelta ★</p>
+            <p>Il più sicuro. Feraligatr impara Morso presto. Affidabile dall'inizio alla fine.</p>
+        </div>
+        <div class="starter-card starter-cynda" data-modal="cyndaquil">
+            <div class="starter-icon">🔥</div>
+            <h3>Cyndaquil</h3>
+            <p class="verdict good">✓ Scelta solida</p>
+            <p>Typhlosion è veloce e potente. Richiede supporto per le prime palestre.</p>
+        </div>
+        <div class="starter-card starter-chiko" data-modal="chikorita">
+            <div class="starter-icon">🌿</div>
+            <h3>Chikorita</h3>
+            <p class="verdict risky">⚠ Sconsigliata</p>
+            <p>La scelta più difficile. Debole contro le prime 4 palestre. Solo per sfida avanzata.</p>
+        </div>
+    </div>
+
+    <!-- Versione Comparison -->
+    <h2 class="section-title">confronto versioni: oro vs argento</h2>
+    <div class="version-comparison">
+        <div class="version-card gold">
+            <div class="version-icon">✨</div>
+            <h3>Pokémon Oro</h3>
+            <ul>
+                <li>🐞 Pinsir (Bosco di Lecci)</li>
+                <li>🔥 Growlithe (comune)</li>
+                <li>🦂 Gligar (Percorso 45)</li>
+                <li>🕷️ Spinarak (Kanto)</li>
+            </ul>
+            <p><strong>Vantaggio:</strong> Arcanine è superiore a Ninetales</p>
+        </div>
+        <div class="version-card silver">
+            <div class="version-icon">🌙</div>
+            <h3>Pokémon Argento</h3>
+            <ul>
+                <li>🐞 Scyther (Bosco di Lecci) → Scizor</li>
+                <li>🦊 Vulpix (comune)</li>
+                <li>🐘 Phanpy (Percorso 45) → Donphan</li>
+                <li>🐡 Mantine (Kanto)</li>
+            </ul>
+            <p><strong>Vantaggio:</strong> Scyther presto, Donphan tank Terra eccellente</p>
+        </div>
+    </div>
+
+    <!-- Pokémon Regalati -->
+    <h2 class="section-title">pokémon regalati e speciali</h2>
+    <div class="gifted-grid">
+        <div class="gifted-card">
+            <div class="gifted-icon">🥚</div>
+            <h3>Togepi (Uovo)</h3>
+            <p>Borgo Foglianova. Togetic è supporto situazionale.</p>
+        </div>
+        <div class="gifted-card">
+            <div class="gifted-icon">🐕</div>
+            <h3>Eevee</h3>
+            <p>Fiordoropoli. Espeon (Psico) o Umbreon (Buio) entrambi eccellenti.</p>
+        </div>
+        <div class="gifted-card">
+            <div class="gifted-icon">🐉</div>
+            <h3>Red Gyarados</h3>
+            <p>Lago della Furia. Gyarados shiny gratuito, ottimo sweeper.</p>
+        </div>
+        <div class="gifted-card">
+            <div class="gifted-icon">💪</div>
+            <h3>Machop (scambio)</h3>
+            <p>Fiordoropoli (Drowzee ↔ Machop). FONDAMENTALE per Whitney!</p>
+        </div>
+        <div class="gifted-card">
+            <div class="gifted-icon">🐉</div>
+            <h3>Dratini</h3>
+            <p>Bazaar di Fiordoropoli (scambio con MT Dragoartigli). Dragonite potente ma grind.</p>
+        </div>
+    </div>
+
+    <!-- Catture per Zona -->
+    <h2 class="section-title">migliori e peggiori catture per zona</h2>
+    <div class="table-container">
+        <table class="capture-table">
+            <thead>
+                <tr><th>Zona</th><th>⭐ Migliori catture</th><th>⚠ Da evitare</th><th>Strategia</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Percorso 29-31</td><td>Pidgey, Hoothoot, Butterfree</td><td>Weedle</td><td>Butterfree con Sonnifero per catture</td></tr>
+                <tr><td>Percorso 32</td><td>Mareep (MUST)</td><td>Hoppip</td><td>Mareep → Amphoros, Elettro top</td></tr>
+                <tr><td>Grotta Dente di Drago</td><td>Geodude (FONDAMENTALE)</td><td>Zubat</td><td>Geodude resiste a Volante, Elettro, Normale</td></tr>
+                <tr><td>Bosco di Lecci</td><td>Scyther (Argento), Pinsir (Oro)</td><td>Paras</td><td>Scyther evolve in Scizor, top attaccante</td></tr>
+                <tr><td>Percorso 34</td><td>Abra, Magnemite, Growlithe (Oro)</td><td>Drowzee</td><td>Abra → Alakazam dominante. Magnemite Acciaio/Elettro</td></tr>
+                <tr><td>Percorso 38-39</td><td>Tauros, Miltank, Magnemite</td><td>Meowth</td><td>Tauros e Miltank Normali forti</td></tr>
+                <tr><td>Grotta Maracalda</td><td>Staryu (Starmie)</td><td>Krabby</td><td>Starmie Acqua/Psico, uno dei migliori</td></tr>
+                <tr><td>Percorso 41</td><td>Chinchou (Lanturn)</td><td>Mantine</td><td>Lanturn Acqua/Elettro, copertura unica</td></tr>
+                <tr><td>Percorso 44</td><td>Swinub (Piloswine)</td><td>Lickitung</td><td>Swinub Ghiaccio/Terra, fondamentale per Lance</td></tr>
+                <tr><td>Fonte di Ghiaccio</td><td>Jynx (MUST per Lance)</td><td>Delibird</td><td>Jynx con Geloraggio distrugge Dragonite</td></tr>
+                <tr><td>Percorso 45 (Oro)</td><td>Gligar (mediocre)</td><td>-</td><td>Non evolve in Gliscor in 2ª gen</td></tr>
+                <tr><td>Percorso 45 (Argento)</td><td>Phanpy (Donphan)</td><td>-</td><td>Donphan ottimo tank Terra</td></tr>
+                <tr><td>Monte Argento</td><td>Larvitar (Tyranitar)</td><td>Ursaring</td><td>Tyranitar potentissimo ma grind Lv.55</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pokémon da Evitare -->
+    <div class="warning-box">
+        <h3>⚠ Pokémon trappola da evitare in 2ª gen</h3>
+        <div class="badge-list">
+            <span class="badge">Hoppip/Jumpluff</span>
+            <span class="badge">Sunflora</span>
+            <span class="badge">Ledian</span>
+            <span class="badge">Delibird</span>
+            <span class="badge">Unown</span>
+            <span class="badge">Gligar (Oro)</span>
+        </div>
+        <p><small>Gligar in 2ª gen è mediocre (non evolve in Gliscor). Ledian ha Attacco fisico ridicolo. Sunflora statistiche bassissime.</small></p>
+    </div>
+
+    <!-- SQUADRE CONSIGLIATE PER OGNI PALESTRA -->
+    <h2 class="section-title">squadre consigliate per ogni palestra</h2>
+    
+    <!-- Falkner -->
+    <div class="gym-full-card">
+        <div class="gym-header falkner-bg">
+            <div class="gym-icon">🦅</div>
+            <div class="gym-title">
+                <h3>Falkner - Borgo Foglianova</h3>
+                <p>Pidgey (Lv.7) · Pidgeotto (Lv.9)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude</strong><p>Caduta Massi</p><small>Resiste a Volo</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Mareep</strong><p>Tuonoshock</p><small>Superefficace su Volante</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐊</span><strong>Totodile</strong><p>Morso</p><small>Alternativa solida</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Geodude resiste a tutte le mosse Volo. Mareep con Tuonoshock. Pidgeotto ha Turbine che abbassa precisione.</p></div>
+        </div>
+    </div>
+
+    <!-- Bugsy -->
+    <div class="gym-full-card">
+        <div class="gym-header bugsy-bg">
+            <div class="gym-icon">🐛</div>
+            <div class="gym-title">
+                <h3>Bugsy - Bosco di Lecci</h3>
+                <p>Metapod (Lv.14) · Kakuna (Lv.14) · Scyther (Lv.16)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude</strong><p>Caduta Massi</p><small>Resiste a Coleottero</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🔥</span><strong>Cyndaquil</strong><p>Lanciafiamme</p><small>Superefficace</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🦅</span><strong>Pidgeotto</strong><p>Volo</p><small>Superefficace</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p><strong>Attenzione a Scyther!</strong> Ha Furia che colpisce 2-5 volte. Geodude è la scelta più sicura. Cyndaquil con Lanciafiamme lo elimina in un colpo.</p></div>
+        </div>
+    </div>
+
+    <!-- Whitney - LA PIÙ PERICOLOSA -->
+    <div class="gym-full-card">
+        <div class="gym-header whitney-bg">
+            <div class="gym-icon">🐄</div>
+            <div class="gym-title">
+                <h3>Whitney - Fiordoropoli ⚠ PERICOLOSA ⚠</h3>
+                <p>Clefairy (Lv.18) · Miltank (Lv.20)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">💪</span><strong>Machop (scambio)</strong><p>Colpo Basso</p><small>FONDAMENTALE! Superefficace su Normale</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude/Graveler</strong><p>Fossa · Caduta Massi</p><small>Alta difesa fisica</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐵</span><strong>Mankey (Percorso 42)</strong><p>Colpo Basso</p><small>Alternativa a Machop</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia - LEGGI ATTENTAMENTE</h4>
+                <p><strong>Miltank è il flagello delle Nuzlocke!</strong> Ha Stramonio (recupera PS), Rotolamento (potenza raddoppia), Infatuazione.</p>
+                <p><strong>Machop scambiato:</strong> Colpo Basso fa 2x su Normale. Machop non subisce Infatuazione se è femmina o se usi Pokémon femmina.</p>
+                <p><strong>Paralizza Miltank:</strong> con Tuononda (Mareep) per ridurne velocità. Geodude resiste ai colpi fisici.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Morty -->
+    <div class="gym-full-card">
+        <div class="gym-header morty-bg">
+            <div class="gym-icon">👻</div>
+            <div class="gym-title">
+                <h3>Morty - Ebanopoli</h3>
+                <p>Gastly (Lv.21) · Haunter (Lv.21) · Haunter (Lv.23) · Gengar (Lv.25)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🦒</span><strong>Girafarig</strong><p>Sgranocchio · Psichico</p><small>IMMUNE a Ombra! Normale/Psico</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🦉</span><strong>Noctowl</strong><p>Sgranocchio</p><small>Resiste a Ombra, Sgranocchio superefficace</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐊</span><strong>Feraligatr</strong><p>Morso · Sgranocchio</p><small>Morso (Buio) superefficace</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p><strong>Girafarig è la scelta migliore:</strong> immune a Ombra, Sgranocchio distrugge Gengar. Attenzione a Gengar con Psichico. Mosse Buio (Sgranocchio, Morso) sono superefficaci.</p></div>
+        </div>
+    </div>
+
+    <!-- Chuck -->
+    <div class="gym-full-card">
+        <div class="gym-header chuck-bg">
+            <div class="gym-icon">💪</div>
+            <div class="gym-title">
+                <h3>Chuck - Mogania</h3>
+                <p>Primeape (Lv.27) · Poliwrath (Lv.30)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🧠</span><strong>Espeon/Alakazam</strong><p>Psichico</p><small>Superefficace su Lotta</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🕊️</span><strong>Gyarados</strong><p>Volo · Idropompa</p><small>Volo superefficace su Lotta</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🦅</span><strong>Pidgeot</strong><p>Volo</p><small>Alternativa volante</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p><strong>Psichico spazza tutto.</strong> Attenzione a Poliwrath con Idropompa. Gyarados con Volo funziona bene.</p></div>
+        </div>
+    </div>
+
+    <!-- Jasmine -->
+    <div class="gym-full-card">
+        <div class="gym-header jasmine-bg">
+            <div class="gym-icon">⚙️</div>
+            <div class="gym-title">
+                <h3>Jasmine - Olivinopoli</h3>
+                <p>Magnemite (Lv.30) · Magnemite (Lv.30) · Steelix (Lv.35)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🔥</span><strong>Typhlosion/Arcanine</strong><p>Lanciafiamme</p><small>Fuoco superefficace su Acciaio</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Feraligatr</strong><p>Surf</p><small>Acqua superefficace</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💪</span><strong>Machoke</strong><p>Colpo Basso</p><small>Lotta superefficace</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Steelix ha altissime difese fisiche. Usa mosse Speciali (Fuoco, Acqua). I Magnemite cadono con un colpo.</p></div>
+        </div>
+    </div>
+
+    <!-- Pryce -->
+    <div class="gym-full-card">
+        <div class="gym-header pryce-bg">
+            <div class="gym-icon">❄️</div>
+            <div class="gym-title">
+                <h3>Pryce - Fiordoropoli (2ª)</h3>
+                <p>Seel (Lv.27) · Dewgong (Lv.29) · Piloswine (Lv.31)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🔥</span><strong>Typhlosion/Arcanine</strong><p>Lanciafiamme</p><small>Fuoco superefficace su Ghiaccio</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💪</span><strong>Machoke</strong><p>Colpo Basso</p><small>Lotta superefficace</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Ampharos</strong><p>Tuono</p><small>Elettro superefficace su Acqua</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Piloswine è Ghiaccio/Terra: Fuoco e Lotta lo colpiscono duramente. Evita Elettro su Piloswine (Terra immune).</p></div>
+        </div>
+    </div>
+
+    <!-- Clair - DRAGO -->
+    <div class="gym-full-card">
+        <div class="gym-header clair-bg">
+            <div class="gym-icon">🐉</div>
+            <div class="gym-title">
+                <h3>Clair - Borgo Argentato</h3>
+                <p>Dragonair (Lv.37) · Dragonair (Lv.37) · Kingdra (Lv.40)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">❄️</span><strong>Jynx</strong><p>Geloraggio · Psichico</p><small>Ghiaccio 4x su Drago! FONDAMENTALE</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐗</span><strong>Piloswine</strong><p>Geloraggio · Fossa</p><small>Ghiaccio/Terra, resiste a Elettro</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Lapras/Starmie</strong><p>Geloraggio · Surf</p><small>Geloraggio per Dragonair</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia</h4>
+                <p><strong>Kingdra non ha debolezze</strong> (Acqua/Drago). Ghiaccio fa 2x. Jynx con Geloraggio è la soluzione migliore.</p>
+                <p><strong>Dragonair:</strong> cadono con un Geloraggio (4x debole). Attenzione a Paralizzante e Fulmine.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- POKÉMON CHIAVE -->
+    <h2 class="section-title">pokémon chiave e mosse utili</h2>
+    <div class="key-pokemon-grid">
+        <div class="key-card"><div class="key-icon">⚡</div><h3>Ampharos</h3><p>Tuono · Tuononda · Pugno Tuono · Segnale</p><small>Cattura Mareep al Percorso 32</small></div>
+        <div class="key-card"><div class="key-icon">⭐</div><h3>Starmie</h3><p>Surf · Psichico · Geloraggio · Tuono</p><small>Copertura universale. Cattura Staryu a Grotta Maracalda</small></div>
+        <div class="key-card"><div class="key-icon">❄️</div><h3>Jynx</h3><p>Geloraggio · Psichico · Bacio Abbandono · Sonnifero</p><small>FONDAMENTALE per Lance! Cattura alla Fonte di Ghiaccio</small></div>
+        <div class="key-card"><div class="key-icon">🐕</div><h3>Espeon</h3><p>Psichico · Sgranocchio · Sonnifero · Morso</p><small>Evolvi Eevee di giorno con alta amicizia</small></div>
+        <div class="key-card"><div class="key-icon">🌙</div><h3>Umbreon</h3><p>Morso · Sgranocchio · Riposa · Sostituto</p><small>Evolvi Eevee di notte. Tank Buio eccellente</small></div>
+        <div class="key-card"><div class="key-icon">🐉</div><h3>Gyarados</h3><p>Dragoartigli · Idropompa · Forza · Morso</p><small>Red Gyarados gratuito al Lago della Furia</small></div>
+        <div class="key-card"><div class="key-icon">🪨</div><h3>Geodude/Graveler</h3><p>Fossa · Caduta Massi · Autodistruzione</p><small>Fondamentale per le prime palestre</small></div>
+        <div class="key-card"><div class="key-icon">🐘</div><h3>Donphan (Argento)</h3><p>Fossa · Forza · Rotolamento · Riposa</p><small>Ottimo tank Terra dal Percorso 45</small></div>
+    </div>
+
+    <!-- TEAM LEGA JOHTO -->
+    <h2 class="section-title">squadra consigliata per la lega Johto</h2>
+    <div class="league-team-showcase">
+        <div class="league-team-grid">
+            <div class="league-pokemon-card"><div class="league-icon">🐊</div><h4>Feraligatr</h4><p>Surf · Morso · Forza · Sgranocchio</p><small>Acqua tank affidabile</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⚡</div><h4>Ampharos</h4><p>Tuono · Tuononda · Pugno Tuono · Segnale</p><small>Distrugge Lance e Volanti</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⭐</div><h4>Starmie</h4><p>Surf · Psichico · Geloraggio · Tuono</p><small>Copertura universale</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">❄️</div><h4>Jynx</h4><p>Geloraggio · Psichico · Bacio Abbandono · Sonnifero</p><small>FONDAMENTALE per Lance!</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐕</div><h4>Espeon</h4><p>Psichico · Sgranocchio · Sonnifero · Morso</p><small>Gestisce Koga e Bruno</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐉</div><h4>Gyarados</h4><p>Dragoartigli · Idropompa · Forza · Morso</p><small>Backup per Lance</small></div>
+        </div>
+    </div>
+
+    <!-- STRATEGIA LEGA DETTAGLIATA -->
+    <h2 class="section-title">strategia dettagliata per la lega Johto</h2>
+    
+    <div class="league-strategy-detailed">
+        <div class="league-member-card"><h3>🔮 Will (Psico)</h3><div class="member-team"><p>Xatu (40) · Xatu (42) · Jynx (41) · Exeggutor (41) · Slowbro (42)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Sgranocchio o Morso (Buio) spazzano. Gyarados con Morso o Espeon con Sgranocchio.</p></div></div>
+        <div class="league-member-card"><h3>☠️ Koga (Veleno)</h3><div class="member-team"><p>Ariados (40) · Venomoth (41) · Forretress (43) · Muk (42) · Crobat (44)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Psichico spazza tutto. Forretress (Acciaio) è vulnerabile al Fuoco: usa Typhlosion o Arcanine.</p></div></div>
+        <div class="league-member-card"><h3>💪 Bruno (Lotta)</h3><div class="member-team"><p>Hitmontop (42) · Hitmonlee (42) · Hitmonchan (42) · Onix (43) · Machamp (46)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Psichico con Espeon o Starmie spazza tutto. Onix è debole ad Acqua/Erba.</p></div></div>
+        <div class="league-member-card"><h3>🌙 Karen (Buio)</h3><div class="member-team"><p>Umbreon (42) · Vileplume (42) · Gengar (45) · Murkrow (44) · Houndoom (47)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Umbreon: usa Lotta (Heracross, Machoke). Gengar: vulnerabile a Buio e Psichico. Houndoom: vulnerabile ad Acqua e Lotta.</p></div></div>
+        <div class="league-member-card"><h3>🐉 Lance (Drago) - LA BATTAGLIA PIÙ DIFFICILE</h3><div class="member-team"><p>Gyarados (44) · Dragonair (47) · Dragonair (47) · Aerodactyl (46) · Charizard (46) · Dragonite (50)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p><strong>Gyarados:</strong> Ampharos Tuono KO.<br><strong>Dragonair:</strong> Jynx Geloraggio KO (4x debole).<br><strong>Aerodactyl:</strong> Ampharos Tuono o Starmie Geloraggio.<br><strong>Charizard:</strong> Starmie Surf KO.<br><strong>Dragonite:</strong> Jynx Geloraggio è la soluzione migliore (4x debole). Dragonite ha Fulmine - non mandare Gyarados!</p></div></div>
+    </div>
+
+    <!-- Kanto e ROSSO -->
+    <h2 class="section-title">kanto e sfida finale: rosso</h2>
+    <div class="red-section">
+        <div class="red-card">
+            <div class="red-icon">🔥</div>
+            <div class="red-info">
+                <h3>Rosso - Monte Argento</h3>
+                <p><strong>Team:</strong> Pikachu (81) · Espeon (73) · Snorlax (75) · Venusaur (77) · Charizard (77) · Blastoise (77)</p>
+                <p><strong>Livelli consigliati:</strong> Almeno 70-75. Il grind è lungo ma necessario.</p>
+                <div class="red-strategy">
+                    <h4>🎯 Strategia contro Rosso:</h4>
+                    <ul>
+                        <li><strong>Pikachu:</strong> Golem/Donphan con Fossa (immune a Elettro)</li>
+                        <li><strong>Espeon:</strong> Umbreon con Sgranocchio (Buio)</li>
+                        <li><strong>Snorlax:</strong> Heracross o Machamp con Sottomissione/Colpo Basso</li>
+                        <li><strong>Venusaur:</strong> Arcanine o Typhlosion con Lanciafiamme</li>
+                        <li><strong>Charizard:</strong> Starmie o Feraligatr con Surf</li>
+                        <li><strong>Blastoise:</strong> Ampharos o Jolteon con Tuono</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consigli Extra -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega Johto: <strong>40-45</strong> ⭐</p>
+        <p>⭐ Livelli consigliati per Rosso: <strong>70-75</strong> ⭐</p>
+        <p>❄️ GHIACCIO FONDAMENTALE per Lance: Jynx con Geloraggio è la scelta migliore!</p>
+        <p>💪 MACHOP SCAMBIATO: fondamentale per sopravvivere a Whitney! Non saltarlo.</p>
+        <p>⚡ MT preziose: Tuono (Centrale Elettrica Kanto), Geloraggio (Bazaar Fiordoropoli), Psichico (Kanto)</p>
+        <p>📞 Usa il telefono per rivincite con allenatori che danno molti EXP dopo Lillipoli</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per zona. Se sviene, è morto ✦</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Oro & Argento · squadre e mosse dettagliate ✦</span>
+    </div>
+</div>
+
+<script src="oro-script.js"></script>
+</body>
+</html>
