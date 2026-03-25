@@ -1,0 +1,631 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, 'Inter', sans-serif;
+    color: #1a2a1f;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.accent {
+    width: 60px;
+    height: 2px;
+    background: #2e7d32;
+    margin: 10px auto;
+}
+
+.hero p {
+    color: #5c6e5a;
+}
+
+/* Info Section */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.info-card {
+    background: #f9fbf7;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #e5f0e0;
+    transition: all 0.2s ease;
+}
+
+.info-card:hover {
+    border-color: #c8e6c9;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.08);
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #2c5e2a;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: #4a5b48;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2.5rem 0 1.5rem 0;
+    color: #1e2f1c;
+    border-left: 4px solid #2e7d32;
+    padding-left: 1rem;
+}
+
+/* Pikachu Starter Highlight */
+.starter-highlight {
+    margin-bottom: 2rem;
+}
+
+.pikachu-card {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3d6 100%);
+    border-radius: 24px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    border: 1px solid #ffe6b3;
+    align-items: center;
+}
+
+.pikachu-icon {
+    font-size: 4rem;
+    background: #ffeb9e;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pikachu-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #b86f0c;
+}
+
+.verdict-pika {
+    display: inline-block;
+    background: #ffebc2;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #b86f0c;
+    margin-bottom: 0.8rem;
+}
+
+.pikachu-info p {
+    font-size: 0.85rem;
+    color: #5c6e5a;
+    margin: 0.3rem 0;
+}
+
+/* Gifted Pokémon Grid */
+.gifted-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.gifted-card {
+    background: #ffffff;
+    border: 1px solid #e9f0e5;
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.gifted-card:hover {
+    transform: translateY(-3px);
+    border-color: #c8e6c9;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.1);
+}
+
+.gifted-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.gifted-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.gifted-card p {
+    font-size: 0.75rem;
+    color: #5c6e5a;
+    margin: 0.2rem 0;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.capture-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.capture-table th,
+.capture-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eef2ea;
+}
+
+.capture-table th {
+    background: #f5f9f2;
+    font-weight: 600;
+    color: #2c5e2a;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.capture-table td {
+    font-size: 0.85rem;
+    color: #2d3a2b;
+}
+
+.capture-table tr:hover {
+    background: #fafdf8;
+}
+
+/* Warning Box */
+.warning-box {
+    background: #fff8e7;
+    border-left: 4px solid #f9a825;
+    padding: 1.2rem 1.5rem;
+    border-radius: 16px;
+    margin: 1.5rem 0;
+}
+
+.warning-box h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: #b76e0e;
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    background: #fff3e0;
+    padding: 0.25rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #b76e0e;
+}
+
+/* Gym Full Cards */
+.gym-full-card {
+    background: #ffffff;
+    border-radius: 24px;
+    margin-bottom: 1.8rem;
+    border: 1px solid #e9f0e5;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.gym-full-card:hover {
+    border-color: #c8e6c9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.gym-header {
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fafdf8;
+    border-bottom: 1px solid #e9f0e5;
+}
+
+.gym-icon {
+    font-size: 2.5rem;
+}
+
+.gym-title h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    color: #2c5e2a;
+}
+
+.gym-title p {
+    font-size: 0.8rem;
+    color: #6c7e69;
+}
+
+.gym-content {
+    padding: 1.5rem;
+}
+
+.team-recommendation h4,
+.strategy-guide h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #2c5e2a;
+    font-weight: 600;
+}
+
+.team-pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.pokemon-card {
+    background: #f9fbf7;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-card:hover {
+    background: #eef5ea;
+    transform: translateY(-2px);
+}
+
+.pokemon-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.pokemon-card strong {
+    display: block;
+    font-size: 0.9rem;
+    color: #2c5e2a;
+    margin-bottom: 0.3rem;
+}
+
+.pokemon-card p {
+    font-size: 0.7rem;
+    color: #5c6e5a;
+    margin: 0.2rem 0;
+}
+
+.pokemon-card small {
+    font-size: 0.65rem;
+    color: #7e8e7b;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.strategy-guide {
+    background: #fafdf8;
+    border-radius: 16px;
+    padding: 1rem;
+    border-left: 3px solid #2e7d32;
+}
+
+.strategy-guide p {
+    font-size: 0.85rem;
+    color: #2d3a2b;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Gym Header Backgrounds */
+.brock-bg .gym-header { background: #f7f3e8; }
+.misty-bg .gym-header { background: #e8f0f7; }
+.surge-bg .gym-header { background: #fef3e0; }
+.erika-bg .gym-header { background: #e8f5e9; }
+.koga-bg .gym-header { background: #f3e5f5; }
+.sabrina-bg .gym-header { background: #fce4ec; }
+.blaine-bg .gym-header { background: #ffede0; }
+.giovanni-bg .gym-header { background: #e8eae6; }
+
+/* League Team */
+.league-team-showcase {
+    margin-bottom: 2rem;
+}
+
+.league-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+}
+
+.league-pokemon-card {
+    background: #f9fbf7;
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.2s;
+    border: 1px solid #e5f0e0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.league-pokemon-card:hover {
+    transform: translateY(-3px);
+    border-color: #c8e6c9;
+    box-shadow: 0 8px 20px rgba(46, 125, 50, 0.1);
+}
+
+.league-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.league-pokemon-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.league-pokemon-card p {
+    font-size: 0.75rem;
+    color: #5c6e5a;
+    margin: 0.3rem 0;
+}
+
+/* League Strategy Detailed */
+.league-strategy-detailed {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.league-member-card {
+    background: #ffffff;
+    border: 1px solid #e9f0e5;
+    border-radius: 20px;
+    padding: 1.2rem;
+}
+
+.league-member-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.member-team {
+    background: #f5f9f2;
+    padding: 0.8rem;
+    border-radius: 12px;
+    margin: 0.8rem 0;
+}
+
+.member-team p {
+    font-size: 0.8rem;
+    color: #2d3a2b;
+}
+
+.member-strategy h4 {
+    font-size: 0.85rem;
+    margin: 0.8rem 0 0.5rem;
+    color: #2e7d32;
+}
+
+.member-strategy p {
+    font-size: 0.8rem;
+    color: #4a5b48;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+/* Key Pokémon Grid */
+.key-pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.key-card {
+    background: #f9fbf7;
+    border-radius: 18px;
+    padding: 1.2rem;
+    transition: all 0.2s ease;
+    border: 1px solid #e5f0e0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.key-card:hover {
+    transform: translateY(-2px);
+    border-color: #c8e6c9;
+}
+
+.key-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.key-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #2c5e2a;
+}
+
+.key-card p {
+    font-size: 0.8rem;
+    color: #5c6e5a;
+    margin: 0.2rem 0;
+}
+
+.key-card small {
+    font-size: 0.7rem;
+    color: #7e8e7b;
+    margin-top: 0.3rem;
+}
+
+/* Footer Note */
+.footer-note {
+    background: #e8f5e9;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.footer-note p {
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+    color: #2c5e2a;
+}
+
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #e9f0e5;
+    padding-top: 2rem;
+    font-size: 0.75rem;
+    color: #7e8e7b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .pikachu-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .gym-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .team-pokemon {
+        grid-template-columns: 1fr;
+    }
+    
+    .capture-table th,
+    .capture-table td {
+        padding: 0.6rem;
+        font-size: 0.7rem;
+    }
+    
+    .league-team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background: white;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 28px;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0ecdb;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c5e2a;
+}
+
+.modal-content p {
+    font-size: 0.9rem;
+    color: #4a5b48;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+.modal-close {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.modal-close:hover {
+    background: #1b5e20;
+}

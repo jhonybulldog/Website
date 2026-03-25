@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Rosso/Blu</title>
+    <link rel="stylesheet" href="rosso-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Rosso/Blu</h1>
+        <div class="accent"></div>
+        <p>guida strategica per completare la sfida senza perdite</p>
+    </div>
+
+    <!-- Sezione Introduzione -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>⚡ Cosa è una Nuzlocke?</h3>
+            <p>Sfida autogestita: se un Pokémon sviene, è considerato morto e non può più essere usato. Puoi catturare solo il primo Pokémon incontrato per ogni zona.</p>
+        </div>
+        <div class="info-card">
+            <h3>🎮 Differenze 1ª gen</h3>
+            <p>MT monouso, critici legati alla velocità, nessuna divisione fisico/speciale (il tipo decide). Alakazam è dominante, Gyarados meno potente.</p>
+        </div>
+    </div>
+
+    <!-- Sezione Starter -->
+    <h2 class="section-title">scelta dello starter</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-bulba" data-modal="bulba">
+            <div class="starter-icon">🌿</div>
+            <h3>Bulbasaur</h3>
+            <p class="verdict best">★ Migliore scelta ★</p>
+            <p>Domina Brock e Misty. Parassisema al Lv.13 per catture sicure.</p>
+        </div>
+        <div class="starter-card starter-squirtle" data-modal="squirtle">
+            <div class="starter-icon">💧</div>
+            <h3>Squirtle</h3>
+            <p class="verdict good">✓ Scelta sicura</p>
+            <p>Tank affidabile, Morso al Lv.24. Vulnerabile a Surge ed Erika.</p>
+        </div>
+        <div class="starter-card starter-charmander" data-modal="charmander">
+            <div class="starter-icon">🔥</div>
+            <h3>Charmander</h3>
+            <p class="verdict risky">⚠ Sconsigliato</p>
+            <p>Rischiosissimo. Serve Mankey o Nidoran per sopravvivere a Brock.</p>
+        </div>
+    </div>
+
+    <!-- Sezione Catture per Zona -->
+    <h2 class="section-title">migliori e peggiori catture per zona</h2>
+    <div class="table-container">
+        <table class="capture-table">
+            <thead>
+                <tr><th>Zona</th><th>⭐ Migliori catture</th><th>⚠ Da evitare</th><th>Strategia</th>
+            </thead>
+            <tbody>
+                <tr><td>Percorso 1-2</td><td>Pidgey (Pidgeot onesto)</td><td>Rattata (fragile)</td><td>Pidgey utile per Volo</td></tr>
+                <tr><td>Percorso 3</td><td>Mankey (Primeape)</td><td>Spearow</td><td>Fondamentale se hai Charmander</td></tr>
+                <tr><td>Bosco Smeraldo</td><td>Pikachu (rarissimo 5%)</td><td>Weedle</td><td>Pikachu distrugge Misty</td></tr>
+                <tr><td>Percorso 4</td><td>Magikarp → Gyarados</td><td>Ekans</td><td>Compra Magikarp al Centro Pokémon</td></tr>
+                <tr><td>Monte Luna</td><td>Geodude (immune Elettro)</td><td>Clefairy</td><td>Geodude è un MUST</td></tr>
+                <tr><td>Percorso 5-6</td><td>Abra (Alakazam/Kadabra)</td><td>Oddish</td><td>Abra è il Pokémon più importante</td></tr>
+                <tr><td>Centrale Elettrica</td><td>Voltorb → Electrode</td><td>Pikachu duplicato</td><td>Electrode velocissimo</td></tr>
+                <tr><td>Percorso 9-10</td><td>Machop (Lotta)</td><td>Geodude duplicato</td><td>Machop scambiabile a Celestopoli</td></tr>
+                <tr><td>Isola Spumarina</td><td>Slowbro (tank mostruoso)</td><td>Seel</td><td>Slowbro con Psichico e Surf</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pokémon da Evitare -->
+    <div class="warning-box">
+        <h3>⚠ Pokémon trappola da evitare in 1ª gen</h3>
+        <div class="badge-list">
+            <span class="badge">Onix</span>
+            <span class="badge">Jigglypuff/Wigglytuff</span>
+            <span class="badge">Farfetch'd</span>
+            <span class="badge">Ditto</span>
+            <span class="badge">Golbat</span>
+        </div>
+        <p><small>Onix ha statistiche offensive pessime. Golbat è mediocre (Crobat non esiste in 1ª gen).</small></p>
+    </div>
+
+    <!-- SQUADRE CONSIGLIATE PER OGNI PALESTRA - VERSIONE COMPLETA -->
+    <h2 class="section-title">squadre consigliate per ogni palestra</h2>
+    
+    <!-- Palestra 1: Brock -->
+    <div class="gym-full-card">
+        <div class="gym-header brock-bg">
+            <div class="gym-icon">🧱</div>
+            <div class="gym-title">
+                <h3>Brock - Palestra di Plumbeopoli</h3>
+                <p>Tipo: Roccia · Geodude (Lv.12) · Onix (Lv.14)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🌿</span>
+                        <strong>Bulbasaur/Ivysaur</strong>
+                        <p>Foglielama · Parassisema · Tossina</p>
+                        <small>STAB Erba, domina Onix</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🐵</span>
+                        <strong>Mankey/Primeape</strong>
+                        <p>Colpo Basso · Bassa Tensione</p>
+                        <small>Se hai Charmander, è essenziale</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🦏</span>
+                        <strong>Nidoran♂</strong>
+                        <p>Doppiosmash (Lv.12)</p>
+                        <small>Ottimo se non hai Bulbasaur</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Con Bulbasaur:</strong> Usa Parassisema appena inizia. Geodude e Onix sono lenti, Parassisema li logora. Foglielama li elimina in 2-3 colpi.</p>
+                <p><strong>Senza Bulbasaur:</strong> Mankey con Colpo Basso è superefficace. Nidoran con Doppiosmash fa buoni danni. Se hai Squirtle, Pistolacqua funziona bene.</p>
+                <p><strong>⚠ Attenzione:</strong> Onix usa Ruggito che abbassa l'attacco. Non usare mosse Normali (sono resistite).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 2: Misty -->
+    <div class="gym-full-card">
+        <div class="gym-header misty-bg">
+            <div class="gym-icon">💧</div>
+            <div class="gym-title">
+                <h3>Misty - Palestra di Celestopoli</h3>
+                <p>Tipo: Acqua · Staryu (Lv.18) · Starmie (Lv.21)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🌿</span>
+                        <strong>Ivysaur/Venusaur</strong>
+                        <p>Foglielama · Parassisema · Crescita</p>
+                        <small>Foglielama spazza Starmie</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">⚡</span>
+                        <strong>Pikachu/Raichu</strong>
+                        <p>Tuonoshock · Tuononda</p>
+                        <small>Raro al Bosco Smeraldo, ma devastante</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🐟</span>
+                        <strong>Gyarados</strong>
+                        <p>Morso · Forza</p>
+                        <small>Morso ha alta probabilità di paura</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Il pericolo è Starmie:</strong> Ha Psichico (superefficace sui Veleno) e Rapid Spin. Velocissima.</p>
+                <p><strong>Con Ivysaur:</strong> Parassisema subito su Staryu, poi Foglielama. Su Starmie, Foglielama puro o Parassisema se resisti.</p>
+                <p><strong>Con Pikachu:</strong> Tuonoshock su Staryu, Tuononda su Starmie per paralizzarla poi Tuonoshock.</p>
+                <p><strong>⚠ Attenzione:</strong> Non mandare Pokémon Veleno (come Beedrill o Golbat) contro Starmie: Psichico li uccide in un colpo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 3: Lt. Surge -->
+    <div class="gym-full-card">
+        <div class="gym-header surge-bg">
+            <div class="gym-icon">⚡</div>
+            <div class="gym-title">
+                <h3>Lt. Surge - Palestra di Aranciopoli</h3>
+                <p>Tipo: Elettro · Voltorb (Lv.21) · Pikachu (Lv.18) · Raichu (Lv.24)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🪨</span>
+                        <strong>Geodude/Graveler</strong>
+                        <p>Fossa · Caduta Massi · Difesa Ferrea</p>
+                        <small>IMMUNE all'Elettro! Essenziale</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">⛏️</span>
+                        <strong>Diglett/Dugtrio</strong>
+                        <p>Fossa · Taglio · Terremoto (MT)</p>
+                        <small>Velocissimo, colpisce superefficace</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🌿</span>
+                        <strong>Ivysaur</strong>
+                        <p>Foglielama · Parassisema</p>
+                        <small>Resiste bene all'Elettro</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Con Geodude:</strong> È immune a tutte le mosse Elettro. Usa Fossa su Voltorb e Pikachu. Per Raichu, Fossa due volte.</p>
+                <p><strong>Con Diglett/Dugtrio:</strong> Fossa spazza via tutto. Attenzione: Raichu ha Surf solo in giallo, qui no, ma ha Morso.</p>
+                <p><strong>⚠ Attenzione:</strong> Non usare Pokémon Acqua o Volante. Geodude rende questa palestra la più facile del gioco.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 4: Erika -->
+    <div class="gym-full-card">
+        <div class="gym-header erika-bg">
+            <div class="gym-icon">🌿</div>
+            <div class="gym-title">
+                <h3>Erika - Palestra di Celadopoli</h3>
+                <p>Tipo: Erba · Victreebel (Lv.29) · Tangela (Lv.24) · Vileplume (Lv.29)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🔥</span>
+                        <strong>Growlithe/Arcanine</strong>
+                        <p>Lanciafiamme · Fuocobomba · Morso</p>
+                        <small>Brucia tutto, resiste all'Erba</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🦅</span>
+                        <strong>Pidgeot</strong>
+                        <p>Volo · Attacco Rapido · Turbine</p>
+                        <small>Volo superefficace</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🐉</span>
+                        <strong>Charizard</strong>
+                        <p>Vampecalde · Lanciafiamme · Volo</p>
+                        <small>Se hai scelto Charmander</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Con Arcanine/Growlithe:</strong> Lanciafiamme spazza Victreebel e Tangela. Vileplume è più resistente, usa Fuocobomba.</p>
+                <p><strong>Con Pidgeot:</strong> Volo su Victreebel. Attenzione a Vileplume con Petalodanza (fa molto danno).</p>
+                <p><strong>⚠ Attenzione:</strong> Vileplume ha Parassisema e Petalodanza. Non mandare Pokémon Acqua. Porta Antidoti.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 5: Koga -->
+    <div class="gym-full-card">
+        <div class="gym-header koga-bg">
+            <div class="gym-icon">☠️</div>
+            <div class="gym-title">
+                <h3>Koga - Palestra di Fucsiapoli</h3>
+                <p>Tipo: Veleno · Koffing (Lv.37) · Muk (Lv.39) · Koffing (Lv.37) · Weezing (Lv.43)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🧠</span>
+                        <strong>Alakazam/Kadabra</strong>
+                        <p>Psichico · Folgorazione · Recupero</p>
+                        <small>Psichico è SUPERefficace sui Veleno</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">😴</span>
+                        <strong>Hypno</strong>
+                        <p>Psichico · Ipnosi · Testata</p>
+                        <small>Alternativa ad Alakazam</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">⛰️</span>
+                        <strong>Graveler/Golem</strong>
+                        <p>Fossa · Terremoto</p>
+                        <small>Fossa colpisce i Veleno</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Con Alakazam/Kadabra:</strong> Psichico spazza via Koffing, Muk e Weezing in un colpo. Usa Recupero se necessario.</p>
+                <p><strong>Attenzione a Weezing:</strong> Usa Smog e Fumo che riducono precisione. Cambia Pokémon se colpito.</p>
+                <p><strong>⚠ Attenzione:</strong> I Koffing usano Autodistruzione! Possono uccidere il tuo Pokémon. Uccidili prima che possano esplodere.</p>
+                <p>Porta molti Antidoti. Le mosse Veleno sono comuni.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 6: Sabrina - LA PIÙ PERICOLOSA -->
+    <div class="gym-full-card">
+        <div class="gym-header sabrina-bg">
+            <div class="gym-icon">🔮</div>
+            <div class="gym-title">
+                <h3>Sabrina - Palestra di Saffronopoli</h3>
+                <p>Tipo: Psico · Kadabra (Lv.38) · Mr. Mime (Lv.37) · Venomoth (Lv.38) · Alakazam (Lv.43)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato (per sopravvivere)</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">😴</span>
+                        <strong>Snorlax</strong>
+                        <p>Morso · Corposcontro · Riposa</p>
+                        <small>Morso fa paura (interrompe Psichico)</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">⚡</span>
+                        <strong>Jolteon</strong>
+                        <p>Morso · Tuono · Tuononda</p>
+                        <small>Morso e altissima velocità</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🐉</span>
+                        <strong>Gyarados</strong>
+                        <p>Morso · Idropompa</p>
+                        <small>Morso, ma attenzione a Psichico</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🪲</span>
+                        <strong>Scyther/Pinsir</strong>
+                        <p>Taglio · Furia · Morso</p>
+                        <small>I Coleotteri sono SUPERefficaci!</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata - LEGGI ATTENTAMENTE</h4>
+                <p><strong>⚠ QUESTA È LA PALESTRA PIÙ PERICOLOSA ⚠</strong> Alakazam ha Psichico, Riduttivo e Folgorazione.</p>
+                <p><strong>Strategia con Snorlax:</strong> Snorlax è il MVP. Usa Morso (in 1ª gen è Normale, ma ha alta probabilità di far paura). La paura interrompe le mosse nemiche. Corposcontro per danni stabili. Riposa per recuperare.</p>
+                <p><strong>Con Jolteon:</strong> Velocissimo, usa Morso per far paura. Tuono se serve.</p>
+                <p><strong>⚠ NON usare Pokémon Veleno o Lotta:</strong> Psichico li distrugge. Non usare Pokémon con basso PS.</p>
+                <p><strong>Coleotteri (Scyther/Pinsir):</strong> Le mosse Coleottero sono superefficaci sui Psico. Se hai uno di questi, usalo!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 7: Blaine -->
+    <div class="gym-full-card">
+        <div class="gym-header blaine-bg">
+            <div class="gym-icon">🔥</div>
+            <div class="gym-title">
+                <h3>Blaine - Palestra di Isola Cannella</h3>
+                <p>Tipo: Fuoco · Growlithe (Lv.42) · Ponyta (Lv.40) · Rapidash (Lv.42) · Arcanine (Lv.47)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">💧</span>
+                        <strong>Gyarados</strong>
+                        <p>Idropompa · Surf · Morso</p>
+                        <small>Surf spazza via tutto</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🐢</span>
+                        <strong>Slowbro</strong>
+                        <p>Surf · Psichico · Pugno Gelato</p>
+                        <small>Tank perfetto, resiste al Fuoco</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🪨</span>
+                        <strong>Golem</strong>
+                        <p>Fossa · Terremoto · Caduta Massi</p>
+                        <small>Fossa superefficace</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🌿</span>
+                        <strong>Venusaur</strong>
+                        <p>Surf (MN) · Foglielama</p>
+                        <small>Resiste bene</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Con Gyarados:</strong> Surf o Idropompa eliminano Growlithe, Ponyta e Rapidash in un colpo. Arcanine richiede 2 Surf.</p>
+                <p><strong>Con Slowbro:</strong> Surf spazza. Psichico per sicurezza. Slowbro resiste benissimo al Fuoco.</p>
+                <p><strong>⚠ Attenzione:</strong> Arcanine ha Estremovelocità. Porta Antiscottatura. Palestra molto semplice con team Acqua.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palestra 8: Giovanni -->
+    <div class="gym-full-card">
+        <div class="gym-header giovanni-bg">
+            <div class="gym-icon">⛰️</div>
+            <div class="gym-title">
+                <h3>Giovanni - Palestra di Viridianopoli</h3>
+                <p>Tipo: Terra · Rhyhorn (Lv.45) · Dugtrio (Lv.42) · Nidoqueen (Lv.44) · Nidoking (Lv.45) · Rhydon (Lv.50)</p>
+            </div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation">
+                <h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">💧</span>
+                        <strong>Gyarados</strong>
+                        <p>Surf · Idropompa</p>
+                        <small>Surf spazza tutta la palestra</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🌿</span>
+                        <strong>Venusaur</strong>
+                        <p>Foglielama · Parassisema</p>
+                        <small>Foglielama superefficace</small>
+                    </div>
+                    <div class="pokemon-card">
+                        <span class="pokemon-icon">🐢</span>
+                        <strong>Slowbro</strong>
+                        <p>Surf · Psichico · Pugno Gelato</p>
+                        <small>Tank eccellente</small>
+                    </div>
+                </div>
+            </div>
+            <div class="strategy-guide">
+                <h4>📖 Strategia dettagliata</h4>
+                <p><strong>Con Gyarados:</strong> Surf distrugge Rhyhorn, Dugtrio, Nidoqueen e Nidoking. Attenzione a Rhydon: usa Surf due volte.</p>
+                <p><strong>Con Venusaur:</strong> Foglielama spazza. Parassisema logora i nemici più resistenti.</p>
+                <p><strong>⚠ Attenzione:</strong> Dugtrio è velocissimo e usa Fossa. Nidoking ha Megacorno (Coleottero) che è superefficace su Erba. Non mandare Venusaur contro Nidoking se non sei sicuro.</p>
+                <p>Palestra relativamente semplice con Acqua o Erba.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SQUADRA LEGA POKÉMON - DETTAGLIATA -->
+    <h2 class="section-title">squadra consigliata per la lega Pokémon</h2>
+    
+    <div class="league-full-section">
+        <div class="league-team-showcase">
+            <h3>⭐ Team Ideale per la Lega (Livelli 55-60) ⭐</h3>
+            <div class="league-team-grid">
+                <div class="league-pokemon-card">
+                    <div class="league-icon">🧠</div>
+                    <h4>Alakazam</h4>
+                    <p><strong>Ruolo:</strong> Sweeper Psico</p>
+                    <p><strong>Mosse:</strong> Psichico · Folgorazione · Recupero · Sonnifero</p>
+                    <p><strong>Strategia:</strong> Distrugge Bruno, Agatha e Koga. Recupero tiene in vita.</p>
+                </div>
+                <div class="league-pokemon-card">
+                    <div class="league-icon">⚡</div>
+                    <h4>Jolteon</h4>
+                    <p><strong>Ruolo:</strong> Sweeper Elettro</p>
+                    <p><strong>Mosse:</strong> Tuono (MT) · Tuononda · Morso · Doppiotagliente</p>
+                    <p><strong>Strategia:</strong> Distrugge Lorelei e i Volanti di Lance.</p>
+                </div>
+                <div class="league-pokemon-card">
+                    <div class="league-icon">💧</div>
+                    <h4>Gyarados</h4>
+                    <p><strong>Ruolo:</strong> Sweeper Acqua</p>
+                    <p><strong>Mosse:</strong> Surf (MN) · Idropompa · Morso · Dragone</p>
+                    <p><strong>Strategia:</strong> Gestisce i Dragonair e Blaine legacy.</p>
+                </div>
+                <div class="league-pokemon-card">
+                    <div class="league-icon">😴</div>
+                    <h4>Snorlax</h4>
+                    <p><strong>Ruolo:</strong> Muro Fisico / Paracadute</p>
+                    <p><strong>Mosse:</strong> Corposcontro · Morso · Riposa · Ruggito</p>
+                    <p><strong>Strategia:</strong> Gestisce Alakazam del rivale e situazioni difficili.</p>
+                </div>
+                <div class="league-pokemon-card">
+                    <div class="league-icon">🌿</div>
+                    <h4>Venusaur</h4>
+                    <p><strong>Ruolo:</strong> Tank / Supporto</p>
+                    <p><strong>Mosse:</strong> Foglielama · Parassisema · Sonnifero · Tossina</p>
+                    <p><strong>Strategia:</strong> Logora i nemici, gestisce Blastoise del rivale.</p>
+                </div>
+                <div class="league-pokemon-card">
+                    <div class="league-icon">🔥</div>
+                    <h4>Arcanine</h4>
+                    <p><strong>Ruolo:</strong> Attaccante Fuoco</p>
+                    <p><strong>Mosse:</strong> Lanciafiamme · Fuocobomba · Morso · Estremovelocità</p>
+                    <p><strong>Strategia:</strong> Batte Exeggutor e i Ghiacci di Lorelei.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STRATEGIA DETTAGLIATA LEGA -->
+    <h2 class="section-title">strategia dettagliata per la lega</h2>
+    
+    <div class="league-strategy-detailed">
+        <div class="league-member-card">
+            <h3>❄️ Lorelei (Ghiaccio/Acqua)</h3>
+            <div class="member-team">
+                <p><strong>Squadra:</strong> Dewgong (Lv.54) · Cloyster (Lv.53) · Slowbro (Lv.54) · Jynx (Lv.56) · Lapras (Lv.56)</p>
+            </div>
+            <div class="member-strategy">
+                <h4>🎯 Strategia:</h4>
+                <p><strong>Jolteon:</strong> Tuono spazza Dewgong e Cloyster in 1 colpo. Slowbro richiede 2 Tuono ma attenzione a Psichico.</p>
+                <p><strong>Jynx:</strong> È Psico/Ghiaccio. Usa Arcanine con Morso o Snorlax con Morso. Non usare Jolteon contro Jynx (Bacio Abbandono paralizza).</p>
+                <p><strong>Lapras:</strong> Ha Cantoforte. Usa Jolteon (Tuono) o Venusaur (Foglielama).</p>
+                <p><strong>⚠ Attenzione:</strong> Slowbro ha Psichico. Non mandare Pokémon Veleno.</p>
+            </div>
+        </div>
+
+        <div class="league-member-card">
+            <h3>💪 Bruno (Lotta/Roccia)</h3>
+            <div class="member-team">
+                <p><strong>Squadra:</strong> Hitmonlee (Lv.53) · Hitmonchan (Lv.55) · Onix (Lv.56) · Machamp (Lv.58) · Onix (Lv.54)</p>
+            </div>
+            <div class="member-strategy">
+                <h4>🎯 Strategia:</h4>
+                <p><strong>Alakazam:</strong> Psichico spazza via TUTTI in un colpo. Il membro più facile della Lega con Alakazam.</p>
+                <p><strong>Alternativa:</strong> Gyarados con Surf o Pidgeot con Volo. Attenzione a Machamp con Sottomissione (fa molto danno).</p>
+                <p><strong>⚠ Attenzione:</strong> Onix usa Leggiadro e Ruggito. Uccidili prima che abbassino troppe statistiche.</p>
+            </div>
+        </div>
+
+        <div class="league-member-card">
+            <h3>👻 Agatha (Veleno/Fantasma)</h3>
+            <div class="member-team">
+                <p><strong>Squadra:</strong> Gengar (Lv.56) · Golbat (Lv.56) · Haunter (Lv.55) · Arbok (Lv.58) · Gengar (Lv.60)</p>
+            </div>
+            <div class="member-strategy">
+                <h4>🎯 Strategia:</h4>
+                <p><strong>Alakazam:</strong> Psichico spazza tutti. Attenzione: i Gengar sono veloci e usano Iperzanna e Maledizione.</p>
+                <p><strong>Snorlax con Morso:</strong> Morso fa paura e interrompe le mosse. Corposcontro NON colpisce i Fantasmi (è Normale).</p>
+                <p><strong>⚠ Attenzione:</strong> I Gengar usano Maledizione (si sacrificano). Se vedi Maledizione, cambia Pokémon o finiscili subito.</p>
+                <p>NON usare mosse Normali o Lotta (non colpiscono).</p>
+            </div>
+        </div>
+
+        <div class="league-member-card">
+            <h3>🐉 Lance (Drago/Volante)</h3>
+            <div class="member-team">
+                <p><strong>Squadra:</strong> Gyarados (Lv.58) · Dragonair (Lv.56) · Dragonair (Lv.56) · Aerodactyl (Lv.60) · Dragonite (Lv.62)</p>
+            </div>
+            <div class="member-strategy">
+                <h4>🎯 Strategia:</h4>
+                <p><strong>Jolteon:</strong> Tuono distrugge Gyarados e Aerodactyl (sono anche Volanti). Dragonair cadono con 1 Tuono.</p>
+                <p><strong>Dragonite (il più pericoloso):</strong> Ha Iperraggio, Fulmine e Sottomissione. Usa Jolteon (Tuono) o Gyarados con Dragone/Iperraggio.</p>
+                <p><strong>⚠ Attenzione:</strong> Dragonite ha Fulmine. NON mandare Gyarados contro Dragonite! Usa Jolteon o Snorlax.</p>
+                <p><strong>Ghiaccio:</strong> Se hai un Pokémon con Pugno Gelato (es. Slowbro), usalo su Dragonite.</p>
+            </div>
+        </div>
+
+        <div class="league-member-card">
+            <h3>👑 Il Campione (Rivale)</h3>
+            <div class="member-team">
+                <p><strong>Squadra:</strong> Pidgeot (Lv.61) · Rhydon/Exeggutor/Alakazam (dipende) · Arcanine/Gyarados · Starter</p>
+            </div>
+            <div class="member-strategy">
+                <h4>🎯 Strategia:</h4>
+                <p><strong>Pidgeot:</strong> Jolteon con Tuono.</p>
+                <p><strong>Alakazam (se presente):</strong> Snorlax con Morso. Non usare mosse Normali, usa Morso fino a quando non muore.</p>
+                <p><strong>Rhydon (se presente):</strong> Gyarados con Surf o Venusaur con Foglielama.</p>
+                <p><strong>Exeggutor (se presente):</strong> Arcanine con Lanciafiamme o Pidgeot con Volo.</p>
+                <p><strong>Starter:</strong></p>
+                <ul>
+                    <li>Venusaur → Arcanine (Lanciafiamme)</li>
+                    <li>Charizard → Gyarados (Surf)</li>
+                    <li>Blastoise → Venusaur (Foglielama) o Jolteon (Tuono)</li>
+                </ul>
+                <p><strong>⚠ Attenzione:</strong> Tieni sempre Snorlax come "paracadute". Porta almeno 20 Ricarica Max e Sveglie.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note finali -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega: <strong>55-60</strong> ⭐</p>
+        <p>Prepara almeno 20 Ricarica Max, Antiscottatura, Antigelo e Sveglie.</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per zona. Se sviene, è morto ✦</p>
+        <p>🎮 MT importanti: Psichico (Saffronopoli), Tuono (Centrale Elettrica), Surf (MN), Lanciafiamme (Gioco d'Azardo)</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Rosso/Blu · squadre e mosse dettagliate ✦</span>
+    </div>
+</div>
+
+<script src="rosso-script.js"></script>
+</body>
+</html>
