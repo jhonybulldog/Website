@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Rubino</title>
+    <link rel="stylesheet" href="rubino-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Rubino</h1>
+        <div class="accent"></div>
+        <p>guida strategica per la regione di Hoenn</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>🔥 Team Magma</h3>
+            <p>Team cattivo di Rubino. Incontri principalmente Pokémon di tipo Terra e Fuoco. Groudon è il leggendario principale.</p>
+        </div>
+        <div class="info-card warning-card">
+            <h3>⚠ Esclusivi Rubino</h3>
+            <p>Seedot → Shiftry (Erba/Buio), Zangoose (Normale), Pinsir (Coleottero), Mawile (Acciaio), Plusle (Elettro), Volbeat (Coleottero).</p>
+        </div>
+        <div class="info-card">
+            <h3>🎮 Assenze critiche</h3>
+            <p>Non hai Heracross (Lotta), non hai Sableye (senza debolezze), non hai Ludicolo (Acqua/Erba). Dovrai trovare alternative!</p>
+        </div>
+    </div>
+
+    <!-- Starter Section -->
+    <h2 class="section-title">scelta dello starter (rubino)</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-mudkip" data-modal="mudkip">
+            <div class="starter-icon">🦎💧</div>
+            <h3>Mudkip</h3>
+            <p class="verdict best">★ Migliore scelta ★</p>
+            <p>Swampert (Acqua/Terra) ha un solo punto debole (Erba). Domina metà delle palestre. Il tank definitivo.</p>
+        </div>
+        <div class="starter-card starter-torchic" data-modal="torchic">
+            <div class="starter-icon">🐔🔥</div>
+            <h3>Torchic</h3>
+            <p class="verdict good">✓ Scelta solida</p>
+            <p>Blaziken (Fuoco/Lotta) copre molti tipi. Utile contro Norman e i Buio della Lega. Richiede supporto Acqua.</p>
+        </div>
+        <div class="starter-card starter-treecko" data-modal="treecko">
+            <div class="starter-icon">🦎🌿</div>
+            <h3>Treecko</h3>
+            <p class="verdict risky">⚠ Sconsigliato</p>
+            <p>Sceptile è veloce ma fragile. In Rubino hai già Seedot come opzione Erba. Scelta rischiosa.</p>
+        </div>
+    </div>
+
+    <!-- Version Comparison -->
+    <h2 class="section-title">esclusivi di rubino</h2>
+    <div class="exclusive-grid">
+        <div class="exclusive-card">
+            <div class="exclusive-icon">🌿</div>
+            <h3>Seedot → Shiftry</h3>
+            <p>Erba/Buio. Ottimo contro Tate&Liza (Psico). Sgranocchio superefficace.</p>
+        </div>
+        <div class="exclusive-card">
+            <div class="exclusive-icon">🐾</div>
+            <h3>Zangoose</h3>
+            <p>Normale. Ottimo attaccante fisico con Taglio e Sgranocchio.</p>
+        </div>
+        <div class="exclusive-card">
+            <div class="exclusive-icon">🪲</div>
+            <h3>Pinsir</h3>
+            <p>Coleottero. Buon attaccante fisico, ma non ha tipo Lotta (a differenza di Heracross).</p>
+        </div>
+        <div class="exclusive-card">
+            <div class="exclusive-icon">⚙️</div>
+            <h3>Mawile</h3>
+            <p>Acciaio. Statistiche mediocri, ma il tipo Acciaio resiste a molti attacchi.</p>
+        </div>
+        <div class="exclusive-card">
+            <div class="exclusive-icon">⚡</div>
+            <h3>Plusle</h3>
+            <p>Elettro. Fragile, Manectric è molto meglio.</p>
+        </div>
+        <div class="exclusive-card">
+            <div class="exclusive-icon">✨</div>
+            <h3>Volbeat</h3>
+            <p>Coleottero. Statistiche basse, non affidabile.</p>
+        </div>
+    </div>
+
+    <!-- Catture per Zona -->
+    <h2 class="section-title">migliori catture per zona (rubino)</h2>
+    <div class="table-container">
+        <table class="capture-table">
+            <thead>
+                <tr><th>Zona</th><th>⭐ Migliori catture</th><th>⚠ Da evitare</th><th>Strategia Rubino</th>
+            </thead>
+            <tbody>
+                <tr><td class="highlight">Percorso 102</td><td>Ralts (Gardevoir) - raro 4%, Seedot</td><td>Poochyena</td><td>Ralts è la cattura più importante! Gardevoir è top Psico.</td></tr>
+                <tr><td>Foresta di Petalo</td><td>Shroomish (Breloom), Slakoth</td><td>Wurmple</td><td>Shroomish è FONDAMENTALE per Norman. Breloom (Erba/Lotta).</td></tr>
+                <tr><td>Grotta Granito</td><td>Geodude, Abra (raro), Mawile</td><td>Zubat</td><td>Geodude immune a Elettro. Abra → Alakazam. Mawile esclusivo Rubino.</td></tr>
+                <tr><td>Percorso 110</td><td>Electrike (Manectric), Plusle</td><td>Gulpin</td><td>Manectric è il tuo Elettro principale!</td></tr>
+                <tr><td>Percorso 111</td><td>Trapinch (Flygon), Numel</td><td>Sandshrew</td><td>Trapinch → Flygon (Terra/Drago). Grind fino a Lv.45.</td></tr>
+                <tr><td>Percorso 113</td><td>Skarmory (raro)</td><td>Spinda</td><td>Skarmory tank fisico eccellente! Acciaio/Volante.</td></tr>
+                <tr><td>Percorso 114</td><td>Zangoose, Swablu</td><td>Seedot duplicato</td><td>Zangoose esclusivo Rubino! Ottimo attaccante.</td></tr>
+                <tr><td>Percorso 119</td><td>Absol (raro), Tropius</td><td>Kecleon</td><td>Absol ha Attacco altissimo e Sgranocchio.</td></tr>
+                <tr><td>Zona Safari</td><td>Pinsir, Girafarig, Rhyhorn</td><td>Spinarak</td><td>Pinsir esclusivo Rubino. Girafarig immune a Fantasma.</td></tr>
+                <tr><td>Percorso 120-121</td><td>Absol, Shuppet</td><td>Kecleon</td><td>Shuppet → Banette (Fantasma) utile contro Normali.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pokémon da Evitare -->
+    <div class="warning-box">
+        <h3>⚠ Pokémon trappola da evitare in Rubino</h3>
+        <div class="badge-list">
+            <span class="badge">Plusle</span>
+            <span class="badge">Volbeat</span>
+            <span class="badge">Spinda</span>
+            <span class="badge">Luvdisc</span>
+            <span class="badge">Delcatty</span>
+            <span class="badge">Mawile (con riserva)</span>
+        </div>
+        <p><small>Plusle è troppo fragile. Manectric è molto meglio. Volbeat e Spinda hanno statistiche molto basse. Mawile può essere un tank situazionale ma non un carry.</small></p>
+    </div>
+
+    <!-- POKÉMON CHIAVE DI RUBINO -->
+    <h2 class="section-title">pokémon chiave di rubino</h2>
+    <div class="key-pokemon-grid">
+        <div class="key-card"><div class="key-icon">💧🪨</div><h3>Swampert</h3><p>Surf · Fossa · Cascata · Protezione</p><small>Starter Mudkip. Tank definitivo, immune a Elettro.</small></div>
+        <div class="key-card"><div class="key-icon">🍄</div><h3>Breloom</h3><p>Foglielama · Sottosopra · Sonnifero · Sferapolvere</p><small>Shroomish. FONDAMENTALE per Norman! Erba/Lotta.</small></div>
+        <div class="key-card"><div class="key-icon">🐾</div><h3>Zangoose</h3><p>Taglio · Sgranocchio · Forza · Ripresa</p><small>Esclusivo Rubino. Ottimo attaccante fisico.</small></div>
+        <div class="key-card"><div class="key-icon">⚡</div><h3>Manectric</h3><p>Tuono · Tuononda · Morso · Carica</p><small>Electrike. Elettro principale per Volanti e Acqua.</small></div>
+        <div class="key-card"><div class="key-icon">🧠</div><h3>Gardevoir</h3><p>Psichico · Folgorazione · Sonnifero · Calmamente</p><small>Ralts (raro 4%). Uno dei migliori Psico del gioco.</small></div>
+        <div class="key-card"><div class="key-icon">🪨</div><h3>Skarmory</h3><p>Taglio · Volo · Ferroaliato · Ripresa</p><small>Percorso 113. Tank fisico eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">🐉</div><h3>Gyarados</h3><p>Dragoartigli · Cascata · Morso · Forza</p><small>Magikarp. Sweeper fisico eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">🌿</div><h3>Shiftry</h3><p>Foglielama · Sgranocchio · Finta · Falcetto</p><small>Seedot. Erba/Buio, utile contro Tate&Liza.</small></div>
+        <div class="key-card"><div class="key-icon">🔥🌍</div><h3>Groudon</h3><p>Fossa · Lanciafiamme · Taglio · Ripresa</p><small>Leggendario OP dopo l'8ª palestra. Lv.45.</small></div>
+    </div>
+
+    <!-- SQUADRE CONSIGLIATE PER OGNI PALESTRA -->
+    <h2 class="section-title">squadre consigliate per ogni palestra (rubino)</h2>
+    
+    <!-- Roxanne -->
+    <div class="gym-full-card">
+        <div class="gym-header roxanne-bg">
+            <div class="gym-icon">🪨</div>
+            <div class="gym-title"><h3>Roxanne - Petalipoli</h3><p>Geodude (Lv.12) · Nosepass (Lv.15)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Mudkip</strong><p>Pistolacqua</p><small>La soluzione più semplice</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🍄</span><strong>Shroomish</strong><p>Assorbimento</p><small>Alternativa Erba</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐦</span><strong>Taillow</strong><p>Azione</p><small>Efficace su Nosepass</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Mudkip con Pistolacqua domina. Nosepass ha Riparo e Fulmisasso. Porta Pozioni.</p></div>
+        </div>
+    </div>
+
+    <!-- Brawly -->
+    <div class="gym-full-card">
+        <div class="gym-header brawly-bg">
+            <div class="gym-icon">💪</div>
+            <div class="gym-title"><h3>Brawly - Ondalupoli</h3><p>Machop (Lv.16) · Makuhita (Lv.18)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🐦</span><strong>Wingull/Pelipper</strong><p>Azione · Acqua</p><small>Superefficace su Lotta</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🦋</span><strong>Beautifly</strong><p>Azione</p><small>Alternativa Volante</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐦</span><strong>Taillow</strong><p>Azione · Furia</p><small>Velocissimo</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Usa Volanti! Attenzione a Makuhita con Rinforzo. Wingull è perfetto.</p></div>
+        </div>
+    </div>
+
+    <!-- Wattson -->
+    <div class="gym-full-card">
+        <div class="gym-header wattson-bg">
+            <div class="gym-icon">⚡</div>
+            <div class="gym-title"><h3>Wattson - Fiordoropoli</h3><p>Voltorb (20) · Electrike (20) · Magneton (22) · Manectric (24)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude/Graveler</strong><p>Fossa</p><small>IMMUNE a Elettro!</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🪨</span><strong>Marshtomp</strong><p>Fossa · Fanghiglia</p><small>Acqua/Terra = immune a Elettro</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Geodude o Marshtomp sono immuni all'Elettro. Fossa spazza via tutto. Manectric ha Morso (Buio) ma non è un problema.</p></div>
+        </div>
+    </div>
+
+    <!-- Flannery -->
+    <div class="gym-full-card">
+        <div class="gym-header flannery-bg">
+            <div class="gym-icon">🔥</div>
+            <div class="gym-title"><h3>Flannery - Ardorepoli</h3><p>Numel (26) · Slugma (26) · Camerupt (28) · Torkoal (29)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Marshtomp/Swampert</strong><p>Fanghiglia · Pistolacqua</p><small>Spazza via tutto</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐉</span><strong>Gyarados</strong><p>Cascata</p><small>Alternativa Acqua</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Marshtomp con Fanghiglia o Pistolacqua elimina tutti. Torkoal è lento ma resistente.</p></div>
+        </div>
+    </div>
+
+    <!-- Norman - LA PIÙ PERICOLOSA -->
+    <div class="gym-full-card">
+        <div class="gym-header norman-bg">
+            <div class="gym-icon">😤</div>
+            <div class="gym-title"><h3>Norman - Ciclamopoli ⚠ PERICOLOSA ⚠</h3><p>Spinda (27) · Vigoroth (27) · Linoone (29) · Slaking (31)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🍄</span><strong>Breloom</strong><p>Sottosopra (Lotta)</p><small>FONDAMENTALE! Superefficace su Normale</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💪</span><strong>Machop/Machoke</strong><p>Colpo Basso</p><small>Alternativa Lotta</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude/Graveler</strong><p>Fossa</p><small>Resiste fisicamente</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia - LEGGI ATTENTAMENTE</h4>
+                <p><strong>Slaking ha Pigrone</strong> (perde un turno su due). Attacca quando è attivo, poi nel turno di "riposo" usa Pozioni o cambia.</p>
+                <p><strong>Breloom con Sottosopra</strong> è la soluzione migliore. Machop scambiato è alternativa valida.</p>
+                <p>Geodude resiste agli attacchi fisici. Vigoroth ha Smontatura (riduce precisione).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Winona -->
+    <div class="gym-full-card">
+        <div class="gym-header winona-bg">
+            <div class="gym-icon">🦅</div>
+            <div class="gym-title"><h3>Winona - Altepoli</h3><p>Swellow (30) · Pelipper (30) · Skarmory (31) · Altaria (32)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Manectric</strong><p>Tuono · Tuononda</p><small>Distrugge tutti i Volanti!</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Graveler/Golem</strong><p>Lapidata</p><small>Efficace su Volanti</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Manectric con Tuono spazza Swellow, Pelipper e Altaria. Skarmory ha Ferroaliato e Resistenza.</p></div>
+        </div>
+    </div>
+
+    <!-- Tate & Liza - DOPPIA BATTAGLIA -->
+    <div class="gym-full-card">
+        <div class="gym-header tateliza-bg">
+            <div class="gym-icon">🔮✨</div>
+            <div class="gym-title"><h3>Tate & Liza - Muropoli ⚠ DOPPIA BATTAGLIA ⚠</h3><p>Lunatone (Lv.41) · Solrock (Lv.41)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🌿</span><strong>Shiftry</strong><p>Sgranocchio (Buio)</p><small>Superefficace su Psico! Esclusivo Rubino</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐾</span><strong>Zangoose</strong><p>Sgranocchio (Buio)</p><small>Ottimo attaccante fisico</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🐉</span><strong>Absol</strong><p>Sgranocchio</p><small>Attacco altissimo, superefficace</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Swampert</strong><p>Surf</p><small>Colpisce entrambi, superefficace su Roccia</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia - DOPPIA BATTAGLIA</h4>
+                <p><strong>Non hai Sableye in Rubino!</strong> Usa Pokémon con mosse Buio (Sgranocchio) per colpire superefficace.</p>
+                <p>Surf di Swampert colpisce entrambi ed è superefficace su Roccia. Elimina prima Lunatone o Solrock con attacchi concentrati.</p>
+                <p>Shiftry (Erba/Buio) è l'esclusivo perfetto per questa palestra.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wallace -->
+    <div class="gym-full-card">
+        <div class="gym-header wallace-bg">
+            <div class="gym-icon">💧</div>
+            <div class="gym-title"><h3>Wallace - Mistralopoli</h3><p>Luvdisc (40) · Whiscash (41) · Sealeo (41) · Seaking (43) · Milotic (44)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Manectric</strong><p>Tuono</p><small>Distrugge tutto tranne Whiscash</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🪨</span><strong>Swampert</strong><p>Foglielama (MT) o Fossa</p><small>Per Whiscash (Acqua/Terra)</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🍄</span><strong>Breloom</strong><p>Foglielama</p><small>Alternativa Erba</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Manectric con Tuono elimina Luvdisc, Sealeo, Seaking. Milotic ha Acquaraggio e Rigenerazione - è il più pericoloso. Whiscash è immune a Elettro, usa Foglielama o Fossa.</p></div>
+        </div>
+    </div>
+
+    <!-- LEGA HENN -->
+    <h2 class="section-title">squadra consigliata per la lega Hoenn (rubino)</h2>
+    <div class="league-team-showcase">
+        <div class="league-team-grid">
+            <div class="league-pokemon-card"><div class="league-icon">💧🪨</div><h4>Swampert</h4><p>Surf · Fossa · Cascata · Protezione</p><small>Starter Mudkip - Tank principale</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⚡</div><h4>Manectric</h4><p>Tuono · Tuononda · Morso · Carica</p><small>Elettro sweeper</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🍄</div><h4>Breloom</h4><p>Foglielama · Sottosopra · Sonnifero · Sferapolvere</p><small>Erba/Lotta - per Norman e Lega</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐾</div><h4>Zangoose</h4><p>Taglio · Sgranocchio · Forza · Ripresa</p><small>Attaccante fisico - Buio per Phoebe</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🧠</div><h4>Gardevoir</h4><p>Psichico · Folgorazione · Sonnifero · Calmamente</p><small>Psico top tier</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐉</div><h4>Gyarados / Skarmory</h4><p>Dragoartigli · Cascata · Morso / Taglio · Volo · Ferroaliato</p><small>Sweeper o Tank</small></div>
+        </div>
+    </div>
+
+    <!-- STRATEGIA LEGA DETTAGLIATA -->
+    <h2 class="section-title">strategia dettagliata per la lega Hoenn</h2>
+    
+    <div class="league-strategy-detailed">
+        <div class="league-member-card"><h3>🌙 Sidney (Buio)</h3><div class="member-team"><p>Mightyena (46) · Cacturne (46) · Shiftry (48) · Sharpedo (48) · Absol (49)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Breloom con Sottosopra (Lotta) è superefficace su tutti tranne Sharpedo e Absol. Per Sharpedo/Absol usa Manectric con Tuono o Swampert con Surf.</p></div></div>
+        
+        <div class="league-member-card"><h3>👻 Phoebe (Fantasma)</h3><div class="member-team"><p>Dusclops (48) · Banette (49) · Banette (49) · Dusclops (50) · Sableye (51)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Zangoose con Sgranocchio (Buio) è superefficace! Gardevoir con Psichico funziona ma attenzione a Ombra Notturna. Sableye (Buio/Fantasma) non ha debolezze in 3ª gen - usa Buio.</p></div></div>
+        
+        <div class="league-member-card"><h3>❄️ Glacia (Ghiaccio)</h3><div class="member-team"><p>Sealeo (50) · Sealeo (50) · Glalie (52) · Glalie (52) · Walrein (53)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Manectric con Tuono distrugge Sealeo e Walrein. Breloom con Sottosopra (Lotta) è superefficace su Glalie e Walrein.</p></div></div>
+        
+        <div class="league-member-card"><h3>🐉 Drake (Drago) - LA BATTAGLIA PIÙ DIFFICILE</h3><div class="member-team"><p>Shelgon (52) · Altaria (53) · Flygon (53) · Flygon (53) · Salamence (55)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p><strong>Geloraggio è FONDAMENTALE!</strong> Insegnatelo a Swampert o Gardevoir.<br>
+        Manectric con Tuono è superefficace su Altaria e Salamence (Volanti).<br>
+        Gyarados con Dragoartigli (MT) è un'ottima alternativa.<br>
+        Salamence è il più pericoloso - ha Iperraggio e Fulmine.</p></div></div>
+        
+        <div class="league-member-card"><h3>⛓️ Steven (Acciaio) - CAMPIONE</h3><div class="member-team"><p>Skarmory (57) · Claydol (55) · Aggron (56) · Cradily (56) · Armaldo (56) · Metagross (58)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4>
+            <p><strong>Skarmory:</strong> Manectric Tuono.<br>
+            <strong>Claydol (Terra/Psico):</strong> Swampert Surf (Acqua) o Breloom Foglielama (Erba).<br>
+            <strong>Aggron (Acciaio/Roccia):</strong> Swampert Surf o Breloom Sottosopra.<br>
+            <strong>Cradily (Roccia/Erba):</strong> Breloom Sottosopra.<br>
+            <strong>Armaldo (Roccia/Coleottero):</strong> Swampert Surf.<br>
+            <strong>Metagross (Acciaio/Psico) - PERICOLOSO:</strong> Swampert Fossa (Terra) o Breloom Sottosopra (Lotta). Ha Pugnodardo (Lotta) e Frantumarmatura (Buio). Attenzione!</p></div></div>
+    </div>
+
+    <!-- GROUDON E POST-GAME -->
+    <h2 class="section-title">🌍 groudon - il leggendario di rubino</h2>
+    <div class="groudon-section">
+        <div class="groudon-card">
+            <div class="groudon-icon">🌋🐾</div>
+            <div class="groudon-info">
+                <h3>Groudon - Livello 45 (Terra)</h3>
+                <p>Dopo l'ottava palestra, vai al Fondo dell'Abisso. Groudon è il leggendario principale di Rubino.</p>
+                <p><strong>Valore:</strong> Tank Terra potentissimo con Lanciafiamme, Fossa, Taglio. A Lv.45 è già competitivo per la Lega.</p>
+                <p><strong>Moveset consigliato:</strong> Fossa · Lanciafiamme · Taglio · Ripresa</p>
+                <p class="note"><strong>Nota Nuzlocke:</strong> Decidi prima se usare una clausola separata per i leggendari. Groudon è OP ma lecito da catturare.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- RAYQUAZA -->
+    <div class="rayquaza-section">
+        <div class="rayquaza-card">
+            <div class="rayquaza-icon">🐉✨</div>
+            <div class="rayquaza-info">
+                <h3>Rayquaza - Torre dei Cieli (Post-Game)</h3>
+                <p>Dopo la Lega, puoi catturare Rayquaza alla Torre dei Cieli. Livello 70, tipo Drago/Volante.</p>
+                <p><strong>Moveset:</strong> Meteorina (Drago), Volo, Fulmine, Iperraggio.</p>
+                <p><strong>Valore:</strong> Se continui la Nuzlocke nel post-game, Rayquaza è una delle aggiunte più potenti.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consigli Extra -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega Hoenn: <strong>45-50</strong> ⭐</p>
+        <p>🎒 <strong>Zigzagoon con Muetassalto:</strong> All'inizio del gioco, Zigzagoon raccoglie oggetti dopo ogni battaglia. Tienilo nel team!</p>
+        <p>🍄 <strong>Breloom è FONDAMENTALE per Norman:</strong> Shroomish evolve in Breloom (Erba/Lotta). Sottosopra distrugge Slaking.</p>
+        <p>📦 <strong>MT preziose:</strong> Tuono (dopo Wattson), Psichico (dopo Winona), Geloraggio (Passo Abbandonato). Scegli bene a chi darle.</p>
+        <p>🔮 <strong>Tate & Liza:</strong> Non hai Sableye! Usa Shiftry, Zangoose o Absol con Sgranocchio. Surf di Swampert colpisce entrambi.</p>
+        <p>❄️ <strong>Per Drake:</strong> Geloraggio è fondamentale. Insegnatelo a Swampert o Gardevoir.</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per zona. Se sviene, è morto ✦</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Rubino · esclusivi e strategie per Hoenn ✦</span>
+    </div>
+</div>
+
+<script src="rubino-script.js"></script>
+</body>
+</html>

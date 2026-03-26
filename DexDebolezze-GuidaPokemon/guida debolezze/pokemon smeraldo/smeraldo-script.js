@@ -1,5 +1,5 @@
 /**
- * Nuzlocke Guide - Pokémon Rubino
+ * Nuzlocke Guide - Pokémon Smeraldo
  * Interattività: modali starter e console log
  */
 
@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const starterDetails = {
         mudkip: {
             title: "🦎 Mudkip",
-            content: "✓ Il più sicuro per una Nuzlocke in Rubino<br>✓ Swampert (Acqua/Terra) ha un solo punto debole (Erba)<br>✓ Domina le palestre di Roccia, Fuoco, Elettro e Acciaio<br>✓ È il tank definitivo, immune a Elettro<br>✓ Lento ma compensa con resistenza eccezionale<br><br>⭐ SCELTA MIGLIORE per Rubino ⭐"
+            content: "✓ Il più sicuro per una Nuzlocke in Smeraldo<br>✓ Swampert (Acqua/Terra) ha un solo punto debole (Erba)<br>✓ Domina molte palestre (Roccia, Fuoco, Elettro, Acciaio)<br>✓ Con Wallace Campione (Acqua), non hai vantaggio diretto, ma Swampert resiste bene<br>✓ È il tank più affidabile per tutto il gioco<br><br>⭐ SCELTA MIGLIORE per Smeraldo ⭐"
         },
         torchic: {
             title: "🐔 Torchic",
-            content: "✓ Blaziken (Fuoco/Lotta) è potente offensivamente<br>✓ La componente Lotta è preziosa contro Norman e i Buio della Lega<br>✓ Domina Erba, Ghiaccio, Coleottero, Buio<br>⚠ Debole contro Acqua, Terra e Psico<br>⚠ Fragile fisicamente<br><br>✓ Richiede un Pokémon Acqua affidabile (Gyarados, Pelipper)"
+            content: "✓ Blaziken (Fuoco/Lotta) è potente offensivamente<br>⚠ In Smeraldo, Wallace (Campione) è Acqua - Blaziken è in svantaggio<br>✓ Se lo scegli, devi avere un forte Pokémon Acqua (Ludicolo, Gyarados, Starmie) per compensare<br>⚠ Debole contro Acqua, Terra e Psico<br>⚠ Fragile fisicamente<br><br>✓ Scelta rischiosa ma possibile con un buon supporto Acqua"
         },
         treecko: {
             title: "🦎 Treecko",
-            content: "⚠ SCELTA SCONSIGLIATA PER NUZLOCKE ⚠<br><br>✓ Sceptile è veloce e ha ottimo Attacco Speciale<br>✓ Foglielama (sempre critico in 3ª gen) è devastante<br>✗ Fragile, debole contro le prime palestre<br>✗ In Rubino hai già Seedot come opzione Erba/Buio<br>✗ Treecko è ridondante e rischioso<br><br>Solo per giocatori esperti che cercano una sfida extra"
+            content: "✓ Sceptile è veloce e ha Foglielama (sempre critico in 3ª gen)<br>✓ È superefficace contro Wallace (Campione Acqua)<br>✗ Fragile, debole contro le prime palestre (Volante, Coleottero)<br>✗ In Smeraldo hai Ludicolo (Acqua/Erba) che è più versatile e resistente<br><br>✓ Scelta situazionale: ottima per Wallace, ma richiede supporto per le prime fasi"
         }
     };
     
@@ -94,11 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Console log con avvisi importanti
-    console.log('✨ Nuzlocke Guide Pokémon Rubino - Caricata con successo!');
-    console.log('🦎 Mudkip è la scelta migliore! Swampert domina metà delle palestre.');
-    console.log('⚠ ATTENZIONE A NORMAN! Breloom con Sottosopra è fondamentale.');
-    console.log('🔮 Tate & Liza: Non hai Sableye! Usa Shiftry, Zangoose o Absol con Sgranocchio.');
-    console.log('❄️ Geloraggio è FONDAMENTALE per Drake (Drago). Insegnatelo a Swampert o Gardevoir.');
-    console.log('🎒 Zigzagoon con Muetassalto raccoglie oggetti gratuiti - tienilo nel team!');
-    console.log('🌋 Groudon è catturabile dopo l\'8ª palestra al Fondo dell\'Abisso (Lv.45).');
+    console.log('✨ Nuzlocke Guide Pokémon Smeraldo - Caricata con successo!');
+    console.log('⚠ SMERALDO È LA VERSIONE PIÙ DIFFICILE DI HOENN!');
+    console.log('🐉 RAYQUAZA PRIMA DELLA LEGA! Catturalo dopo Tate&Liza (Lv.70) - è OP!');
+    console.log('⚠⚠ TATE&LIZA: attenzione! Hanno 4 Pokémon (Xatu, Claydol, Lunatone, Solrock). Usa Sableye e Heracross!');
+    console.log('🪲💪 Heracross è fondamentale per Norman! Cercalo al Percorso 119 (raro 5%).');
+    console.log('👻⚫ Sableye non ha debolezze in 3ª gen! Catturalo alla Grotta Granito.');
+    console.log('💧🌿 Ludicolo (Lotad) è eccellente per Wallace e Drake con Geloraggio.');
+    console.log('⚡ Manectric con Tuono è fondamentale per Wallace - Milotic cade con Tuono.');
+    console.log('💪 Wallace è il nuovo Campione (Acqua) - prepara un forte Elettro e un Erba!');
+    console.log('🎒 Zigzagoon con Muetassalto raccoglie oggetti - tienilo nel team all\'inizio!');
 });

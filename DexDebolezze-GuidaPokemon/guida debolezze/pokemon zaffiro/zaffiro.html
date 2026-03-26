@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Zaffiro</title>
+    <link rel="stylesheet" href="zaffiro-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Zaffiro</h1>
+        <div class="accent"></div>
+        <p>guida strategica per la versione più agevole di Hoenn</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>💧 Team Idro</h3>
+            <p>Team cattivo di Zaffiro. Incontri principalmente Pokémon di tipo Acqua. Kyogre è il leggendario principale.</p>
+        </div>
+        <div class="info-card highlight-card">
+            <h3>✨ VANTAGGI ESCLUSIVI</h3>
+            <p><strong>Heracross</strong> (Lotta/Coleottero) · <strong>Sableye</strong> (Buio/Fantasma - senza debolezze!) · <strong>Ludicolo</strong> (Acqua/Erba)</p>
+            <p class="small">Le tre palestre più difficili (Norman, Tate&Liza) diventano molto più gestibili!</p>
+        </div>
+        <div class="info-card">
+            <h3>🌊 Kyogre</h3>
+            <p>Leggendario principale, catturabile dopo l'ottava palestra. Con Pioggiadanza e Idropompa è uno dei Pokémon più dominanti del gioco.</p>
+        </div>
+    </div>
+
+    <!-- Starter Section -->
+    <h2 class="section-title">scelta dello starter (zaffiro)</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-mudkip" data-modal="mudkip">
+            <div class="starter-icon">🦎💧</div>
+            <h3>Mudkip</h3>
+            <p class="verdict best">★ Migliore scelta ★</p>
+            <p>Swampert (Acqua/Terra) ha un solo punto debole. Con Heracross, Sableye e Ludicolo disponibili, hai un team imbattibile.</p>
+        </div>
+        <div class="starter-card starter-torchic" data-modal="torchic">
+            <div class="starter-icon">🐔🔥</div>
+            <h3>Torchic</h3>
+            <p class="verdict good">✓ Scelta solida</p>
+            <p>Blaziken è potente, ma in Zaffiro hai già Heracross per Lotta. Scelta valida ma ridondante.</p>
+        </div>
+        <div class="starter-card starter-treecko" data-modal="treecko">
+            <div class="starter-icon">🦎🌿</div>
+            <h3>Treecko</h3>
+            <p class="verdict risky">⚠ Sconsigliato</p>
+            <p>Ludicolo (Acqua/Erba) è più versatile e resistente. Treecko è fragile e rischioso.</p>
+        </div>
+    </div>
+
+    <!-- Version Comparison Zaffiro vs Rubino -->
+    <h2 class="section-title">zaffiro vs rubino: i vantaggi</h2>
+    <div class="comparison-table">
+        <table class="diff-table">
+            <thead>
+                <tr><th>Caratteristica</th><th>Zaffiro</th><th>Rubino</th><th>Vantaggio</th>
+            </thead>
+            <tbody>
+                <tr><td>Esclusivo Lotta</td><td class="good-cell">Heracross (eccellente)</td><td>Pinsir (senza Lotta)</td><td class="good-cell">Zaffiro</td></tr>
+                <tr><td>Esclusivo Immune Psico</td><td class="good-cell">Sableye (nessuna debolezza)</td><td>Mawile (mediocre)</td><td class="good-cell">Zaffiro</td></tr>
+                <tr><td>Esclusivo Acqua/Erba</td><td class="good-cell">Ludicolo (tank versatile)</td><td>Shiftry (fragile)</td><td class="good-cell">Zaffiro</td></tr>
+                <tr><td>Difficoltà Norman</td><td class="good-cell">Facile (Heracross)</td><td>Difficile</td><td class="good-cell">Zaffiro</td></tr>
+                <tr><td>Difficoltà Tate&Liza</td><td class="good-cell">Facile (Sableye immune)</td><td>Difficile</td><td class="good-cell">Zaffiro</td></tr>
+                <tr><td>Leggendario</td><td>Kyogre (Acqua)</td><td>Groudon (Terra)</td><td>Entrambi OP</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Esclusivi di Zaffiro -->
+    <h2 class="section-title">✨ esclusivi di zaffiro (i tuoi migliori alleati)</h2>
+    <div class="exclusive-grid">
+        <div class="exclusive-card best">
+            <div class="exclusive-icon">🪲💪</div>
+            <h3>Heracross</h3>
+            <p>Lotta/Coleottero. Fondamentale per Norman! Distrugge Slaking con Sottomissione. Raro (5% al Percorso 119).</p>
+        </div>
+        <div class="exclusive-card best">
+            <div class="exclusive-icon">👻⚫</div>
+            <h3>Sableye</h3>
+            <p>Buio/Fantasma. NON HA DEBOLEZZE in 3ª gen! Immune a Psico, Lotta, Normale. Rende Tate&Liza una passeggiata.</p>
+        </div>
+        <div class="exclusive-card best">
+            <div class="exclusive-icon">💧🌿</div>
+            <h3>Ludicolo</h3>
+            <p>Acqua/Erba. Tank versatile, resiste ad Acqua, Terra, Roccia. Ottimo con Geloraggio per Drake.</p>
+        </div>
+        <div class="exclusive-card mid">
+            <div class="exclusive-icon">🐍</div>
+            <h3>Seviper</h3>
+            <p>Veleno. Mediocre. Con Heracross e Sableye disponibili, non perdere tempo con Seviper.</p>
+        </div>
+        <div class="exclusive-card mid">
+            <div class="exclusive-icon">⚡</div>
+            <h3>Minun</h3>
+            <p>Elettro. Fragile. Manectric è molto meglio.</p>
+        </div>
+        <div class="exclusive-card mid">
+            <div class="exclusive-icon">✨</div>
+            <h3>Illumise</h3>
+            <p>Coleottero. Statistiche basse, non affidabile.</p>
+        </div>
+    </div>
+
+    <!-- Catture per Zona (Zaffiro specifico) -->
+    <h2 class="section-title">migliori catture per zona (zaffiro)</h2>
+    <div class="table-container">
+        <table class="capture-table">
+            <thead>
+                <tr><th>Zona</th><th>⭐ Migliori catture</th><th>⚠ Da evitare</th><th>Strategia Zaffiro</th>
+            </thead>
+            <tbody>
+                <tr><td class="highlight">Percorso 102</td><td>Ralts (Gardevoir), Lotad (Ludicolo)</td><td>Poochyena</td><td>Lotad è l'esclusivo Acqua/Erba di Zaffiro! Ralts è sempre top.</td></tr>
+                <tr><td>Foresta di Petalo</td><td>Shroomish, Slakoth</td><td>Wurmple</td><td>Shroomish → Breloom, ma in Zaffiro Heracross è meglio per Lotta.</td></tr>
+                <tr><td class="highlight">Grotta Granito</td><td>Sableye (esclusivo!), Geodude, Abra</td><td>Zubat</td><td>Sableye è il Pokémon più importante di Zaffiro. Nessuna debolezza!</td></tr>
+                <tr><td>Percorso 110</td><td>Electrike (Manectric)</td><td>Minun</td><td>Manectric è il tuo Elettro principale. Minun è fragile.</td></tr>
+                <tr><td>Percorso 111</td><td>Trapinch (Flygon), Numel</td><td>Sandshrew</td><td>Trapinch → Flygon (Terra/Drago). Grind fino a Lv.45.</td></tr>
+                <tr><td>Percorso 113</td><td>Skarmory (raro)</td><td>Spinda</td><td>Skarmory tank fisico eccellente! Acciaio/Volante.</td></tr>
+                <tr><td>Percorso 114</td><td>Lotad, Swablu</td><td>Seviper</td><td>Lotad (Ludicolo) è la cattura migliore. Seviper è mediocre.</td></tr>
+                <tr><td class="highlight">Percorso 119</td><td>Heracross (raro 5%), Absol</td><td>Kecleon</td><td>Heracross è la cattura più importante! Cercalo sugli alberi o nei cespugli alti.</td></tr>
+                <tr><td>Zona Safari</td><td>Heracross, Girafarig, Rhyhorn</td><td>Spinarak</td><td>Heracross disponibile anche qui. Girafarig immune a Fantasma.</td></tr>
+                <tr><td>Percorso 120-121</td><td>Absol, Heracross, Shuppet</td><td>Kecleon</td><td>Absol con Sgranocchio per Phoebe e Tate&Liza.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pokémon da Evitare -->
+    <div class="warning-box">
+        <h3>⚠ Pokémon trappola da evitare in Zaffiro</h3>
+        <div class="badge-list">
+            <span class="badge">Minun</span>
+            <span class="badge">Illumise</span>
+            <span class="badge">Spinda</span>
+            <span class="badge">Luvdisc</span>
+            <span class="badge">Delcatty</span>
+            <span class="badge">Seviper</span>
+        </div>
+        <p><small>In Zaffiro hai Heracross, Sableye e Ludicolo - non perdere tempo con Pokémon mediocri! Minun è troppo fragile, Illumise ha statistiche bassissime.</small></p>
+    </div>
+
+    <!-- POKÉMON CHIAVE DI ZAFFIRO -->
+    <h2 class="section-title">pokémon chiave di zaffiro</h2>
+    <div class="key-pokemon-grid">
+        <div class="key-card best-card"><div class="key-icon">🪲💪</div><h3>Heracross</h3><p>Megacorno · Sottomissione · Sgranocchio · Forza</p><small>Percorso 119 (raro 5%). FONDAMENTALE per Norman!</small></div>
+        <div class="key-card best-card"><div class="key-icon">👻⚫</div><h3>Sableye</h3><p>Finta · Sgranocchio · Ombra Notturna · Fossa (MT)</p><small>Grotta Granito. NESSUNA DEBOLEZZA! Immune a Psico, Lotta, Normale.</small></div>
+        <div class="key-card best-card"><div class="key-icon">💧🌿</div><h3>Ludicolo</h3><p>Surf · Foglielama · Geloraggio · Sonnifero</p><small>Lotad (Percorso 102/114). Tank Acqua/Erba versatile.</small></div>
+        <div class="key-card"><div class="key-icon">💧🪨</div><h3>Swampert</h3><p>Surf · Fossa · Cascata · Protezione</p><small>Starter Mudkip. Tank principale.</small></div>
+        <div class="key-card"><div class="key-icon">⚡</div><h3>Manectric</h3><p>Tuono · Tuononda · Morso · Carica</p><small>Electrike (Percorso 110). Elettro principale.</small></div>
+        <div class="key-card"><div class="key-icon">🧠</div><h3>Gardevoir</h3><p>Psichico · Folgorazione · Sonnifero · Calmamente</p><small>Ralts (Percorso 102). Psico top tier.</small></div>
+        <div class="key-card"><div class="key-icon">🐉</div><h3>Gyarados</h3><p>Dragoartigli · Cascata · Morso · Forza</p><small>Magikarp. Sweeper fisico eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">⚔️</div><h3>Absol</h3><p>Sgranocchio · Taglio · Falcecobalto · Forza</p><small>Percorso 119/120. Attacco altissimo, Buio per Phoebe.</small></div>
+        <div class="key-card"><div class="key-icon">🪨</div><h3>Skarmory</h3><p>Taglio · Volo · Ferroaliato · Ripresa</p><small>Percorso 113 (raro). Tank fisico eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">🌊</div><h3>Kyogre</h3><p>Idropompa · Pioggiadanza · Geloraggio · Tuono (MT)</p><small>Dopo l'8ª palestra. OP con Pioggiadanza.</small></div>
+    </div>
+
+    <!-- SQUADRE CONSIGLIATE PER OGNI PALESTRA -->
+    <h2 class="section-title">squadre consigliate per ogni palestra (zaffiro)</h2>
+    
+    <!-- Roxanne -->
+    <div class="gym-full-card">
+        <div class="gym-header roxanne-bg">
+            <div class="gym-icon">🪨</div>
+            <div class="gym-title"><h3>Roxanne - Petalipoli</h3><p>Geodude (Lv.12) · Nosepass (Lv.15)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Mudkip</strong><p>Pistolacqua</p><small>La soluzione più semplice</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🌿</span><strong>Lotad</strong><p>Assorbimento</p><small>Esclusivo Zaffiro, efficace</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Mudkip con Pistolacqua domina. Zaffiro parte bene grazie a Lotad come opzione Erba.</p></div>
+        </div>
+    </div>
+
+    <!-- Brawly -->
+    <div class="gym-full-card">
+        <div class="gym-header brawly-bg">
+            <div class="gym-icon">💪</div>
+            <div class="gym-title"><h3>Brawly - Ondalupoli</h3><p>Machop (Lv.16) · Makuhita (Lv.18)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🐦</span><strong>Wingull/Pelipper</strong><p>Azione</p><small>Superefficace su Lotta</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">👻⚫</span><strong>Sableye</strong><p>Finta</p><small>IMMUNE a Lotta! Se già catturato</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Sableye è immune a Lotta. Wingull con Azione funziona benissimo.</p></div>
+        </div>
+    </div>
+
+    <!-- Wattson -->
+    <div class="gym-full-card">
+        <div class="gym-header wattson-bg">
+            <div class="gym-icon">⚡</div>
+            <div class="gym-title"><h3>Wattson - Fiordoropoli</h3><p>Voltorb (20) · Electrike (20) · Magneton (22) · Manectric (24)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🪨</span><strong>Marshtomp</strong><p>Fossa · Fanghiglia</p><small>Acqua/Terra = immune a Elettro!</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude/Graveler</strong><p>Fossa</p><small>Immune a Elettro</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Marshtomp è immune all'Elettro. Fossa spazza via tutto. Sableye non è immune (subisce danni normali).</p></div>
+        </div>
+    </div>
+
+    <!-- Flannery -->
+    <div class="gym-full-card">
+        <div class="gym-header flannery-bg">
+            <div class="gym-icon">🔥</div>
+            <div class="gym-title"><h3>Flannery - Ardorepoli</h3><p>Numel (26) · Slugma (26) · Camerupt (28) · Torkoal (29)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Marshtomp/Swampert</strong><p>Fanghiglia</p><small>Spazza via tutto</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🌿</span><strong>Ludicolo</strong><p>Acqua · Foglielama</p><small>Versatile e resistente</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Marshtomp con Fanghiglia elimina tutti. Ludicolo è un'ottima alternativa.</p></div>
+        </div>
+    </div>
+
+    <!-- Norman - CON HERACROSS È FACILE -->
+    <div class="gym-full-card">
+        <div class="gym-header norman-bg">
+            <div class="gym-icon">😤</div>
+            <div class="gym-title"><h3>Norman - Ciclamopoli ⚠ PERICOLOSA (ma Zaffiro la rende facile)</h3><p>Spinda (27) · Vigoroth (27) · Linoone (29) · Slaking (31)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato (Zaffiro)</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">🪲💪</span><strong>Heracross</strong><p>Sottomissione (Lotta)</p><small>FONDAMENTALE! Distrugge Slaking in un colpo</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">👻⚫</span><strong>Sableye</strong><p>Finta · Sgranocchio</p><small>IMMUNE a Lotta e Normale! Slaking non può colpirlo</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🍄</span><strong>Breloom</strong><p>Sottosopra</p><small>Alternativa se non hai Heracross</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia - ZAFFIRO RENDE NORMAN FACILE</h4>
+                <p><strong>Heracross con Sottomissione</strong> elimina Slaking e Vigoroth in un colpo. È la soluzione migliore.</p>
+                <p><strong>Sableye è immune a Lotta e Normale</strong>. Slaking non può colpirlo con Corposcontro o Smontatura. Usa Finta per logorarlo.</p>
+                <p>Slaking ha Pigrone: attacca quando è attivo, poi nel turno di "riposo" usa Pozioni o cambia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Winona -->
+    <div class="gym-full-card">
+        <div class="gym-header winona-bg">
+            <div class="gym-icon">🦅</div>
+            <div class="gym-title"><h3>Winona - Altepoli</h3><p>Swellow (30) · Pelipper (30) · Skarmory (31) · Altaria (32)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Manectric</strong><p>Tuono · Tuononda</p><small>Distrugge tutti i Volanti!</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Manectric con Tuono spazza Swellow, Pelipper e Altaria. Skarmory ha Ferroaliato e Resistenza.</p></div>
+        </div>
+    </div>
+
+    <!-- Tate & Liza - CON SABLEYE È FACILISSIMA -->
+    <div class="gym-full-card">
+        <div class="gym-header tateliza-bg">
+            <div class="gym-icon">🔮✨</div>
+            <div class="gym-title"><h3>Tate & Liza - Muropoli ⚠ DOPPIA BATTAGLIA (Zaffiro la rende facile)</h3><p>Lunatone (Lv.41) · Solrock (Lv.41)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato (Zaffiro)</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">👻⚫</span><strong>Sableye</strong><p>Finta · Sgranocchio</p><small>IMMUNE a Psichico! Lunatone e Solrock non possono colpirlo</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">🪲💪</span><strong>Heracross</strong><p>Megacorno</p><small>Coleottero superefficace su Psico</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">⚔️</span><strong>Absol</strong><p>Sgranocchio</p><small>Buio superefficace su Psico</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Swampert</strong><p>Surf</p><small>Colpisce entrambi, superefficace su Roccia</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia - SABLEYE LA RENDE UNA PASSEGGIATA</h4>
+                <p><strong>Sableye è immune a Psichico!</strong> Lunatone e Solrock non possono colpirlo. Mettilo in campo e usa Finta o Sgranocchio.</p>
+                <p>Concentra gli attacchi su un avversario alla volta. Surf di Swampert colpisce entrambi ed è superefficace su Roccia.</p>
+                <p>Attenzione: Lunatone e Solrock hanno Coscienza e Riparo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wallace -->
+    <div class="gym-full-card">
+        <div class="gym-header wallace-bg">
+            <div class="gym-icon">💧</div>
+            <div class="gym-title"><h3>Wallace - Mistralopoli</h3><p>Luvdisc (40) · Whiscash (41) · Sealeo (41) · Seaking (43) · Milotic (44)</p></div>
+        </div>
+        <div class="gym-content">
+            <div class="team-recommendation"><h4>🔥 Miglior team consigliato</h4>
+                <div class="team-pokemon">
+                    <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Manectric</strong><p>Tuono</p><small>Distrugge tutto tranne Whiscash</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🌿</span><strong>Ludicolo</strong><p>Foglielama</p><small>Per Whiscash (Acqua/Terra) e Milotic</small></div>
+                    <div class="pokemon-card"><span class="pokemon-icon">💧🪨</span><strong>Swampert</strong><p>Foglielama (MT) o Fossa</p><small>Alternativa per Whiscash</small></div>
+                </div>
+            </div>
+            <div class="strategy-guide"><h4>📖 Strategia</h4><p>Manectric con Tuono elimina Luvdisc, Sealeo, Seaking. Whiscash è immune a Elettro, usa Foglielama. Milotic ha Acquaraggio e Rigenerazione - è il più pericoloso.</p></div>
+        </div>
+    </div>
+
+    <!-- LEGA HOENN -->
+    <h2 class="section-title">squadra consigliata per la lega Hoenn (zaffiro)</h2>
+    <div class="league-team-showcase">
+        <div class="league-team-grid">
+            <div class="league-pokemon-card"><div class="league-icon">💧🪨</div><h4>Swampert</h4><p>Surf · Fossa · Cascata · Protezione</p><small>Starter Mudkip - Tank principale</small></div>
+            <div class="league-pokemon-card best-card"><div class="league-icon">🪲💪</div><h4>Heracross</h4><p>Megacorno · Sottomissione · Sgranocchio · Forza</p><small>Per Sidney e Glacia</small></div>
+            <div class="league-pokemon-card best-card"><div class="league-icon">👻⚫</div><h4>Sableye</h4><p>Finta · Sgranocchio · Ombra Notturna · Fossa</p><small>Per Phoebe e Tate&Liza</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⚡</div><h4>Manectric</h4><p>Tuono · Tuononda · Morso · Carica</p><small>Elettro sweeper</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">💧🌿</div><h4>Ludicolo</h4><p>Surf · Foglielama · Geloraggio · Sonnifero</p><small>Per Drake (Geloraggio) e Wallace</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🧠</div><h4>Gardevoir / Absol</h4><p>Psichico · Folgorazione / Sgranocchio · Taglio</p><small>Copertura Psico o Buio</small></div>
+        </div>
+    </div>
+
+    <!-- STRATEGIA LEGA DETTAGLIATA -->
+    <h2 class="section-title">strategia dettagliata per la lega Hoenn (zaffiro)</h2>
+    
+    <div class="league-strategy-detailed">
+        <div class="league-member-card"><h3>🌙 Sidney (Buio)</h3><div class="member-team"><p>Mightyena (46) · Cacturne (46) · Shiftry (48) · Sharpedo (48) · Absol (49)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Heracross con Sottomissione (Lotta) distrugge tutti tranne Sharpedo e Absol. Per Sharpedo/Absol usa Manectric con Tuono o Swampert con Surf.</p></div></div>
+        
+        <div class="league-member-card"><h3>👻 Phoebe (Fantasma)</h3><div class="member-team"><p>Dusclops (48) · Banette (49) · Banette (49) · Dusclops (50) · Sableye (51)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Sableye è eccellente qui. Usa Heracross con Sgranocchio (Buio) o Absol. Gardevoir con Psichico funziona ma attenzione a Ombra Notturna.</p></div></div>
+        
+        <div class="league-member-card"><h3>❄️ Glacia (Ghiaccio)</h3><div class="member-team"><p>Sealeo (50) · Sealeo (50) · Glalie (52) · Glalie (52) · Walrein (53)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Manectric con Tuono distrugge Sealeo e Walrein. Heracross con Sottomissione (Lotta) è superefficace su Ghiaccio.</p></div></div>
+        
+        <div class="league-member-card"><h3>🐉 Drake (Drago) - LA BATTAGLIA PIÙ DIFFICILE</h3><div class="member-team"><p>Shelgon (52) · Altaria (53) · Flygon (53) · Flygon (53) · Salamence (55)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p><strong>Ludicolo con Geloraggio</strong> è eccellente per Drake. Buon Attacco Speciale e resistenza.<br>
+        Swampert con Geloraggio (MT) funziona benissimo.<br>
+        Manectric con Tuono è superefficace su Altaria e Salamence (Volanti).<br>
+        Gyarados con Dragoartigli (MT) è un'alternativa valida.</p></div></div>
+        
+        <div class="league-member-card"><h3>⛓️ Steven (Acciaio) - CAMPIONE</h3><div class="member-team"><p>Skarmory (57) · Claydol (55) · Aggron (56) · Cradily (56) · Armaldo (56) · Metagross (58)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4>
+            <p><strong>Skarmory:</strong> Manectric Tuono.<br>
+            <strong>Claydol (Terra/Psico):</strong> Swampert Surf o Ludicolo Surf/Foglielama.<br>
+            <strong>Aggron (Acciaio/Roccia):</strong> Swampert Surf o Heracross Sottomissione.<br>
+            <strong>Cradily (Roccia/Erba):</strong> Heracross Sottomissione.<br>
+            <strong>Armaldo (Roccia/Coleottero):</strong> Swampert Surf.<br>
+            <strong>Metagross (Acciaio/Psico) - PERICOLOSO:</strong> Swampert Fossa (Terra) o Heracross Sottomissione (Lotta).</p></div></div>
+    </div>
+
+    <!-- KYOGRE -->
+    <h2 class="section-title">🌊 kyogre - il leggendario di zaffiro</h2>
+    <div class="kyogre-section">
+        <div class="kyogre-card">
+            <div class="kyogre-icon">🌊🐋</div>
+            <div class="kyogre-info">
+                <h3>Kyogre - Livello 45 (Acqua)</h3>
+                <p>Dopo l'ottava palestra, vai al Fondo dell'Abisso. Kyogre è il leggendario principale di Zaffiro.</p>
+                <p><strong>Valore:</strong> Con Pioggiadanza, Idropompa è devastante. Insegna Tuono (MT) e Geloraggio (MT) per copertura totale.</p>
+                <p><strong>Moveset consigliato:</strong> Idropompa · Pioggiadanza · Geloraggio · Tuono (MT)</p>
+                <p class="note"><strong>Nota Nuzlocke:</strong> Kyogre è OP. Decidi prima se usare una clausola separata per i leggendari.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- RAYQUAZA -->
+    <div class="rayquaza-section">
+        <div class="rayquaza-card">
+            <div class="rayquaza-icon">🐉✨</div>
+            <div class="rayquaza-info">
+                <h3>Rayquaza - Torre dei Cieli (Post-Game)</h3>
+                <p>Dopo la Lega, puoi catturare Rayquaza alla Torre dei Cieli. Livello 70, tipo Drago/Volante.</p>
+                <p><strong>Moveset:</strong> Meteorina (Drago), Volo, Fulmine, Iperraggio.</p>
+                <p><strong>Valore:</strong> Se continui la Nuzlocke nel post-game, Rayquaza è una delle aggiunte più potenti.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consigli Extra -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega Hoenn: <strong>45-50</strong> ⭐</p>
+        <p>🪲💪 <strong>Heracross è la cattura più importante di Zaffiro!</strong> Cercalo al Percorso 119 (5% raro) o nella Zona Safari.</p>
+        <p>👻⚫ <strong>Sableye non ha debolezze in 3ª gen!</strong> Rende Tate&Liza una passeggiata. Catturalo alla Grotta Granito.</p>
+        <p>💧🌿 <strong>Ludicolo (Lotad)</strong> è un tank Acqua/Erba versatile. Perfetto per Drake con Geloraggio.</p>
+        <p>🎒 <strong>Zigzagoon con Muetassalto</strong> raccoglie oggetti dopo ogni battaglia - tienilo nel team all'inizio!</p>
+        <p>📦 <strong>MT preziose:</strong> Tuono (dopo Wattson), Psichico (dopo Winona), Geloraggio (Passo Abbandonato).</p>
+        <p>🌊 <strong>Kyogre è OP:</strong> Pioggiadanza + Idropompa + Tuono (MT) + Geloraggio (MT) = copertura totale.</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per zona. Se sviene, è morto ✦</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Zaffiro · i vantaggi esclusivi di Hoenn ✦</span>
+    </div>
+</div>
+
+<script src="zaffiro-script.js"></script>
+</body>
+</html>

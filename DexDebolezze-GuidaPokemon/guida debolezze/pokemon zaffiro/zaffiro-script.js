@@ -1,5 +1,5 @@
 /**
- * Nuzlocke Guide - Pokémon Rubino
+ * Nuzlocke Guide - Pokémon Zaffiro
  * Interattività: modali starter e console log
  */
 
@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const starterDetails = {
         mudkip: {
             title: "🦎 Mudkip",
-            content: "✓ Il più sicuro per una Nuzlocke in Rubino<br>✓ Swampert (Acqua/Terra) ha un solo punto debole (Erba)<br>✓ Domina le palestre di Roccia, Fuoco, Elettro e Acciaio<br>✓ È il tank definitivo, immune a Elettro<br>✓ Lento ma compensa con resistenza eccezionale<br><br>⭐ SCELTA MIGLIORE per Rubino ⭐"
+            content: "✓ Il più sicuro per una Nuzlocke in Zaffiro<br>✓ Swampert (Acqua/Terra) ha un solo punto debole (Erba)<br>✓ Con Heracross, Sableye e Ludicolo disponibili, hai un team imbattibile<br>✓ Domina le palestre di Roccia, Fuoco, Elettro e Acciaio<br>✓ È il tank definitivo<br><br>⭐ SCELTA MIGLIORE per Zaffiro ⭐"
         },
         torchic: {
             title: "🐔 Torchic",
-            content: "✓ Blaziken (Fuoco/Lotta) è potente offensivamente<br>✓ La componente Lotta è preziosa contro Norman e i Buio della Lega<br>✓ Domina Erba, Ghiaccio, Coleottero, Buio<br>⚠ Debole contro Acqua, Terra e Psico<br>⚠ Fragile fisicamente<br><br>✓ Richiede un Pokémon Acqua affidabile (Gyarados, Pelipper)"
+            content: "✓ Blaziken (Fuoco/Lotta) è potente offensivamente<br>✓ In Zaffiro hai già Heracross per Lotta<br>✓ Domina Erba, Ghiaccio, Coleottero, Buio<br>⚠ Debole contro Acqua, Terra e Psico<br>⚠ Fragile fisicamente<br><br>✓ Scelta valida ma ridondante grazie a Heracross"
         },
         treecko: {
             title: "🦎 Treecko",
-            content: "⚠ SCELTA SCONSIGLIATA PER NUZLOCKE ⚠<br><br>✓ Sceptile è veloce e ha ottimo Attacco Speciale<br>✓ Foglielama (sempre critico in 3ª gen) è devastante<br>✗ Fragile, debole contro le prime palestre<br>✗ In Rubino hai già Seedot come opzione Erba/Buio<br>✗ Treecko è ridondante e rischioso<br><br>Solo per giocatori esperti che cercano una sfida extra"
+            content: "⚠ SCELTA SCONSIGLIATA PER NUZLOCKE ⚠<br><br>✓ Sceptile è veloce e ha ottimo Attacco Speciale<br>✓ Foglielama (sempre critico in 3ª gen) è devastante<br>✗ In Zaffiro hai Ludicolo (Acqua/Erba) che è più versatile e resistente<br>✗ Fragile, debole contro le prime palestre<br><br>Solo per giocatori esperti che cercano una sfida extra"
         }
     };
     
@@ -94,11 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Console log con avvisi importanti
-    console.log('✨ Nuzlocke Guide Pokémon Rubino - Caricata con successo!');
-    console.log('🦎 Mudkip è la scelta migliore! Swampert domina metà delle palestre.');
-    console.log('⚠ ATTENZIONE A NORMAN! Breloom con Sottosopra è fondamentale.');
-    console.log('🔮 Tate & Liza: Non hai Sableye! Usa Shiftry, Zangoose o Absol con Sgranocchio.');
-    console.log('❄️ Geloraggio è FONDAMENTALE per Drake (Drago). Insegnatelo a Swampert o Gardevoir.');
-    console.log('🎒 Zigzagoon con Muetassalto raccoglie oggetti gratuiti - tienilo nel team!');
-    console.log('🌋 Groudon è catturabile dopo l\'8ª palestra al Fondo dell\'Abisso (Lv.45).');
+    console.log('✨ Nuzlocke Guide Pokémon Zaffiro - Caricata con successo!');
+    console.log('🪲💪 Heracross è la cattura più importante! Cercalo al Percorso 119 (5% raro).');
+    console.log('👻⚫ Sableye non ha debolezze in 3ª gen! Rende Tate&Liza una passeggiata.');
+    console.log('💧🌿 Ludicolo (Lotad) è un tank Acqua/Erba versatile. Perfetto per Drake con Geloraggio.');
+    console.log('⚡ Manectric è il tuo Elettro principale. Minun è troppo fragile.');
+    console.log('🌊 Kyogre è OP con Pioggiadanza + Idropompa + Tuono + Geloraggio.');
+    console.log('🎒 Zigzagoon con Muetassalto raccoglie oggetti - tienilo nel team all\'inizio!');
+    console.log('💪 Norman è FACILE in Zaffiro: Heracross con Sottomissione distrugge Slaking!');
 });

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Smeraldo</title>
+    <link rel="stylesheet" href="smeraldo-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Smeraldo</h1>
+        <div class="accent"></div>
+        <p>la sfida definitiva di Hoenn · guida completa</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card warning-card">
+            <h3>⚠ DIFFICOLTÀ SUPERIORE</h3>
+            <p>Smeraldo è la versione più difficile di Hoenn! Capipalestra potenziati, Tate&Liza con 4 Pokémon, nuovo Campione Wallace.</p>
+        </div>
+        <div class="info-card highlight-card">
+            <h3>✨ RAYQUAZA PRIMA DELLA LEGA</h3>
+            <p>Dopo Tate&Liza, puoi catturare Rayquaza (Lv.70) alla Torre dei Cieli. È OP e può spazzare gran parte della Lega!</p>
+        </div>
+        <div class="info-card">
+            <h3>🎮 TUTTI GLI ESCLUSIVI</h3>
+            <p>In Smeraldo puoi trovare sia Heracross che Pinsir, sia Sableye che Mawile, sia Lotad che Seedot. Massima flessibilità!</p>
+        </div>
+    </div>
+
+    <!-- Differenze Chiave -->
+    <h2 class="section-title">differenze chiave: smeraldo vs rubino/zaffiro</h2>
+    <div class="comparison-table">
+        <table class="diff-table">
+            <thead>
+                <tr><th>Caratteristica</th><th>Rubino/Zaffiro</th><th>Smeraldo</th><th>Impatto</th>
+            </thead>
+            <tbody>
+                <tr><td class="highlight">Tate & Liza</td><td>2 Pokémon</td><td class="bad-cell">4 Pokémon (Xatu, Claydol, Lunatone, Solrock)</td><td class="bad-cell">Molto più difficile!</td></tr>
+                <tr><td>Campione</td><td>Steven (Acciaio)</td><td class="highlight-cell">Wallace (Acqua)</td><td>Diversa strategia</td></tr>
+                <tr><td>Ottavo Capo</td><td>Wallace (Acqua)</td><td>Juan (Acqua)</td><td>Palestra Acqua extra</td></tr>
+                <tr><td>Rayquaza</td><td>Dopo Lega (Lv.70)</td><td class="good-cell">Prima della Lega (Lv.70)</td><td class="good-cell">Vantaggio enorme!</td></tr>
+                <tr><td>Team Cattivo</td><td>Solo Magma o Idro</td><td>Entrambi</td><td>Più battaglie obbligatorie</td></tr>
+                <tr><td>Esclusivi</td><td>Solo alcuni</td><td class="good-cell">Tutti disponibili</td><td class="good-cell">Massima flessibilità</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Starter Section -->
+    <h2 class="section-title">scelta dello starter (smeraldo)</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-mudkip" data-modal="mudkip">
+            <div class="starter-icon">🦎💧</div>
+            <h3>Mudkip</h3>
+            <p class="verdict best">★ Migliore scelta ★</p>
+            <p>Swampert è il tank più affidabile. Con Wallace Campione (Acqua), non hai vantaggio diretto, ma resiste bene.</p>
+        </div>
+        <div class="starter-card starter-torchic" data-modal="torchic">
+            <div class="starter-icon">🐔🔥</div>
+            <h3>Torchic</h3>
+            <p class="verdict risky">⚠ Scelta rischiosa</p>
+            <p>Blaziken è in svantaggio contro Wallace (Acqua). Se lo scegli, devi avere un forte Pokémon Acqua (Ludicolo, Gyarados).</p>
+        </div>
+        <div class="starter-card starter-treecko" data-modal="treecko">
+            <div class="starter-icon">🦎🌿</div>
+            <h3>Treecko</h3>
+            <p class="verdict good">✓ Scelta situazionale</p>
+            <p>Sceptile è superefficace su Wallace, ma fragile nelle prime fasi. Ludicolo è un'alternativa più resistente.</p>
+        </div>
+    </div>
+
+    <!-- Esclusivi di Smeraldo -->
+    <h2 class="section-title">✨ tutti gli esclusivi disponibili in smeraldo</h2>
+    <div class="exclusive-grid">
+        <div class="exclusive-card best">
+            <div class="exclusive-icon">🪲💪</div>
+            <h3>Heracross</h3>
+            <p>Lotta/Coleottero. Fondamentale per Norman! Catturalo al Percorso 119 (raro 5%).</p>
+        </div>
+        <div class="exclusive-card best">
+            <div class="exclusive-icon">👻⚫</div>
+            <h3>Sableye</h3>
+            <p>Buio/Fantasma. NESSUNA DEBOLEZZA in 3ª gen! Immune a Psico, Lotta, Normale.</p>
+        </div>
+        <div class="exclusive-card best">
+            <div class="exclusive-icon">💧🌿</div>
+            <h3>Ludicolo</h3>
+            <p>Acqua/Erba. Tank versatile, eccellente contro Wallace e Drake.</p>
+        </div>
+        <div class="exclusive-card good">
+            <div class="exclusive-icon">🐾</div>
+            <h3>Zangoose</h3>
+            <p>Normale. Ottimo attaccante fisico con Taglio e Sgranocchio.</p>
+        </div>
+        <div class="exclusive-card good">
+            <div class="exclusive-icon">⚔️</div>
+            <h3>Absol</h3>
+            <p>Buio. Attacco altissimo, Sgranocchio per Phoebe e Tate&Liza.</p>
+        </div>
+        <div class="exclusive-card mid">
+            <div class="exclusive-icon">🐛</div>
+            <h3>Pinsir</h3>
+            <p>Coleottero. Buono ma senza tipo Lotta (a differenza di Heracross).</p>
+        </div>
+        <div class="exclusive-card mid">
+            <div class="exclusive-icon">⚙️</div>
+            <h3>Mawile</h3>
+            <p>Acciaio. Mediocre, ma può essere un tank situazionale.</p>
+        </div>
+        <div class="exclusive-card mid">
+            <div class="exclusive-icon">⚡</div>
+            <h3>Plusle/Minun</h3>
+            <p>Elettro. Fragili, Manectric è molto meglio.</p>
+        </div>
+    </div>
+
+    <!-- Catture per Zona -->
+    <h2 class="section-title">migliori catture per zona (smeraldo)</h2>
+    <div class="table-container">
+        <table class="capture-table">
+            <thead>
+                <tr><th>Zona</th><th>⭐ Migliori catture</th><th>⚠ Da evitare</th><th>Strategia Smeraldo</th>
+            </thead>
+            <tbody>
+                <tr><td class="highlight">Percorso 102</td><td>Ralts (Gardevoir), Lotad, Seedot</td><td>Poochyena</td><td>Ralts è top. Sia Lotad che Seedot disponibili!</td></tr>
+                <tr><td>Foresta di Petalo</td><td>Shroomish (Breloom), Slakoth</td><td>Wurmple</td><td>Shroomish per Lotta (Breloom), alternativa a Heracross</td></tr>
+                <tr><td class="highlight">Grotta Granito</td><td>Sableye, Geodude, Abra</td><td>Zubat</td><td>Sableye è FONDAMENTALE! Nessuna debolezza.</td></tr>
+                <tr><td>Percorso 110</td><td>Electrike (Manectric)</td><td>Plusle/Minun</td><td>Manectric è il tuo Elettro principale.</td></tr>
+                <tr><td>Percorso 111</td><td>Trapinch (Flygon), Numel</td><td>Sandshrew</td><td>Trapinch → Flygon (Terra/Drago), grind Lv.45.</td></tr>
+                <tr><td>Percorso 113</td><td>Skarmory (raro)</td><td>Spinda</td><td>Skarmory tank fisico eccellente!</td></tr>
+                <tr><td>Percorso 114</td><td>Zangoose, Swablu, Lotad, Seedot</td><td>Seviper</td><td>Zangoose potente, Swablu → Altaria.</td></tr>
+                <tr><td class="highlight">Percorso 119</td><td>Heracross (raro 5%), Absol</td><td>Kecleon</td><td>HERACROSS è la cattura più importante! Cercalo sugli alberi.</td></tr>
+                <tr><td>Zona Safari</td><td>Heracross, Pinsir, Girafarig, Rhyhorn</td><td>Spinarak</td><td>Heracross disponibile anche qui. Girafarig immune a Fantasma.</td></tr>
+                <tr><td class="highlight">Torre dei Cieli</td><td>Rayquaza (Lv.70)</td><td>-</td><td>OP! Catturalo prima della Lega dopo Tate&Liza.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pokémon da Evitare -->
+    <div class="warning-box">
+        <h3>⚠ Pokémon trappola da evitare in Smeraldo</h3>
+        <div class="badge-list">
+            <span class="badge">Plusle/Minun</span>
+            <span class="badge">Volbeat/Illumise</span>
+            <span class="badge">Spinda</span>
+            <span class="badge">Luvdisc</span>
+            <span class="badge">Delcatty</span>
+            <span class="badge">Seviper</span>
+        </div>
+        <p><small>In Smeraldo hai accesso a Heracross, Sableye, Ludicolo e Rayquaza - non perdere tempo con Pokémon mediocri!</small></p>
+    </div>
+
+    <!-- POKÉMON CHIAVE DI SMERALDO -->
+    <h2 class="section-title">pokémon chiave di smeraldo</h2>
+    <div class="key-pokemon-grid">
+        <div class="key-card best-card"><div class="key-icon">🐉✨</div><h3>Rayquaza</h3><p>Dragoartigli · Volo · Fulmine · Geloraggio</p><small>Torre dei Cieli (Lv.70). OP! Catturalo prima della Lega!</small></div>
+        <div class="key-card best-card"><div class="key-icon">🪲💪</div><h3>Heracross</h3><p>Megacorno · Sottomissione · Sgranocchio · Forza</p><small>Percorso 119. FONDAMENTALE per Norman e Sidney!</small></div>
+        <div class="key-card best-card"><div class="key-icon">👻⚫</div><h3>Sableye</h3><p>Finta · Sgranocchio · Ombra Notturna · Fossa</p><small>Grotta Granito. NESSUNA DEBOLEZZA!</small></div>
+        <div class="key-card"><div class="key-icon">💧🪨</div><h3>Swampert</h3><p>Surf · Fossa · Cascata · Protezione</p><small>Starter Mudkip. Tank principale.</small></div>
+        <div class="key-card"><div class="key-icon">⚡</div><h3>Manectric</h3><p>Tuono · Tuononda · Morso · Carica</p><small>Electrike. Elettro principale per Wallace.</small></div>
+        <div class="key-card"><div class="key-icon">💧🌿</div><h3>Ludicolo</h3><p>Surf · Foglielama · Geloraggio · Sonnifero</p><small>Lotad. Eccellente contro Wallace e Drake.</small></div>
+        <div class="key-card"><div class="key-icon">🪨</div><h3>Skarmory</h3><p>Taglio · Volo · Ferroaliato · Ripresa</p><small>Percorso 113. Tank fisico eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">⚔️</div><h3>Absol</h3><p>Sgranocchio · Taglio · Falcecobalto · Forza</p><small>Percorso 119/120. Attacco altissimo, Buio per Phoebe.</small></div>
+    </div>
+
+    <!-- RAYQUAZA SECTION - SPECIALE -->
+    <h2 class="section-title">🐉 rayquaza - l'asso di smeraldo</h2>
+    <div class="rayquaza-special-section">
+        <div class="rayquaza-special-card">
+            <div class="rayquaza-special-icon">🐉 </div>
+            <div class="rayquaza-special-info">
+                <h3>Rayquaza - Livello 70 (Drago/Volante)</h3>
+                <p><strong>Disponibile PRIMA della Lega!</strong> Dopo aver sconfitto Tate&Liza, vai alla Torre dei Cieli.</p>
+                <p><strong>Abilità:</strong> Spirattacco (annulla gli effetti del clima)</p>
+                <p><strong>Moveset consigliato per la Lega:</strong> Dragoartigli · Volo · Fulmine (MT) · Geloraggio (MT)</p>
+                <p><strong>Valore:</strong> A Lv.70, Rayquaza da solo può spazzare gran parte della Lega. È il tuo miglior alleato per la sfida finale!</p>
+                <div class="rayquaza-tips">
+                    <h4>🎯 Come catturarlo in Nuzlocke:</h4>
+                    <ul>
+                        <li>Porta almeno 30 Ultra Ball o Timer Ball</li>
+                        <li>Usa un Pokémon con Sonnifero (Breloom, Ludicolo) o Tuononda (Manectric) per paralizzarlo</li>
+                        <li>Rayquaza è Lv.70 - i suoi attacchi sono forti. Indeboliscilo con cautela</li>
+                        <li>Se lo catturi, la Lega diventa molto più gestibile!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SQUADRE CONSIGLIATE PER OGNI PALESTRA -->
+    <h2 class="section-title">squadre consigliate per ogni palestra (smeraldo)</h2>
+    
+    <!-- Roxanne -->
+    <div class="gym-full-card">
+        <div class="gym-header roxanne-bg"><div class="gym-icon">🪨</div><div class="gym-title"><h3>Roxanne - Petalipoli</h3><p>Geodude (12) · Nosepass (15)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon"><div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Mudkip</strong><p>Pistolacqua</p></div><div class="pokemon-card"><span class="pokemon-icon">💧🌿</span><strong>Lotad</strong><p>Assorbimento</p></div></div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Mudkip con Pistolacqua domina. Lotad è un'ottima alternativa.</p></div></div>
+    </div>
+
+    <!-- Brawly -->
+    <div class="gym-full-card">
+        <div class="gym-header brawly-bg"><div class="gym-icon">💪</div><div class="gym-title"><h3>Brawly - Ondalupoli</h3><p>Machop (16) · Makuhita (18)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon"><div class="pokemon-card"><span class="pokemon-icon">🐦</span><strong>Wingull</strong><p>Azione</p></div><div class="pokemon-card"><span class="pokemon-icon">👻⚫</span><strong>Sableye</strong><p>Finta</p><small>IMMUNE a Lotta!</small></div></div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Sableye è immune a Lotta. Wingull con Azione funziona benissimo.</p></div></div>
+    </div>
+
+    <!-- Wattson - POTENZIATO -->
+    <div class="gym-full-card">
+        <div class="gym-header wattson-bg"><div class="gym-icon">⚡</div><div class="gym-title"><h3>Wattson - Fiordoropoli ⚡ POTENZIATO</h3><p>Voltorb (20) · Electrike (20) · Magneton (22) · Manectric (24)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon"><div class="pokemon-card"><span class="pokemon-icon">💧🪨</span><strong>Marshtomp</strong><p>Fossa</p><small>Immune a Elettro!</small></div><div class="pokemon-card"><span class="pokemon-icon">🪨</span><strong>Geodude</strong><p>Fossa</p><small>Immune a Elettro</small></div></div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Marshtomp è immune all'Elettro. Fossa spazza via tutto. Manectric ha Morso ma non è un problema.</p></div></div>
+    </div>
+
+    <!-- Flannery -->
+    <div class="gym-full-card">
+        <div class="gym-header flannery-bg"><div class="gym-icon">🔥</div><div class="gym-title"><h3>Flannery - Ardorepoli</h3><p>Numel (26) · Slugma (26) · Camerupt (28) · Torkoal (29)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon"><div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Marshtomp</strong><p>Fanghiglia</p></div><div class="pokemon-card"><span class="pokemon-icon">💧🌿</span><strong>Ludicolo</strong><p>Acqua</p></div></div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Marshtomp con Fanghiglia elimina tutti. Torkoal è lento ma resistente.</p></div></div>
+    </div>
+
+    <!-- Norman -->
+    <div class="gym-full-card">
+        <div class="gym-header norman-bg"><div class="gym-icon">😤</div><div class="gym-title"><h3>Norman - Ciclamopoli ⚠ PERICOLOSA</h3><p>Spinda (27) · Vigoroth (27) · Linoone (29) · Slaking (31)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team (Smeraldo)</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">🪲💪</span><strong>Heracross</strong><p>Sottomissione</p><small>FONDAMENTALE! Distrugge Slaking</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">👻⚫</span><strong>Sableye</strong><p>Finta</p><small>IMMUNE a Lotta e Normale!</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🍄</span><strong>Breloom</strong><p>Sottosopra</p><small>Alternativa</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Heracross con Sottomissione elimina Slaking in un colpo. Sableye è immune a Lotta e Normale - Slaking non può colpirlo. Slaking ha Pigrone: attacca quando è attivo, poi nel turno di riposo usa Pozioni.</p></div></div>
+    </div>
+
+    <!-- Winona -->
+    <div class="gym-full-card">
+        <div class="gym-header winona-bg"><div class="gym-icon">🦅</div><div class="gym-title"><h3>Winona - Altepoli</h3><p>Swellow (30) · Pelipper (30) · Skarmory (31) · Altaria (33)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon"><div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Manectric</strong><p>Tuono</p><small>Distrugge tutti i Volanti!</small></div></div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Manectric con Tuono spazza Swellow, Pelipper e Altaria. Skarmory ha Ferroaliato e Resistenza.</p></div></div>
+    </div>
+
+    <!-- Tate & Liza - LA PIÙ DIFFICILE -->
+    <div class="gym-full-card">
+        <div class="gym-header tateliza-bg"><div class="gym-icon">🔮✨</div><div class="gym-title"><h3>Tate & Liza - Muropoli ⚠⚠ LA PIÙ DIFFICILE ⚠⚠</h3><p>Xatu (41) · Claydol (41) · Lunatone (42) · Solrock (42) - DOPPIA BATTAGLIA CON 4 POKÉMON!</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team (Smeraldo)</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">👻⚫</span><strong>Sableye</strong><p>Sgranocchio</p><small>Immune a Psichico! Assorbe attacchi</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🪲💪</span><strong>Heracross</strong><p>Megacorno</p><small>Coleottero superefficace su Psico</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Swampert</strong><p>Surf</p><small>Colpisce entrambi, superefficace su Roccia</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">⚔️</span><strong>Absol</strong><p>Sgranocchio</p><small>Buio superefficace</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia - LA BATTAGLIA PIÙ DIFFICILE DI HOENN</h4>
+            <p><strong>Non puoi più usare solo Sableye!</strong> Ci sono 4 Pokémon. Sableye è ancora utile perché immune a Psichico.</p>
+            <p><strong>Strategia:</strong> Concentra gli attacchi su Xatu e Claydol prima (hanno meno difese). Usa Surf di Swampert per danni ad area. Heracross con Megacorno colpisce duro.</p>
+            <p>Attenzione: Claydol ha Fossa (Terra) - Sableye non subisce danni extra. Lunatone e Solrock hanno Coscienza e Riparo.</p>
+            <p>Porta molte Ricarica Max!</p></div></div>
+    </div>
+
+    <!-- Juan - NUOVO CAPO -->
+    <div class="gym-full-card">
+        <div class="gym-header juan-bg"><div class="gym-icon">💧</div><div class="gym-title"><h3>Juan - Mistralopoli (NUOVO CAPO)</h3><p>Luvdisc (40) · Whiscash (41) · Sealeo (41) · Seaking (43) · Milotic (46)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Manectric</strong><p>Tuono</p><small>Distrugge Luvdisc, Sealeo, Seaking</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">💧🌿</span><strong>Ludicolo</strong><p>Foglielama</p><small>Per Whiscash (immune a Elettro)</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Manectric con Tuono elimina tutto tranne Whiscash. Milotic è il più pericoloso con Acquaraggio e Rigenerazione. Ludicolo con Foglielama gestisce Whiscash.</p></div></div>
+    </div>
+
+    <!-- LEGA SMERALDO -->
+    <h2 class="section-title">squadra consigliata per la lega Hoenn (smeraldo)</h2>
+    <div class="league-team-showcase">
+        <div class="league-team-grid">
+            <div class="league-pokemon-card best-card"><div class="league-icon">🐉✨</div><h4>Rayquaza</h4><p>Dragoartigli · Volo · Fulmine · Geloraggio</p><small>Torre dei Cieli - OP!</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">💧🪨</div><h4>Swampert</h4><p>Surf · Fossa · Cascata · Protezione</p><small>Starter Mudkip</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🪲💪</div><h4>Heracross</h4><p>Megacorno · Sottomissione · Sgranocchio · Forza</p><small>Per Sidney e Glacia</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">👻⚫</div><h4>Sableye</h4><p>Finta · Sgranocchio · Ombra Notturna · Fossa</p><small>Per Phoebe e Tate&Liza</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⚡</div><h4>Manectric</h4><p>Tuono · Tuononda · Morso · Carica</p><small>Per Wallace e Glacia</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">💧🌿</div><h4>Ludicolo</h4><p>Surf · Foglielama · Geloraggio · Sonnifero</p><small>Per Drake e Wallace</small></div>
+        </div>
+    </div>
+
+    <!-- STRATEGIA LEGA SMERALDO -->
+    <h2 class="section-title">strategia dettagliata per la lega Hoenn (smeraldo)</h2>
+    
+    <div class="league-strategy-detailed">
+        <div class="league-member-card"><h3>🌙 Sidney (Buio)</h3><div class="member-team"><p>Mightyena (46) · Cacturne (46) · Shiftry (48) · Sharpedo (48) · Absol (49)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Heracross con Sottomissione distrugge tutti tranne Sharpedo e Absol. Rayquaza con Dragoartigli spazza tutto.</p></div></div>
+        
+        <div class="league-member-card"><h3>👻 Phoebe (Fantasma)</h3><div class="member-team"><p>Dusclops (48) · Banette (49) · Banette (49) · Dusclops (50) · Sableye (51)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Sableye con Sgranocchio (Buio) è eccellente. Absol con Sgranocchio funziona benissimo. Rayquaza con Dragoartigli o Fulmine.</p></div></div>
+        
+        <div class="league-member-card"><h3>❄️ Glacia (Ghiaccio)</h3><div class="member-team"><p>Sealeo (50) · Sealeo (50) · Glalie (52) · Glalie (52) · Walrein (53)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Manectric con Tuono distrugge Sealeo e Walrein. Heracross con Sottomissione è superefficace su Ghiaccio. Rayquaza con Fulmine.</p></div></div>
+        
+        <div class="league-member-card"><h3>🐉 Drake (Drago) - POTENZIATO</h3><div class="member-team"><p>Shelgon (52) · Altaria (53) · Flygon (53) · Flygon (53) · Salamence (55)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p><strong>Rayquaza con Geloraggio è la soluzione migliore!</strong> Rayquaza è più veloce di tutti i Draghi di Drake.<br>
+        Ludicolo con Geloraggio è un'ottima alternativa.<br>
+        Manectric con Tuono è superefficace su Altaria e Salamence (Volanti).<br>
+        Attenzione a Salamence: ha Dragoartigli e Morso.</p></div></div>
+        
+        <div class="league-member-card"><h3>💧 Wallace (Acqua) - NUOVO CAMPIONE</h3><div class="member-team"><p>Wailord (57) · Whiscash (56) · Ludicolo (56) · Gyarados (56) · Tentacruel (55) · Milotic (58)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4>
+            <p><strong>Manectric con Tuono</strong> distrugge Wailord, Gyarados, Tentacruel e Milotic.<br>
+            <strong>Whiscash (Acqua/Terra):</strong> immune a Elettro. Usa Ludicolo con Foglielama.<br>
+            <strong>Ludicolo (avversario):</strong> vulnerabile a Volo (Rayquaza con Volo) e Coleottero.<br>
+            <strong>Milotic:</strong> è il più pericoloso con Acquaraggio e Rigenerazione. Manectric con Tuono è la soluzione migliore. Se Manectric cade, Rayquaza con Fulmine può gestirlo.<br>
+            Porta almeno 20 Ricarica Max - Wallace è un avversario logorante!</p></div></div>
+    </div>
+
+    <!-- Post-Game -->
+    <h2 class="section-title">post-game: groudon, kyogre e battle frontier</h2>
+    <div class="postgame-section">
+        <div class="postgame-card">
+            <div class="postgame-icon">🌋💧</div>
+            <div class="postgame-info">
+                <h3>Groudon e Kyogre</h3>
+                <p>Dopo la Lega, puoi catturare Groudon (Terra) e Kyogre (Acqua). Entrambi al livello 70.</p>
+                <p><strong>Latios/Latias:</strong> Dopo la Lega, puoi catturare il Pokémon leggendario che hai incontrato all'inizio.</p>
+                <p><strong>Battle Frontier:</strong> Zona di sfida post-game - non rilevante per Nuzlocke.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consigli Extra -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega Hoenn: <strong>50-55</strong> ⭐</p>
+        <p>🐉 <strong>RAYQUAZA È LA CHIAVE!</strong> Catturalo dopo Tate&Liza (Lv.70) prima della Lega. Da solo può spazzare gran parte della Lega.</p>
+        <p>🪲💪 <strong>Heracross è fondamentale</strong> per Norman e Sidney. Cercalo al Percorso 119 (raro 5%).</p>
+        <p>👻⚫ <strong>Sableye non ha debolezze in 3ª gen!</strong> Rende Tate&Liza più gestibile. Catturalo alla Grotta Granito.</p>
+        <p>💧🌿 <strong>Ludicolo (Lotad)</strong> è eccellente contro Wallace e Drake con Geloraggio.</p>
+        <p>⚡ <strong>Manectric con Tuono</strong> è fondamentale per Wallace - Milotic cade con Tuono.</p>
+        <p>🎒 <strong>Zigzagoon con Muetassalto</strong> raccoglie oggetti - tienilo nel team all'inizio!</p>
+        <p>📦 <strong>MT preziose:</strong> Tuono (dopo Wattson), Psichico (dopo Winona), Geloraggio (Passo Abbandonato).</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per zona. Se sviene, è morto ✦</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Smeraldo · la sfida definitiva di Hoenn ✦</span>
+    </div>
+</div>
+
+<script src="smeraldo-script.js"></script>
+</body>
+</html>
