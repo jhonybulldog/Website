@@ -1,0 +1,106 @@
+/**
+ * Nuzlocke Guide - Pokémon X
+ * Interattività: modali starter e console log
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- Modale per gli Starter ---
+    const starterDetails = {
+        froakie: {
+            title: "🐸 Froakie",
+            content: "✓ Il più versatile. Greninja (Acqua/Buio) è velocissimo con Acquartigli e Morso Buio<br>✓ Il tipo Buio è prezioso contro i Psico (palestra di Olympia e Lega)<br>✓ In X hai anche altre opzioni Acqua (Gyarados, Lapras, Starmie), ma Greninja resta eccellente<br>⚠ Fragile fisicamente<br><br>⭐ SCELTA MIGLIORE per la flessibilità ⭐"
+        },
+        fennekin: {
+            title: "🦊 Fennekin",
+            content: "✓ Delphox (Fuoco/Psico) ha buon Attacco Speciale<br>✓ Il tipo Psico è utile contro i Lotta e i Veleno<br>✓ In X hai Houndoom come Fuoco/Buio, ma Delphox è un'alternativa valida<br>⚠ Lento<br>⚠ Debole contro Acqua, Terra, Roccia, Buio, Fantasma<br><br>✓ Scelta solida"
+        },
+        chespin: {
+            title: "🦔 Chespin",
+            content: "⚠ SCELTA SCONSIGLIATA PER NUZLOCKE ⚠<br><br>✓ Chesnaught (Erba/Lotta) è un tank fisico con buone difese<br>✗ Lento, ha molte debolezze (Fuoco, Ghiaccio, Volante, Psico, Folletto)<br>✗ L'Erba non è un tipo prioritario in X<br>✗ In X hai molte opzioni Erba migliori (Roselia, Flabébé, Skiddo)<br><br>Solo per giocatori esperti che cercano una sfida extra"
+        }
+    };
+    
+    // Crea overlay modale
+    const modalOverlay = document.createElement('div');
+    modalOverlay.className = 'modal-overlay';
+    
+    const modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    
+    modalOverlay.appendChild(modalContent);
+    document.body.appendChild(modalOverlay);
+    
+    function openModal(starterKey) {
+        const data = starterDetails[starterKey];
+        if (!data) return;
+        
+        modalContent.innerHTML = `
+            <h2>${data.title}</h2>
+            <p>${data.content}</p>
+            <button class="modal-close">Chiudi</button>
+        `;
+        
+        modalOverlay.classList.add('active');
+        
+        const closeBtn = modalContent.querySelector('.modal-close');
+        closeBtn.addEventListener('click', closeModal);
+    }
+    
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+    }
+    
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            closeModal();
+        }
+    });
+    
+    // Aggiungi event listener alle card starter
+    const starterCards = document.querySelectorAll('.starter-card');
+    starterCards.forEach(card => {
+        card.addEventListener('click', () => {
+            if (card.classList.contains('starter-froakie')) {
+                openModal('froakie');
+            } else if (card.classList.contains('starter-fennekin')) {
+                openModal('fennekin');
+            } else if (card.classList.contains('starter-chespin')) {
+                openModal('chespin');
+            }
+        });
+    });
+    
+    // Effetto hover per le card Pokémon
+    const pokemonCards = document.querySelectorAll('.pokemon-card, .league-pokemon-card, .exclusive-card, .key-card, .priority-card, .gifted-card, .mega-card');
+    pokemonCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transition = 'all 0.2s ease';
+        });
+    });
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#' && href !== '') {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+    
+    // Console log con avvisi importanti
+    console.log('✨ Nuzlocke Guide Pokémon X - Caricata con successo!');
+    console.log('🦌✨ XERNEAS è OP! Catturalo durante la storia. Geocontrollo + Forza Lunare = devastante.');
+    console.log('🐦🔥 FLETCHLING al Percorso 2 evolve in Talonflame. Abilità Coraggio = priorità mosse Volanti.');
+    console.log('⚔️👻 HONEDGE al Percorso 6 è Aegislash. Cambio forma strategico con Spadardente.');
+    console.log('🧠💜 RALTS al Percorso 4 è Gardevoir. Psico/Folletto eccellente per la Lega (4x sui Draghi).');
+    console.log('🐕🔥⚫ HOUNDOUR al Percorso 10 è esclusivo X. Houndoom Buio/Fuoco perfetto per i Psico.');
+    console.log('💎 MEGA LUCARIO regalato dopo la terza palestra. Aurasfera + Pugnoscarica devastante.');
+    console.log('🎮 MT RIUTILIZZABILI! In sesta generazione puoi usare le MT infinite volte.');
+    console.log('⚠ Attenzione all\'EXP Share: dà esperienza a tutto il team. Usalo con moderazione.');
+});
