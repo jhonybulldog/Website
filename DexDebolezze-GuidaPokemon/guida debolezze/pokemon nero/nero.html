@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Nero</title>
+    <link rel="stylesheet" href="nero-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Nero</h1>
+        <div class="accent"></div>
+        <p>guida strategica per la regione di Unima (5ª generazione)</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>🌟 Solo Pokémon di Unima</h3>
+            <p>Prima della Lega, incontrerai SOLO Pokémon della 5ª generazione. Nessun Pokémon delle generazioni precedenti fino al post-game.</p>
+        </div>
+        <div class="info-card highlight-card">
+            <h3>✨ Esclusivi Nero</h3>
+            <p><strong>Cottonee → Whimsicott</strong> (Erba/Supporto) · <strong>Gothita → Gothitelle</strong> (Psico) · <strong>Shelmet → Accelgor</strong> (Coleottero) · <strong>Zekrom</strong> (Elettro/Drago)</p>
+        </div>
+        <div class="info-card">
+            <h3>🎮 Stagioni</h3>
+            <p>Le stagioni influenzano gli incontri selvatici. Alcuni Pokémon compaiono solo in determinate stagioni. Pianifica di conseguenza!</p>
+        </div>
+    </div>
+
+    <!-- Version Comparison -->
+    <h2 class="section-title">confronto versioni: nero vs bianco</h2>
+    <div class="version-comparison">
+        <div class="version-card black">
+            <div class="version-icon">⚫🐉</div>
+            <h3>Nero</h3>
+            <ul>
+                <li>⚡ Zekrom (Elettro/Drago) - Leggendario</li>
+                <li>🌿 Cottonee → Whimsicott (Supporto eccellente)</li>
+                <li>🧠 Gothita → Gothitelle (Psico solido)</li>
+                <li>🐚 Shelmet → Accelgor (Coleottero veloce)</li>
+                <li>🦅 Rufflet → Braviary (Volante, post-Lega)</li>
+            </ul>
+            <p><strong>Vantaggio:</strong> Whimsicott supporto eccellente, Gothitelle tank Psico</p>
+        </div>
+        <div class="version-card white">
+            <div class="version-icon">🤍🐉</div>
+            <h3>Bianco</h3>
+            <ul>
+                <li>🔥 Reshiram (Fuoco/Drago) - Leggendario</li>
+                <li>🌿 Petilil → Lilligant (Erba offensivo)</li>
+                <li>🧠 Solosis → Reuniclus (Tank Psico)</li>
+                <li>🪲 Karrablast → Escavalier (Tank Acciaio)</li>
+                <li>🦅 Vullaby → Mandibuzz (Buio/Volante)</li>
+            </ul>
+            <p><strong>Vantaggio:</strong> Reuniclus tank, Escavalier Acciaio, Lilligant offensivo</p>
+        </div>
+    </div>
+
+    <!-- Starter Section -->
+    <h2 class="section-title">scelta dello starter (nero)</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-tepig" data-modal="tepig">
+            <div class="starter-icon">🐷🔥</div>
+            <h3>Tepig</h3>
+            <p class="verdict best">★ Migliore per flessibilità ★</p>
+            <p>Emboar (Fuoco/Lotta) copre molti tipi. Tank fisico con buon Attacco. In Nero, dove hai Whimsicott come supporto, Tepig è eccellente.</p>
+        </div>
+        <div class="starter-card starter-oshawott" data-modal="oshawott">
+            <div class="starter-icon">🦦💧</div>
+            <h3>Oshawott</h3>
+            <p class="verdict good">✓ Scelta solida</p>
+            <p>Samurott (Acqua) è bilanciato con buone statistiche fisiche e speciali. Impara Morso (Buio) presto. Scelta sicura.</p>
+        </div>
+        <div class="starter-card starter-snivy" data-modal="snivy">
+            <div class="starter-icon">🐍🌿</div>
+            <h3>Snivy</h3>
+            <p class="verdict risky">⚠ Sconsigliato</p>
+            <p>Serperior è veloce ma offensivamente debole. In Nero hai Whimsicott come Erba migliore. Scelta rischiosa.</p>
+        </div>
+    </div>
+
+    <!-- Esclusivi di Nero -->
+    <h2 class="section-title">✨ esclusivi di nero (i tuoi migliori alleati)</h2>
+    <div class="exclusive-grid">
+        <div class="exclusive-card best"><div class="exclusive-icon">🌿💨</div><h3>Whimsicott</h3><p>Erba. Supporto eccellente con Sonnifero e Sostituto. Cottonee (Foresta di Smeraldo).</p></div>
+        <div class="exclusive-card best"><div class="exclusive-icon">🧠⚫</div><h3>Gothitelle</h3><p>Psico. Solido con buone difese. Gothita (Percorso 11).</p></div>
+        <div class="exclusive-card good"><div class="exclusive-icon">⚡🐉</div><h3>Zekrom</h3><p>Elettro/Drago. Leggendario OP. Torre Drago (storia). Macchiavampo + Dragartigli.</p></div>
+        <div class="exclusive-card mid"><div class="exclusive-icon">🐚⚡</div><h3>Accelgor</h3><p>Coleottero. Velocissimo ma fragile. Shelmet (Percorso 8) + scambio con Karrablast.</p></div>
+        <div class="exclusive-card good"><div class="exclusive-icon">🦅⚡</div><h3>Braviary</h3><p>Normale/Volante. Alto Attacco. Rufflet (Monte Corona, post-Lega).</p></div>
+    </div>
+
+    <!-- Catture per Zona -->
+    <h2 class="section-title">migliori catture per zona (nero)</h2>
+    <div class="table-container">
+        <table class="capture-table">
+            <thead><tr><th>Zona</th><th>⭐ Migliori catture</th><th>⚠ Da evitare</th><th>Strategia Nero</th> </thead>
+            <tbody>
+                <tr><td class="highlight">Percorso 1-2</td><td>Lillipup (Stoutland)</td><td>Patrat</td><td>Stoutland con Spavalderia è un Normale eccellente.</td> </tr>
+                 <tr><td class="highlight">Foresta di Smeraldo</td><td>Cottonee (Whimsicott) - ESCLUSIVO!</td><td>Purrloin</td><td>Cottonee è il tuo supporto principale. Sonnifero + Sostituto.</td> </tr>
+                 <tr><td class="highlight">Grotta Spettro</td><td>Drilbur (Excadrill), Roggenrola</td><td>Woobat</td><td>Excadrill è TOP TIER! Terra/Acciaio, altissimo Attacco.</td> </tr>
+                 <tr><td class="highlight">Percorso 4</td><td>Sandile (Krookodile), Scraggy (Scrafty), Darumaka (Darmanitan)</td><td>Trubbish</td><td>Krookodile Terra/Buio, Scrafty Lotta/Buio tank, Darmanitan Fuoco con Impeto.</td> </tr>
+                 <tr><td class="highlight">Percorso 5-6</td><td>Minccino (Cinccino), Foongus (Amoonguss), Deerling (Sawsbuck)</td><td>-</td><td>Cinccino con Tecnico, Amoonguss tank con Sonnifero.</td> </tr>
+                 <tr><td class="highlight">Percorso 7-8</td><td>Zangoose, Shelmet (esclusivo)</td><td>Seviper</td><td>Zangoose Normale potente. Shelmet richiede scambio.</td> </tr>
+                 <tr><td class="highlight">Percorso 9</td><td>Pawniard (Bisharp)</td><td>-</td><td>Bisharp Acciaio/Buio, altissimo Attacco.</td> </tr>
+                 <tr><td class="highlight">Percorso 10</td><td>Bouffalant</td><td>-</td><td>Bouffalant Normale con Forzabruta, tank fisico eccellente.</td> </tr>
+                 <tr><td class="highlight">Monte Corona</td><td>Deino (Hydreigon), Rufflet (Braviary), Mienfoo (Mienshao), Durant</td><td>Heatmor</td><td>Hydreigon pseudo-leggendario, Braviary attaccante, Mienshao veloce Lotta.</td> </tr>
+                 <tr><td class="highlight">Pesca (Percorso 4)</td><td>Frillish (Jellicent)</td><td>Basculin</td><td>Jellicent Acqua/Fantasma, tank speciale eccellente.</td> </tr>
+                 <tr><td class="highlight">Leggendari</td><td>Zekrom (Lv.50)</td><td>-</td><td>Elettro/Drago. Lo ottieni prima della battaglia finale contro N e Ghecis.</td> </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pokémon da Evitare -->
+    <div class="warning-box">
+        <h3>⚠ Pokémon trappola da evitare in Nero</h3>
+        <div class="badge-list">
+            <span class="badge">Patrat/Watchog</span>
+            <span class="badge">Purrloin/Liepard</span>
+            <span class="badge">Pidove/Unfezant</span>
+            <span class="badge">Woobat/Swoobat</span>
+            <span class="badge">Trubbish/Garbodor</span>
+            <span class="badge">Heatmor</span>
+            <span class="badge">Basculin</span>
+        </div>
+        <p><small>In Nero hai accesso a Pokémon eccellenti (Excadrill, Krookodile, Scrafty, Whimsicott) - non perdere tempo con questi!</small></p>
+    </div>
+
+    <!-- POKÉMON CHIAVE DI NERO -->
+    <h2 class="section-title">pokémon chiave di nero</h2>
+    <div class="key-pokemon-grid">
+        <div class="key-card best-card"><div class="key-icon">🐷🔥</div><h3>Emboar</h3><p>Nitrocarburo · Pugnoscarica · Sgranocchio · Falcata</p><small>Starter Tepig. Fuoco/Lotta, copertura eccellente.</small></div>
+        <div class="key-card best-card"><div class="key-icon">⛏️⚙️</div><h3>Excadrill</h3><p>Fossa · Forbice X · Falcata · Ripresa</p><small>Drilbur (Grotta Spettro). TOP TIER! Terra/Acciaio.</small></div>
+        <div class="key-card best-card"><div class="key-icon">🐊⚫</div><h3>Krookodile</h3><p>Fossa · Sgranocchio · Forzabruta · Falcata</p><small>Sandile (Percorso 4). Terra/Buio, perfetto per Lega.</small></div>
+        <div class="key-card best-card"><div class="key-icon">💪⚫</div><h3>Scrafty</h3><p>Pugnoscarica · Sgranocchio · Ripresa · Forzabruta</p><small>Scraggy (Percorso 4). Tank Lotta/Buio con Ripresa.</small></div>
+        <div class="key-card"><div class="key-icon">🌿💨</div><h3>Whimsicott</h3><p>Sonnifero · Sostituto · Foglielama · Fortunello</p><small>Cottonee (Foresta di Smeraldo). SUPPORTO ECCELLENTE!</small></div>
+        <div class="key-card"><div class="key-icon">💧👻</div><h3>Jellicent</h3><p>Surf · Ombra Notturna · Riposa · Geloraggio</p><small>Frillish (Percorso 4, pesca). Tank Acqua/Fantasma.</small></div>
+        <div class="key-card"><div class="key-icon">🐉🔥</div><h3>Darmanitan</h3><p>Nitrocarburo · Sventaglia · Falcata · Sgranocchio</p><small>Darumaka (Percorso 4). Con Impeto, Attacco astronomico.</small></div>
+        <div class="key-card"><div class="key-icon">⚔️⚫</div><h3>Bisharp</h3><p>Falcata · Sgranocchio · Forbice X · Sventaglia</p><small>Pawniard (Percorso 9). Acciaio/Buio, Attacco altissimo.</small></div>
+        <div class="key-card"><div class="key-icon">🐕💪</div><h3>Stoutland</h3><p>Spavalderia · Sgranocchio · Ripresa · Forzabruta</p><small>Lillipup (Percorso 1). Normale affidabile con Spavalderia.</small></div>
+        <div class="key-card"><div class="key-icon">⚡🐉</div><h3>Zekrom</h3><p>Macchiavampo · Dragartigli · Sgranocchio · Falcata</p><small>Torre Drago (storia). Leggendario OP per N e Ghecis.</small></div>
+        <div class="key-card"><div class="key-icon">❄️</div><h3>Vanilluxe</h3><p>Geloraggio · Alitaghiaccio · Segnalibrio · Sgranocchio</p><small>Vanillite (Zona di Raffreddamento). Ghiaccio per Draghi.</small></div>
+        <div class="key-card"><div class="key-icon">🧠⚫</div><h3>Gothitelle</h3><p>Psichico · Sgranocchio · Tuono · Ripresa</p><small>Gothita (Percorso 11). Psico solido, esclusivo Nero.</small></div>
+    </div>
+
+    <!-- WHIMSICOTT - Sezione Speciale -->
+    <h2 class="section-title">🌿 whimsicott - il supporto perfetto (esclusivo nero)</h2>
+    <div class="whimsicott-section">
+        <div class="whimsicott-card">
+            <div class="whimsicott-icon">🌿💨✨</div>
+            <div class="whimsicott-info">
+                <h3>Whimsicott (Cottonee → Whimsicott)</h3>
+                <p><strong>Esclusivo di Nero!</strong> Cattura Cottonee nella Foresta di Smeraldo.</p>
+                <p><strong>Ruolo:</strong> Supporto eccellente per Nuzlocke. Moveset ideale: Sonnifero · Sostituto · Foglielama · Fortunello</p>
+                <p><strong>Perché è fondamentale:</strong> Sonnifero per addormentare i nemici (catture sicure), Sostituto per proteggersi, Fortunello per recuperare PS. Un supporto insostituibile!</p>
+                <div class="whimsicott-tips">
+                    <h4>🎯 Strategia d'uso:</h4>
+                    <ul>
+                        <li>Usa Sonnifero per addormentare i Pokémon difficili da catturare</li>
+                        <li>Sostituto ti protegge da mosse potenti e da Selfdestruct</li>
+                        <li>Fortunello recupera PS senza bisogno di oggetti</li>
+                        <li>Foglielama per danni quando necessario</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXCADRILL - Sezione Speciale -->
+    <h2 class="section-title">⛏️ excadrill - il re di unima</h2>
+    <div class="excadrill-section">
+        <div class="excadrill-card">
+            <div class="excadrill-icon">⛏️⚙️🐭</div>
+            <div class="excadrill-info">
+                <h3>Excadrill (Drilbur → Excadrill)</h3>
+                <p><strong>Disponibile nella Grotta Spettro (Percorso 3)!</strong> Drilbur è comune e vale ogni sforzo.</p>
+                <p><strong>Tipo:</strong> Terra/Acciaio · <strong>Ruolo:</strong> Sweeper fisico</p>
+                <p><strong>Moveset consigliato:</strong> Fossa · Forbice X · Falcata · Ripresa</p>
+                <p><strong>Perché è top tier:</strong> Altissimo Attacco, buona velocità, immunità a Elettro, resistenza a molti tipi. Distrugge le palestre di Elesa (Elettro) e Drayden (Drago).</p>
+                <div class="excadrill-tips">
+                    <h4>🎯 Come catturarlo:</h4>
+                    <ul>
+                        <li>Grotta Spettro (Percorso 3) - Drilbur è comune</li>
+                        <li>Evolve in Excadrill al Lv.31</li>
+                        <li>Insegna Fossa (TM) appena possibile</li>
+                        <li>Con Forbice X copri i tipi Erba e Psico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SQUADRE CONSIGLIATE PER OGNI PALESTRA -->
+    <h2 class="section-title">squadre consigliate per ogni palestra (nero)</h2>
+    
+    <!-- Chili/Cress/Cilan - prima palestra -->
+    <div class="gym-full-card"><div class="gym-header first-bg"><div class="gym-icon">🍃🔥💧</div><div class="gym-title"><h3>Prima Palestra - A seconda dello starter</h3><p>Se hai Tepig: affronti Chili (Fuoco) con Lillipup (12), Patrat (12), Pansear (14)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon"><div class="pokemon-card"><span class="pokemon-icon">🐷🔥</span><strong>Tepig</strong><p>Nitrocarburo</p></div><div class="pokemon-card"><span class="pokemon-icon">🐕</span><strong>Lillipup</strong><p>Spavalderia</p></div></div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Tepig con Nitrocarburo domina. Semplice.</p></div></div>
+    </div>
+
+    <!-- Lenora -->
+    <div class="gym-full-card"><div class="gym-header lenora-bg"><div class="gym-icon">📚</div><div class="gym-title"><h3>Lenora - Città Nera</h3><p>Herdier (18) · Watchog (20)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">🐷🔥</span><strong>Pignite</strong><p>Pugnoscarica</p><small>Lotta superefficace</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">💪</span><strong>Sawk</strong><p>Colpo Basso</p><small>Alternativa Lotta</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Pignite con Pugnoscarica elimina Herdier e Watchog. Attenzione a Watchog con Ritmo Insistente e Morso.</p></div></div>
+    </div>
+
+    <!-- Burgh -->
+    <div class="gym-full-card"><div class="gym-header burgh-bg"><div class="gym-icon">🐛</div><div class="gym-title"><h3>Burgh - Città di Mistralopoli</h3><p>Whirlipede (21) · Dwebble (21) · Leavanny (23)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">🐷🔥</span><strong>Pignite</strong><p>Fiammata</p><small>Fuoco spazza</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🔥</span><strong>Darumaka</strong><p>Nitrocarburo</p><small>Alternativa Fuoco</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Pignite con Fiammata spazza tutto. Attenzione a Leavanny con Foglielama.</p></div></div>
+    </div>
+
+    <!-- Elesa -->
+    <div class="gym-full-card"><div class="gym-header elesa-bg"><div class="gym-icon">⚡</div><div class="gym-title"><h3>Elesa - Città di Zefiropoli</h3><p>Emolga (25) · Emolga (25) · Zebstrika (27)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">⛏️⚙️</span><strong>Excadrill/Drilbur</strong><p>Fossa</p><small>IMMUNE a Elettro!</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🐊</span><strong>Sandile</strong><p>Fossa</p><small>Immune a Elettro</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Excadrill è immune a Elettro. Fossa spazza. Attenzione: Emolga ha Volo e Azione per colpire i Terra. Usa mosse Roccia sugli Emolga.</p></div></div>
+    </div>
+
+    <!-- Clay -->
+    <div class="gym-full-card"><div class="gym-header clay-bg"><div class="gym-icon">⛏️</div><div class="gym-title"><h3>Clay - Città di Sottopassopoli</h3><p>Krokorok (29) · Sandslash (29) · Excadrill (31)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">💧</span><strong>Dewott/Samurott</strong><p>Surf</p><small>Acqua superefficace</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🌿</span><strong>Whimsicott</strong><p>Foglielama</p><small>Erba superefficace</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Surf e Foglielama spazzano. Attenzione a Excadrill con Fossa e Falcata.</p></div></div>
+    </div>
+
+    <!-- Skyla -->
+    <div class="gym-full-card"><div class="gym-header skyla-bg"><div class="gym-icon">🕊️</div><div class="gym-title"><h3>Skyla - Città di Libecciopoli</h3><p>Swoobat (33) · Unfezant (33) · Swanna (35)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">⚡</span><strong>Zebstrika</strong><p>Tuonoshock</p><small>Elettro superefficace</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">⛏️⚙️</span><strong>Excadrill</strong><p>Falcata (Roccia)</p><small>Roccia per Volanti</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Zebstrika con Tuonoshock distrugge tutto. Attenzione a Swanna con Acquaraggio.</p></div></div>
+    </div>
+
+    <!-- Brycen -->
+    <div class="gym-full-card"><div class="gym-header brycen-bg"><div class="gym-icon">❄️</div><div class="gym-title"><h3>Brycen - Città di Gelopoli</h3><p>Vanillish (37) · Beartic (37) · Cryogonal (39)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">🐷🔥</span><strong>Emboar</strong><p>Nitrocarburo</p><small>Fuoco spazza</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🔥</span><strong>Darmanitan</strong><p>Nitrocarburo</p><small>Alternativa Fuoco</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Emboar con Nitrocarburo elimina tutto. Cryogonal è veloce ma fragile.</p></div></div>
+    </div>
+
+    <!-- Drayden -->
+    <div class="gym-full-card"><div class="gym-header drayden-bg"><div class="gym-icon">🐉</div><div class="gym-title"><h3>Drayden - Città di Austropoli</h3><p>Druddigon (41) · Flygon (41) · Haxorus (43)</p></div></div>
+        <div class="gym-content"><div class="team-recommendation"><h4>🔥 Miglior team</h4><div class="team-pokemon">
+            <div class="pokemon-card"><span class="pokemon-icon">❄️</span><strong>Vanilluxe</strong><p>Geloraggio</p><small>Ghiaccio 4x sui Draghi!</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">🐉</span><strong>Haxorus</strong><p>Dragartigli</p><small>Drago superefficace</small></div>
+            <div class="pokemon-card"><span class="pokemon-icon">⛏️⚙️</span><strong>Excadrill</strong><p>Falcecobalto</p><small>Acciaio resiste a Drago</small></div>
+        </div></div><div class="strategy-guide"><h4>📖 Strategia</h4><p>Vanilluxe con Geloraggio è fondamentale. Attenzione a Haxorus con Dragartigli e Sventaglia.</p></div></div>
+    </div>
+
+    <!-- LEGA UNIMA -->
+    <h2 class="section-title">squadra consigliata per la lega Unima</h2>
+    <div class="league-team-showcase">
+        <div class="league-team-grid">
+            <div class="league-pokemon-card"><div class="league-icon">🐷🔥</div><h4>Emboar</h4><p>Nitrocarburo · Pugnoscarica · Sgranocchio · Falcata</p><small>Per Marshall e Grimsley</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⛏️⚙️</div><h4>Excadrill</h4><p>Fossa · Forbice X · Falcata · Ripresa</p><small>Per Caitlin e Shauntal</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐊⚫</div><h4>Krookodile</h4><p>Fossa · Sgranocchio · Forzabruta · Falcata</p><small>Per Caitlin e Shauntal (Buio)</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">💪⚫</div><h4>Scrafty</h4><p>Pugnoscarica · Sgranocchio · Ripresa · Forzabruta</p><small>Tank per Grimsley e Caitlin</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🌿💨</div><h4>Whimsicott</h4><p>Sonnifero · Sostituto · Foglielama · Fortunello</p><small>Supporto per catture e logoramento</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">💧👻</div><h4>Jellicent</h4><p>Surf · Ombra Notturna · Riposa · Geloraggio</p><small>Tank speciale per Shauntal e Ghecis</small></div>
+        </div>
+    </div>
+
+    <!-- STRATEGIA LEGA E N/GHECIS -->
+    <h2 class="section-title">strategia per la lega, N e Ghecis</h2>
+    
+    <div class="league-strategy-detailed">
+        <div class="league-member-card"><h3>👻 Shauntal (Fantasma)</h3><div class="member-team"><p>Cofagrigus (48) · Jellicent (48) · Golurk (48) · Chandelure (50)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Krookodile con Sgranocchio (Buio) spazza. Scrafty con Sgranocchio funziona. Attenzione a Jellicent con Acquaraggio.</p></div></div>
+        
+        <div class="league-member-card"><h3>💪 Marshall (Lotta)</h3><div class="member-team"><p>Throh (48) · Sawk (48) · Conkeldurr (48) · Mienshao (50)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Usa Psichico (Gothitelle) o Volo (Unfezant). Emboar con Pugnoscarica fa danni neutri. Attenzione a Mienshao con Demolizione.</p></div></div>
+        
+        <div class="league-member-card"><h3>⚫ Grimsley (Buio)</h3><div class="member-team"><p>Liepard (48) · Scrafty (48) · Krookodile (48) · Bisharp (50)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Emboar con Pugnoscarica (Lotta) spazza tranne Bisharp. Per Bisharp, Emboar con Nitrocarburo o Excadrill con Fossa.</p></div></div>
+        
+        <div class="league-member-card"><h3>🔮 Caitlin (Psico)</h3><div class="member-team"><p>Reuniclus (48) · Gothitelle (48) · Sigilyph (48) · Musharna (50)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4><p>Krookodile con Sgranocchio (Buio) spazza. Scrafty con Sgranocchio funziona. Attenzione a Reuniclus con Ripresa.</p></div></div>
+        
+        <div class="league-member-card"><h3>🐉 N (con Reshiram)</h3><div class="member-team"><p>Reshiram (52) · Vanilluxe (50) · Carracosta (50) · Archeops (50) · Klinklang (50) · Zoroark (50)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4>
+            <p><strong>Reshiram:</strong> Drago/Fuoco. Excadrill con Fossa (Terra) è superefficace.<br>
+            <strong>Vanilluxe:</strong> Emboar con Nitrocarburo.<br>
+            <strong>Carracosta:</strong> Emboar con Pugnoscarica o Whimsicott con Foglielama.<br>
+            <strong>Archeops:</strong> Excadrill con Falcata (Roccia).<br>
+            <strong>Klinklang:</strong> Emboar con Nitrocarburo.<br>
+            <strong>Zoroark:</strong> Emboar con Pugnoscarica.</p></div></div>
+        
+        <div class="league-member-card"><h3>👑 Ghecis (Team Plasma) - SFIDA FINALE</h3><div class="member-team"><p>Cofagrigus (52) · Bisharp (52) · Seismitoad (52) · Hydreigon (54) · Bouffalant (52) · Eelektross (52)</p></div><div class="member-strategy"><h4>🎯 Strategia:</h4>
+            <p><strong>Cofagrigus:</strong> Krookodile con Sgranocchio.<br>
+            <strong>Bisharp:</strong> Emboar con Pugnoscarica o Nitrocarburo.<br>
+            <strong>Seismitoad:</strong> Whimsicott con Foglielama (4x debole).<br>
+            <strong>Hydreigon (DRAGO/BUIO):</strong> Vanilluxe con Geloraggio (4x) o Excadrill con Forbice X.<br>
+            <strong>Bouffalant:</strong> Emboar con Pugnoscarica.<br>
+            <strong>Eelektross:</strong> ATTENZIONE! Ha Levitatura, immune a Terra. Usa Krookodile con Sgranocchio o Scrafty con Pugnoscarica.<br>
+            Porta molte Ricarica Max - dopo N non hai tempo per curare!</p></div></div>
+    </div>
+
+    <!-- Post-Game -->
+    <div class="postgame-section">
+        <div class="postgame-card">
+            <div class="postgame-icon">🗺️</div>
+            <div class="postgame-info">
+                <h3>Post-Game: Parte Est di Unima</h3>
+                <p>Dopo la Lega, accedi alla parte est di Unima con nuovi percorsi e Pokémon di generazioni precedenti.</p>
+                <p><strong>Catture aggiuntive:</strong> Ogni nuova area ti dà una cattura extra per la tua Nuzlocke.</p>
+                <p><strong>Reshiram:</strong> Dopo la storia, puoi catturare Reshiram (Lv.50) nella Torre Drago.</p>
+                <p><strong>Torre Lotta:</strong> Sfida post-game non rilevante per Nuzlocke.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consigli Extra -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega Unima: <strong>48-50</strong> · per N e Ghecis: <strong>52-55</strong> ⭐</p>
+        <p>⛏️⚙️ <strong>EXCADRILL è la chiave!</strong> Cattura Drilbur nella Grotta Spettro (Percorso 3). Top tier assoluto!</p>
+        <p>🌿💨 <strong>WHIMSICOTT (Cottonee) è il supporto perfetto!</strong> Esclusivo Nero nella Foresta di Smeraldo. Sonnifero + Sostituto per catture sicure.</p>
+        <p>🐊⚫ <strong>KROOKODILE (Sandile)</strong> al Percorso 4 è fondamentale per la Lega (Buio per Psico e Fantasma).</p>
+        <p>💪⚫ <strong>SCRAGGY (Scrafty)</strong> al Percorso 4 è un tank Lotta/Buio con Ripresa. Eccellente per Grimsley e Caitlin.</p>
+        <p>❄️ <strong>GHIACCIO per Hydreigon di Ghecis!</strong> Vanilluxe con Geloraggio o Beartic sono fondamentali.</p>
+        <p>⚡🐉 <strong>ZEKROM</strong> lo ottieni prima di N e Ghecis. Usalo! È OP con Macchiavampo e Dragartigli.</p>
+        <p>⚠ <strong>Attenzione a Eelektross di Ghecis!</strong> Ha Levitatura, immune a Terra. Usa Sgranocchio o Pugnoscarica.</p>
+        <p>🎒 <strong>Porta almeno 20 Ricarica Max</strong> per N e Ghecis consecutivi senza possibilità di cura!</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per zona. Se sviene, è morto ✦</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Nero · gli esclusivi di Unima ✦</span>
+    </div>
+</div>
+
+<script src="nero-script.js"></script>
+</body>
+</html>
