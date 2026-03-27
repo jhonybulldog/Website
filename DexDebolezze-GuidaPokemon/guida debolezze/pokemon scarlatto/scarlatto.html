@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nuzlocke Guide | Pokémon Scarlatto</title>
+    <link rel="stylesheet" href="scarlatto-style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="hero">
+        <h1>nuzlocke · Pokémon Scarlatto</h1>
+        <div class="accent"></div>
+        <p>guida strategica per il mondo aperto di Paldea (9ª generazione)</p>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>🌍 Mondo Completamente Aperto</h3>
+            <p>Nessun percorso lineare! I confini tra aree sono meno definiti. La regola "un Pokémon per percorso" diventa "un Pokémon per area nominata sulla mappa".</p>
+        </div>
+        <div class="info-card highlight-card">
+            <h3>✨ Regole Nuzlocke per Paldea</h3>
+            <p><strong>Un Pokémon per area</strong> · <strong>Metodo occhi chiusi</strong> per il primo incontro · <strong>Level Cap</strong> · <strong>Auto-Battaglie per grind sicuro</strong></p>
+        </div>
+        <div class="info-card">
+            <h3>🎮 Meccaniche Uniche</h3>
+            <p>Teracristal (cambia tipo), Auto-Battaglie (`Let's Go!`), tre percorsi di sfida (Palestre, Titan, Team Star), ordine completamente libero.</p>
+        </div>
+    </div>
+
+    <!-- Regole Nuzlocke per Scarlatto -->
+    <h2 class="section-title">📜 regole nuzlocke adattate per paldea</h2>
+    <div class="rules-section">
+        <div class="rules-card">
+            <div class="rules-icon">🗺️</div>
+            <div class="rules-info">
+                <h3>Catture per area</h3>
+                <p>Un Pokémon per <strong>area nominata sulla mappa</strong> (es. South Province Area One, West Province Area Two, ecc.). Ogni volta che il nome cambia, hai diritto a una nuova cattura.</p>
+            </div>
+        </div>
+        <div class="rules-card">
+            <div class="rules-icon">🙈</div>
+            <div class="rules-info">
+                <h3>Primo incontro (metodo occhi chiusi)</h3>
+                <p>Entra in una nuova area, chiudi gli occhi e cammina finché non inneschi un incontro. Quel Pokémon è la tua cattura. Ricrea la casualità dei giochi classici.</p>
+            </div>
+        </div>
+        <div class="rules-card">
+            <div class="rules-icon">🔄</div>
+            <div class="rules-info">
+                <h3>Dupes & Shiny Clause</h3>
+                <p>Se il primo è un duplicato, puoi ritentare. <strong>Shiny = cattura libera</strong> (eccezione celebrativa).</p>
+            </div>
+        </div>
+        <div class="rules-card">
+            <div class="rules-icon">📊</div>
+            <div class="rules-info">
+                <h3>Level Cap (opzionale)</h3>
+                <p>I Pokémon non possono superare il livello del prossimo capo principale (palestra, Titan o Team Star). Aumenta la difficoltà.</p>
+            </div>
+        </div>
+        <div class="rules-card">
+            <div class="rules-icon">⚡</div>
+            <div class="rules-info">
+                <h3>Auto-Battaglie (Let's Go!)</h3>
+                <p>Usale per grindare in sicurezza! Il Pokémon non sviene mai (si ferma a PS bassi). Utile per livellare senza rischi.</p>
+            </div>
+        </div>
+        <div class="rules-card">
+            <div class="rules-icon">🏆</div>
+            <div class="rules-info">
+                <h3>Vittoria finale</h3>
+                <p>Sconfiggere l'<strong>Elite Four e Geeta</strong> = fine della Nuzlocke. Nemona è opzionale post-Lega.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Starter Section -->
+    <h2 class="section-title">scelta dello starter (scarlatto)</h2>
+    <div class="starter-grid">
+        <div class="starter-card starter-fuecoco" data-modal="fuecoco">
+            <div class="starter-icon">🐊🔥</div>
+            <h3>Fuecoco</h3>
+            <p class="verdict best">★ Migliore per sicurezza ★</p>
+            <p>Skeledirge (Fuoco/Fantasma) con Canto Funebre è eccellente. I tipi Fuoco sono rari a Paldea. Scelta migliore per Nuzlocke.</p>
+        </div>
+        <div class="starter-card starter-quaxly" data-modal="quaxly">
+            <div class="starter-icon">🦆💧</div>
+            <h3>Quaxly</h3>
+            <p class="verdict good">✓ Scelta solida</p>
+            <p>Quaquaval (Acqua/Lotta) è offensivo con Samba Frullante. I tipi Acqua sono comuni a Paldea, ma resta valido.</p>
+        </div>
+        <div class="starter-card starter-sprigatito" data-modal="sprigatito">
+            <div class="starter-icon">🐱🌿</div>
+            <h3>Sprigatito</h3>
+            <p class="verdict mid">⚠ Scelta intermedia</p>
+            <p>Meowscarada (Erba/Buio) è veloce con Fiore Olocco. Fragile fisicamente, meno ottimale per le prime sfide.</p>
+        </div>
+    </div>
+
+    <!-- Ordine Consigliato per le Sfide -->
+    <h2 class="section-title">🎯 ordine consigliato per le sfide (level cap)</h2>
+    <div class="order-section">
+        <div class="order-tabs">
+            <button class="order-tab active" data-order="gyms">Palestre</button>
+            <button class="order-tab" data-order="titans">Titan Pokémon</button>
+            <button class="order-tab" data-order="star">Team Star</button>
+        </div>
+        
+        <div class="order-content active" id="gyms-content">
+            <div class="order-grid">
+                <div class="order-card"><div class="order-num">1</div><h3>Katy</h3><p>Cortondo · Coleottero</p><p class="level">Lv. 14-15</p><p>Contro: Fuoco, Volante, Roccia</p></div>
+                <div class="order-card"><div class="order-num">2</div><h3>Brassius</h3><p>Artazon · Erba</p><p class="level">Lv. 16-17</p><p>Contro: Fuoco, Volante, Coleottero</p></div>
+                <div class="order-card"><div class="order-num">3</div><h3>Iono</h3><p>Levincia · Elettro</p><p class="level">Lv. 23-24</p><p>Contro: Terra</p></div>
+                <div class="order-card"><div class="order-num">4</div><h3>Kofu</h3><p>Cascarrafa · Acqua</p><p class="level">Lv. 29-30</p><p>Contro: Elettro, Erba</p></div>
+                <div class="order-card"><div class="order-num">5</div><h3>Larry</h3><p>Medali · Normale</p><p class="level">Lv. 35-36</p><p>Contro: Lotta</p></div>
+                <div class="order-card"><div class="order-num">6</div><h3>Ryme</h3><p>Montenevera · Fantasma</p><p class="level">Lv. 41-42</p><p>Contro: Buio, Fantasma</p></div>
+                <div class="order-card"><div class="order-num">7</div><h3>Tulip</h3><p>Alfornada · Psico</p><p class="level">Lv. 44-45</p><p>Contro: Buio, Coleottero</p></div>
+                <div class="order-card"><div class="order-num">8</div><h3>Grusha</h3><p>Glaseado · Ghiaccio</p><p class="level">Lv. 47-48</p><p>Contro: Fuoco, Roccia, Lotta</p></div>
+            </div>
+        </div>
+        
+        <div class="order-content" id="titans-content">
+            <div class="order-grid">
+                <div class="order-card"><div class="order-num">1</div><h3>Klawf</h3><p>Roccia · Lv. 16</p><p>Ricompensa: Corsa</p></div>
+                <div class="order-card"><div class="order-num">2</div><h3>Bombirdier</h3><p>Volante/Buio · Lv. 19</p><p>Ricompensa: Volo</p></div>
+                <div class="order-card"><div class="order-num">3</div><h3>Orthworm</h3><p>Acciaio · Lv. 28</p><p>Ricompensa: Nuoto</p></div>
+                <div class="order-card"><div class="order-num">4</div><h3>Great Tusk</h3><p>Terra/Acciaio · Lv. 44</p><p>Ricompensa: Salto</p></div>
+                <div class="order-card"><div class="order-num">5</div><h3>Tatsugiri/Dondozo</h3><p>Drago/Acqua · Lv. 55</p><p>Ricompensa: Caduta</p></div>
+            </div>
+        </div>
+        
+        <div class="order-content" id="star-content">
+            <div class="order-grid">
+                <div class="order-card"><div class="order-num">1</div><h3>Segin Squad</h3><p>Buio · Lv. 20-21</p></div>
+                <div class="order-card"><div class="order-num">2</div><h3>Schedar Squad</h3><p>Fuoco · Lv. 26-27</p></div>
+                <div class="order-card"><div class="order-num">3</div><h3>Navi Squad</h3><p>Veleno · Lv. 32-33</p></div>
+                <div class="order-card"><div class="order-num">4</div><h3>Ruchbah Squad</h3><p>Folletto · Lv. 50-51</p></div>
+                <div class="order-card"><div class="order-num">5</div><h3>Caph Squad</h3><p>Lotta · Lv. 55-56</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aree Principali e Catture -->
+    <h2 class="section-title">🏞️ aree principali e catture prioritarie</h2>
+    <div class="areas-grid">
+        <div class="area-card"><div class="area-icon">🌾</div><h3>South Province (Area 1-6)</h3><p><strong>⭐ Priorità:</strong> Fletchling, Rookidee, Pawmi, Gible (raro), Ralts, Gastly</p><p>Fletchling → Talonflame, Rookidee → Corviknight (tank), Gible → Garchomp (TOP)</p></div>
+        <div class="area-card"><div class="area-icon">⛰️</div><h3>West Province (Area 1-3)</h3><p><strong>⭐ Priorità:</strong> Mankey, Riolu, Eevee, Tinkatink, Swablu</p><p>Mankey → Annihilape (TOP!), Riolu → Lucario, Eevee → Umbreon/Espeon</p></div>
+        <div class="area-card"><div class="area-icon">🌅</div><h3>East Province (Area 1-3)</h3><p><strong>⭐ Priorità:</strong> Charcadet, Murkrow, Flittle, Girafarig</p><p>Charcadet → Armarouge (Scarlatto) eccellente Fuoco/Psico</p></div>
+        <div class="area-card"><div class="area-icon">🏜️</div><h3>Asado Desert</h3><p><strong>⭐ Priorità:</strong> Sandile, Hippopotas, Orthworm</p><p>Sandile → Krookodile (Terra/Buio), Hippopotas → Hippowdon (tank Terra)</p></div>
+        <div class="area-card"><div class="area-icon">❄️</div><h3>North Province (Area 1-3)</h3><p><strong>⭐ Priorità:</strong> Frigibax, Cetoddle, Beldum (raro), Sneasel</p><p>Frigibax → Baxcalibur (pseudo-leggendario Drago/Ghiaccio), Beldum → Metagross</p></div>
+        <div class="area-card"><div class="area-icon">💧</div><h3>Zone Costiere</h3><p><strong>⭐ Priorità:</strong> Magikarp, Wingull, Psyduck, Finizen</p><p>Gyarados sempre eccellente. Finizen → Palafin (Hero Form) è OP ma richiede amicizia.</p></div>
+    </div>
+
+    <!-- POKÉMON CHIAVE DI SCARLATTO -->
+    <h2 class="section-title">pokémon chiave di scarlatto</h2>
+    <div class="key-pokemon-grid">
+        <div class="key-card best-card"><div class="key-icon">🐊🔥👻</div><h3>Skeledirge</h3><p>Canto Funebre · Ombra Notturna · Sgranocchio · Ripresa</p><small>Starter Fuecoco. Canto Funebre potenzia Sp. Atk a ogni KO.</small></div>
+        <div class="key-card best-card"><div class="key-icon">🐒💢</div><h3>Annihilape</h3><p>Collera · Pugnoscarica · Sgranocchio · Forza</p><small>Mankey. TOP TIER! Collera diventa più forte quando viene colpito.</small></div>
+        <div class="key-card best-card"><div class="key-icon">🐉🌪️</div><h3>Garchomp</h3><p>Dragartigli · Fossa · Falcata · Forza</p><small>Gible (South Province). Pseudo-leggendario sempre eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">🐦⚙️</div><h3>Corviknight</h3><p>Ferroaliato · Volo · Ripresa · Forzabruta</p><small>Rookidee. Tank Acciaio/Volante eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">⚡💪</div><h3>Pawmot</h3><p>Sparalampo · Pugnoscarica · Sgranocchio · Ripresa</p><small>Pawmi. Elettro/Lotta veloce con copertura.</small></div>
+        <div class="key-card"><div class="key-icon">🐊⚫</div><h3>Krookodile</h3><p>Fossa · Sgranocchio · Forzabruta · Falcata</p><small>Sandile (Asado Desert). Terra/Buio per Psico e Fantasma.</small></div>
+        <div class="key-card"><div class="key-icon">🐉❄️</div><h3>Baxcalibur</h3><p>Dragartigli · Geloraggio · Falcecobalto · Forza</p><small>Frigibax (North Province). Pseudo-leggendario Drago/Ghiaccio.</small></div>
+        <div class="key-card"><div class="key-icon">🔨✨</div><h3>Tinkaton</h3><p>Falcecobalto · Forza Lunare · Sgranocchio · Ripresa</p><small>Tinkatink. Acciaio/Folletto, Spaccagigia distrugge oggetti.</small></div>
+        <div class="key-card"><div class="key-icon">💩🪨</div><h3>Clodsire</h3><p>Fossa · Velenpuntura · Ripresa · Maledizione</p><small>Wooper di Paldea. Tank Veleno/Terra eccellente.</small></div>
+        <div class="key-card"><div class="key-icon">🔥🧠</div><h3>Armarouge</h3><p>Lanciafiamme · Psichico · Sgranocchio · Ripresa</p><small>Charcadet + Auspicious Armor. ESCLUSIVO Scarlatto!</small></div>
+    </div>
+
+    <!-- LEGA PALDEA - ELITE FOUR -->
+    <h2 class="section-title">👑 lega paldea - elite four e campione geeta</h2>
+    <div class="league-section">
+        <div class="league-grid">
+            <div class="league-card"><div class="league-icon">🌍</div><h3>Rika (Terra)</h3><p>Whiscash (57), Donphan (57), Dugtrio (57), Camerupt (57), Clodsire (58)</p><p><strong>Strategia:</strong> Erba e Acqua. Attenzione: Clodsire ha Assorbacqua, usa Erba!</p></div>
+            <div class="league-card"><div class="league-icon">⚙️</div><h3>Poppy (Acciaio)</h3><p>Scizor (58), Magnezone (58), Bronzong (58), Corviknight (58), Tinkaton (59)</p><p><strong>Strategia:</strong> Fuoco e Terra. Bronzong può avere Levitatura.</p></div>
+            <div class="league-card"><div class="league-icon">🕊️</div><h3>Larry (Volante)</h3><p>Tropius (59), Altaria (59), Staraptor (59), Oricorio (59), Flamigo (60)</p><p><strong>Strategia:</strong> Elettro e Ghiaccio. Altaria ha Fuocobomba!</p></div>
+            <div class="league-card"><div class="league-icon">🐉</div><h3>Hassel (Drago)</h3><p>Noivern (60), Dragapult (60), Flapple (60), Haxorus (60), Baxcalibur (61)</p><p><strong>Strategia:</strong> Folletto (4x). Se non hai Folletto, usa Ghiaccio.</p></div>
+            <div class="league-card champion"><div class="league-icon">👑</div><h3>Geeta (Campione)</h3><p>Espathra (61), Gogoat (61), Avalugg (61), Kingambit (61), Veluza (62), Glimmora (62, Tera Roccia)</p><p><strong>Strategia:</strong> Espathra: Buio; Gogoat: Fuoco; Avalugg: Fuoco/Lotta; Kingambit: Fuoco/Lotta; Veluza: Elettro/Erba; Glimmora: Acqua/Terra.</p></div>
+        </div>
+    </div>
+
+    <!-- Team Finale Consigliato -->
+    <h2 class="section-title">⭐ squadra consigliata per la lega paldea</h2>
+    <div class="league-team-showcase">
+        <div class="league-team-grid">
+            <div class="league-pokemon-card"><div class="league-icon">🐊🔥👻</div><h4>Skeledirge</h4><p>Canto Funebre · Ombra Notturna · Sgranocchio · Ripresa</p><small>Per Poppy e Hassel</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐒💢</div><h4>Annihilape</h4><p>Collera · Pugnoscarica · Sgranocchio · Forza</p><small>Per Rika e Geeta</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐉🌪️</div><h4>Garchomp</h4><p>Dragartigli · Fossa · Falcata · Forza</p><small>Per Poppy e Larry</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">⚡💪</div><h4>Pawmot</h4><p>Sparalampo · Pugnoscarica · Sgranocchio · Ripresa</p><small>Per Larry (Volante)</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🐉❄️</div><h4>Baxcalibur</h4><p>Dragartigli · Geloraggio · Falcecobalto · Forza</p><small>Per Hassel (Drago)</small></div>
+            <div class="league-pokemon-card"><div class="league-icon">🔨✨</div><h4>Tinkaton</h4><p>Falcecobalto · Forza Lunare · Sgranocchio · Ripresa</p><small>Per Hassel (Folletto 4x)</small></div>
+        </div>
+    </div>
+
+    <!-- TERACRISTAL - Sezione Speciale -->
+    <h2 class="section-title">💎 teracristal - il meccanismo chiave di paldea</h2>
+    <div class="tera-section">
+        <div class="tera-card">
+            <div class="tera-icon">💎</div>
+            <div class="tera-info">
+                <h3>Teracristal (Tera Type)</h3>
+                <p>I Pokémon possono cambiare tipo con il Teracristal! Questo può trasformare un punto debole in una resistenza o potenziare mosse STAB.</p>
+                <p><strong>Strategia:</strong> Attenzione ai capi con Teracristal! Esempio: Glimmora di Geeta diventa tipo Roccia, potenziando le mosse Roccia.</p>
+                <div class="tera-tips">
+                    <h4>🎯 Consigli per gestire il Teracristal:</h4>
+                    <ul>
+                        <li>Controlla sempre il Tera Type dei boss prima di affrontarli</li>
+                        <li>Un Pokémon può avere un Tera Type diverso dal suo tipo originale</li>
+                        <li>Usa il Teracristal nelle battaglie importanti per ottenere vantaggio</li>
+                        <li>Il Teracristal cambia le debolezze e le resistenze del Pokémon</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consigli Extra -->
+    <div class="footer-note">
+        <p>⭐ Livelli consigliati per la Lega Paldea: <strong>60-65</strong> ⭐</p>
+        <p>🐊🔥 <strong>FUECOCO è la scelta migliore!</strong> Skeledirge con Canto Funebre è eccellente per tutta la run. I tipi Fuoco sono rari a Paldea.</p>
+        <p>🐒💢 <strong>MANKEY (Annihilape)</strong> è uno dei migliori Pokémon di nona gen! Collera diventa potentissima quando viene colpito. Catturalo a West Province.</p>
+        <p>🐉🌪️ <strong>GIBLE (Garchomp)</strong> nelle province meridionali (South Province Area Two/Six) è top tier assoluto.</p>
+        <p>⚡💪 <strong>PAWMI (Pawmot)</strong> è un Elettro/Lotta eccellente per Larry (Volante) e per copertura.</p>
+        <p>🔨✨ <strong>TINKATON (Tinkatink)</strong> a West Province è Acciaio/Folletto. Perfetto per Hassel (Drago) con Forza Lunare (4x).</p>
+        <p>🎮 <strong>Auto-Battaglie (Let's Go!)</strong> per grindare in sicurezza! Il Pokémon non sviene mai, si ferma a PS bassi.</p>
+        <p>💎 <strong>TERACRISTAL:</strong> Attenzione ai boss con Teracristal! Cambia tipo e può sorprenderti.</p>
+        <p>🗺️ <strong>Ordine delle sfide:</strong> Segui l'ordine di livello consigliato per evitare aree troppo difficili.</p>
+        <p>⚠ <strong>Team Star:</strong> Durante le incursioni, i tuoi Pokémon possono sviene. Fai attenzione!</p>
+        <p>✦ Nuzlocke: cattura solo il primo Pokémon per area. Se sviene, è morto ✦</p>
+    </div>
+
+    <div class="footer">
+        <span>✦ nuzlocke guide · Pokémon Scarlatto · il mondo aperto di Paldea ✦</span>
+    </div>
+</div>
+
+<script src="scarlatto-script.js"></script>
+</body>
+</html>

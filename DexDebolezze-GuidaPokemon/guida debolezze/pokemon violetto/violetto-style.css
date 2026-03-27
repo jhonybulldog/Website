@@ -1,0 +1,808 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, 'Inter', sans-serif;
+    color: #1a2a1f;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.accent {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #9b59b6, #8e44ad);
+    margin: 10px auto;
+}
+
+.hero p {
+    color: #5c6e5a;
+}
+
+/* Info Section */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.info-card {
+    background: #f9fbf7;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #e5f0e0;
+    transition: all 0.2s ease;
+}
+
+.info-card:hover {
+    border-color: #9b59b6;
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.1);
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #2c5e2a;
+}
+
+.highlight-card {
+    background: #f3e5f5;
+    border-left: 4px solid #9b59b6;
+}
+
+.highlight-card h3 {
+    color: #9b59b6;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: #4a5b48;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2.5rem 0 1.5rem 0;
+    color: #1e2f1c;
+    border-left: 4px solid #9b59b6;
+    padding-left: 1rem;
+}
+
+/* Rules Section */
+.rules-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.rules-card {
+    background: #f9fbf7;
+    border-radius: 20px;
+    padding: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    border: 1px solid #e5f0e0;
+    transition: all 0.2s;
+}
+
+.rules-card:hover {
+    border-color: #9b59b6;
+    transform: translateY(-2px);
+}
+
+.rules-icon {
+    font-size: 2rem;
+    background: #f3e5f5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.rules-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #2c5e2a;
+}
+
+.rules-info p {
+    font-size: 0.8rem;
+    color: #5c6e5a;
+    line-height: 1.4;
+}
+
+/* Version Comparison */
+.version-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.version-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #e9f0e5;
+    transition: all 0.2s;
+}
+
+.version-card.violet {
+    border-top: 4px solid #9b59b6;
+}
+
+.version-card.scarlet {
+    border-top: 4px solid #e74c3c;
+}
+
+.version-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.version-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.version-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #2c5e2a;
+}
+
+.version-card ul {
+    list-style: none;
+    text-align: left;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.version-card li {
+    font-size: 0.85rem;
+    color: #5c6e5a;
+    margin: 0.4rem 0;
+}
+
+.version-card p {
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.version-card.violet p {
+    color: #9b59b6;
+    font-weight: 500;
+}
+
+.version-card.scarlet p {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+/* Starter Grid */
+.starter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.starter-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1.8rem 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: 1px solid #e9f0e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.starter-card:hover {
+    transform: translateY(-4px);
+    border-color: #9b59b6;
+    box-shadow: 0 12px 24px -12px rgba(155, 89, 182, 0.3);
+}
+
+.starter-icon {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+.starter-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e2b;
+}
+
+.verdict {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.verdict.best {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.verdict.good {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.verdict.mid {
+    background: #fff8e7;
+    color: #f39c12;
+}
+
+.verdict.risky {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.starter-card p {
+    font-size: 0.85rem;
+    color: #5c6e5a;
+}
+
+/* Exclusive Grid */
+.exclusive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.exclusive-card {
+    background: #ffffff;
+    border: 1px solid #e9f0e5;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.exclusive-card.best {
+    background: #f3e5f5;
+    border-left: 3px solid #9b59b6;
+}
+
+.exclusive-card.good {
+    background: #e8f5e9;
+    border-left: 3px solid #2e7d32;
+}
+
+.exclusive-card.mid {
+    background: #fff8e7;
+    border-left: 3px solid #f39c12;
+}
+
+.exclusive-card:hover {
+    transform: translateY(-3px);
+    border-color: #9b59b6;
+    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.1);
+}
+
+.exclusive-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.exclusive-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.exclusive-card p {
+    font-size: 0.7rem;
+    color: #5c6e5a;
+}
+
+/* Areas Grid */
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.area-card {
+    background: #ffffff;
+    border: 1px solid #e9f0e5;
+    border-radius: 20px;
+    padding: 1.2rem;
+    transition: all 0.2s;
+}
+
+.area-card:hover {
+    transform: translateY(-2px);
+    border-color: #9b59b6;
+}
+
+.area-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.area-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.area-card p {
+    font-size: 0.75rem;
+    color: #5c6e5a;
+    margin: 0.3rem 0;
+}
+
+/* Key Pokémon Grid */
+.key-pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.key-card {
+    background: #f9fbf7;
+    border-radius: 18px;
+    padding: 1.2rem;
+    transition: all 0.2s ease;
+    border: 1px solid #e5f0e0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.key-card.best-card {
+    background: #f3e5f5;
+    border-left: 3px solid #9b59b6;
+}
+
+.key-card:hover {
+    transform: translateY(-2px);
+    border-color: #9b59b6;
+}
+
+.key-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.key-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #2c5e2a;
+}
+
+.key-card p {
+    font-size: 0.8rem;
+    color: #5c6e5a;
+    margin: 0.2rem 0;
+}
+
+.key-card small {
+    font-size: 0.7rem;
+    color: #7e8e7b;
+    margin-top: 0.3rem;
+}
+
+/* Order Section */
+.order-section {
+    margin-bottom: 2rem;
+}
+
+.order-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e9f0e5;
+    padding-bottom: 0.5rem;
+}
+
+.order-tab {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7e8e7b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.order-tab:hover {
+    color: #9b59b6;
+}
+
+.order-tab.active {
+    color: #9b59b6;
+    border-bottom: 2px solid #9b59b6;
+}
+
+.order-content {
+    display: none;
+}
+
+.order-content.active {
+    display: block;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.order-card {
+    background: #ffffff;
+    border: 1px solid #e9f0e5;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    border-color: #9b59b6;
+}
+
+.order-num {
+    background: #9b59b6;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem;
+    font-weight: bold;
+}
+
+.order-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #2c5e2a;
+}
+
+.order-card p {
+    font-size: 0.7rem;
+    color: #5c6e5a;
+    margin: 0.2rem 0;
+}
+
+.order-card .level {
+    font-weight: 600;
+    color: #9b59b6;
+}
+
+/* League Section */
+.league-section {
+    margin-bottom: 2rem;
+}
+
+.league-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.2rem;
+}
+
+.league-card {
+    background: #ffffff;
+    border: 1px solid #e9f0e5;
+    border-radius: 20px;
+    padding: 1.2rem;
+    transition: all 0.2s;
+}
+
+.league-card:hover {
+    transform: translateY(-2px);
+    border-color: #9b59b6;
+}
+
+.league-card.champion {
+    background: #f3e5f5;
+    border-left: 3px solid #9b59b6;
+}
+
+.league-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.league-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.league-card p {
+    font-size: 0.75rem;
+    color: #5c6e5a;
+    margin: 0.3rem 0;
+}
+
+/* League Team */
+.league-team-showcase {
+    margin-bottom: 2rem;
+}
+
+.league-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+}
+
+.league-pokemon-card {
+    background: #f9fbf7;
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.2s;
+    border: 1px solid #e5f0e0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.league-pokemon-card:hover {
+    transform: translateY(-3px);
+    border-color: #9b59b6;
+    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.1);
+}
+
+.league-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.league-pokemon-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c5e2a;
+}
+
+.league-pokemon-card p {
+    font-size: 0.75rem;
+    color: #5c6e5a;
+    margin: 0.3rem 0;
+}
+
+.league-pokemon-card small {
+    font-size: 0.65rem;
+    color: #7e8e7b;
+}
+
+/* Tera Section */
+.tera-section {
+    margin-bottom: 2rem;
+}
+
+.tera-card {
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    border-radius: 24px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    border: 1px solid #9b59b6;
+    align-items: flex-start;
+}
+
+.tera-icon {
+    font-size: 3rem;
+    background: #9b59b6;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tera-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #9b59b6;
+}
+
+.tera-info p {
+    font-size: 0.85rem;
+    color: #2c3e2b;
+    margin: 0.5rem 0;
+}
+
+.tera-tips {
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.tera-tips h4 {
+    font-size: 0.9rem;
+    color: #9b59b6;
+    margin-bottom: 0.5rem;
+}
+
+.tera-tips ul {
+    padding-left: 1.5rem;
+}
+
+.tera-tips li {
+    font-size: 0.8rem;
+    color: #2c3e2b;
+    margin: 0.3rem 0;
+}
+
+/* Footer Note */
+.footer-note {
+    background: #f3e5f5;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.footer-note p {
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+    color: #9b59b6;
+}
+
+.footer {
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #e9f0e5;
+    padding-top: 2rem;
+    font-size: 0.75rem;
+    color: #7e8e7b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .rules-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .rules-icon {
+        margin-bottom: 0.5rem;
+    }
+    
+    .order-tabs {
+        justify-content: center;
+    }
+    
+    .tera-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .tera-icon {
+        margin: 0 auto;
+    }
+    
+    .tera-tips ul {
+        text-align: left;
+    }
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background: white;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 28px;
+    padding: 1.8rem;
+    text-align: center;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0ecdb;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.modal-content p {
+    font-size: 0.9rem;
+    color: #4a5b48;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+.modal-close {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.modal-close:hover {
+    opacity: 0.9;
+}
