@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="task-style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 TaskManager</h1>
+            <p>Gestisci le tue attività con categorie e priorità</p>
+        </header>
+
+        <!-- Form aggiungi task -->
+        <div class="add-task-section">
+            <input type="text" id="taskInput" placeholder="Nuovo task...">
+            <select id="prioritySelect">
+                <option value="alta">🔴 Alta</option>
+                <option value="media">🟡 Media</option>
+                <option value="bassa">🟢 Bassa</option>
+            </select>
+            <select id="categorySelect">
+                <!-- Le categorie verranno inserite da JavaScript -->
+            </select>
+            <button id="addTaskBtn" class="btn-primary">Aggiungi</button>
+        </div>
+
+        <!-- Gestione categorie -->
+        <div class="categories-section">
+            <h3>📁 Le tue categorie</h3>
+            <div id="categoriesList" class="categories-list">
+                <!-- Categorie inserite dinamicamente -->
+            </div>
+            <div class="add-category">
+                <input type="text" id="newCategoryInput" placeholder="Nuova categoria...">
+                <button id="addCategoryBtn" class="btn-secondary">+ Aggiungi categoria</button>
+            </div>
+        </div>
+
+        <!-- Filtri -->
+        <div class="filters-section">
+            <div class="filter-buttons">
+                <button data-filter="all" class="filter-btn active">Tutti</button>
+                <button data-filter="active" class="filter-btn">Da fare</button>
+                <button data-filter="completed" class="filter-btn">Completati</button>
+            </div>
+            <div id="categoryFilters" class="category-filters">
+                <!-- Filtri per categoria dinamicamente -->
+            </div>
+        </div>
+
+        <!-- Lista task -->
+        <div id="tasksList" class="tasks-list">
+            <!-- I task vengono inseriti qui -->
+        </div>
+
+        <!-- Footer -->
+        <div class="tasks-footer">
+            <span id="tasksRemaining">0 task rimanenti</span>
+            <button id="clearCompletedBtn" class="btn-danger">Cancella completati</button>
+        </div>
+    </div>
+
+    <script src="task-script.js"></script>
+</body>
+</html>
